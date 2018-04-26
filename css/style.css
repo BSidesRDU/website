@@ -41,7 +41,7 @@ body {
     font-size   : 17px;
     line-height : 1.7em;
     color       : #353e55;
-    font-weight : 100;
+    font-weight : 350;
     background  : #ffffff;
     border      : 10px solid #fff;
     }
@@ -620,7 +620,7 @@ button:focus,
     }
 
 /* --------------------------
- * Client Logo 
+ * Client Logo
  *---------------------------*/
 
 .client-logo a img {
