@@ -1,677 +1,871 @@
-<!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content="BSidesRDU is a community-driven framework for building events for and by cyber security community members. The goal is to expand the spectrum of conversation beyond the traditional confines of space and time. It creates opportunities for individuals to both present and participate in an intimate atmosphere that encourages collaboration. It is an intense event with discussions, demos, and interaction from participants. It is where conversations for the next-big-thing are happening. Security is top of mind across the entire sphere of IT and the world beyond. Therefore, more people and organizations are interested in the next new thing in security. BSides is the place where these people come to collaborate, learn and share. With many tech-companies, colleges and universities in Raleigh, Durham, Chapel Hill and surrounding areas, it is also an international center of innovation in the security industry. Security B-Sides Raleigh-Durham (B-Sides RDU) is proud to have had great speaker lineups at our events including keynotes by Dan Kaminsky, Dave Kennedy, Paul Vixie, BenTen, Jay Beale, G.Mark Hardy, and for B-Sides RDU 2017: Cliff Stoll."/>
-    <meta name="author" content="Omar Santos"/>
-    <meta property='og:image' content='/img/bsidesrdu.jpg"/>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content=
+  "BSidesRDU is a community-driven framework for building events for and by cyber security community members. The goal is to expand the spectrum of conversation beyond the traditional confines of space and time. It creates opportunities for individuals to both present and participate in an intimate atmosphere that encourages collaboration. It is an intense event with discussions, demos, and interaction from participants. It is where conversations for the next-big-thing are happening. Security is top of mind across the entire sphere of IT and the world beyond. Therefore, more people and organizations are interested in the next new thing in security. BSides is the place where these people come to collaborate, learn and share. With many tech-companies, colleges and universities in Raleigh, Durham, Chapel Hill and surrounding areas, it is also an international center of innovation in the security industry. Security B-Sides Raleigh-Durham (B-Sides RDU) is proud to have had great speaker lineups at our events including keynotes by Dan Kaminsky, Dave Kennedy, Paul Vixie, BenTen, Jay Beale, G.Mark Hardy, and for B-Sides RDU 2017: Cliff Stoll." />
+  <meta name="author" content="Omar Santos" />
+  <meta property='og:image' content=
+  'BSidesRDU : Raleigh - Durham Area Cybersecurity Conference"/&gt; &lt;title&gt;BSidesRDU : Cybersecurity Conference&lt;/title&gt; &lt;!-- favicon --&gt; &lt;link href="favicon.png" rel=icon&gt; &lt;!-- web-fonts --&gt; &lt;link href='
+  rel='stylesheet' type='text/css' />
+  <link href=
+  "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel=
+  "stylesheet" integrity=
+  "sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin=
+  "anonymous" type="text/css" /><!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/style1.css" rel="stylesheet" type="text/css" />
 
-    <meta property='og:title' content='BSidesRDU : Raleigh - Durham Area Cybersecurity Conference"/>
-
-                                       
-    <title>BSidesRDU : Cybersecurity Conference</title>
-
-    <!-- favicon -->
-    <link href="favicon.png" rel=icon>
-
-    <!-- web-fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'>
-
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style1.css" rel="stylesheet">
-
+  <title></title>
+  <style type="text/css">
+/*<![CDATA[*/
+  iframe.c9 {border:0}
+  div.c8 {text-align: center}
+  table.c7 {width: 754px;}
+  td.c6 {width: 560px;}
+  td.c5 {width: 29px;}
+  td.c4 {width: 147px;}
+  th.c3 {width: 560px;}
+  th.c2 {width: 29px;}
+  th.c1 {width: 147px;}
+  /*]]>*/
+  </style>
 </head>
+
 <body id="page-top" data-spy="scroll" data-target=".navbar">
-<div id="main-wrapper">
+  <div id="main-wrapper">
     <!-- Page Preloader -->
+
     <div id="preloader">
-        <div id="status">
-            <div class="status-mes"></div>
+      <div class="status-mes" id="status"></div>
+    </div><!-- Navigation -->
+
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=
+        ".navbar-main-collapse"><span class="sr-only">Toggle navigation</span></button>
+        <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png" alt=
+        "BsidesRDU" height="40" width="200" /></a>
+      </div><!-- Collect the nav links, forms, and other content for toggling -->
+
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+
+          <li class="hidden"><a href="#page-top"></a></li>
+
+          <li><a class="page-scroll" href="#section-intro">About</a></li>
+
+          <li><a class="page-scroll" href="#section-schedule">Schedule</a></li>
+
+          <li><a class="page-scroll" href="#ctf">Side Events</a></li>
+
+          <li><a class="page-scroll" href="#tickets">Buy Tickets</a></li>
+
+          <li><a class="page-scroll" href="#section-sponsor">Sponsors</a></li>
+
+          <li><a class="page-scroll" href="#section-venue">Venue</a></li>
+
+          <li><a href="principles.html">Principles</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+    <!-- .nav -->
+
+    <div class="jumbotron text-center content">
+      <div class="event-date">
+        OCTOBER 19th, 2018 | Durham, NC
+      </div>
+
+      <h1>BSidesRDU</h1>
+
+      <p class="lead">...a community-driven framework for building events for and by
+      cyber security community members.</p><a href="#section-venue"><button type="button"
+      class="btn btn-default btn-lg"><a href="#section-venue">STAY IN THE
+      LOOP</a></button></a>
+    </div><!-- .Jumbotron-->
+
+    <div class="container row col-md-8">
+      <p class="lead">Security BSides is a community-driven framework for building events
+      for and by cyber security community members. The goal is to expand the spectrum of
+      conversation beyond the traditional confines of space and time. It creates
+      opportunities for individuals to both present and participate in an intimate
+      atmosphere that encourages collaboration. It is an intense event with discussions,
+      demos, and interaction from participants. It is where conversations for the
+      next-big-thing are happening.<br />
+      <br />
+      Security is top of mind across the entire sphere of IT and the world beyond.
+      Therefore, more people and organizations are interested in the next new thing in
+      security. BSides is the place where these people come to collaborate, learn and
+      share.<br />
+      <br />
+      With many tech-companies, colleges and universities in Raleigh, Durham, Chapel Hill
+      and surrounding areas, it is also an international center of innovation in the
+      security industry.<br />
+      <br />
+      Security B-Sides Raleigh-Durham (B-Sides RDU) is proud to have had great speaker
+      lineups at our events including keynotes by Dan Kaminsky, Dave Kennedy, Paul Vixie,
+      BenTen, Jay Beale, G.Mark Hardy, and for B-Sides RDU 2017: Cliff Stoll.</p>
+
+      <p class="lead"></p>
+    </div><!-- .about-event -->
+
+    <div class="container">
+      <div class="row col-md-12 lead">
+        <h1>Schedule</h1>
+
+        <table class="c7" border="1">
+          <thead>
+            <tr>
+              <th class="c1">
+                <p>Time</p>
+              </th>
+
+              <th class="c2">
+                <p>Presenter</p>
+              </th>
+
+              <th class="c3">
+                <p>Talk Name</p>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="c4">
+                <p>8:00 start</p>
+              </td>
+
+              <td class="c5">
+                <p>Staff</p>
+              </td>
+
+              <td class="c6">
+                <p>Registration</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="c4">
+                <p>8:30-8:45</p>
+              </td>
+
+              <td class="c5">
+                <p>Staff</p>
+              </td>
+
+              <td class="c6">
+                <p>Welcome &amp; Opening Remarks</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="c4">
+                <p>8:45-9:45</p>
+              </td>
+
+              <td class="c5">
+                <p>Shahid Buttar</p>
+              </td>
+
+              <td class="c6">
+                <p><a href="#keynote">Keynote from Shahid Buttar, EFF Director Of
+                Grassroots Advocacy</a></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="c4">
+                <p>9:45-10:30</p>
+              </td>
+
+              <td class="c5">
+                <p>Matt</p>
+              </td>
+
+              <td class="c6">
+                <p><a href="#approaching">Approaching Parity: Considerations for adapting
+                enterprise monitoring and incident response (IR) capabilities for
+                efficacy in cloud environments, and how to operationalize these
+                capabilities with a playbook.</a></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="c4">
+                <p>10:30-11:15</p>
+              </td>
+
+              <td class="c5">
+                <p>SleepZ3R0 and HA12TL3Y</p>
+              </td>
+
+              <td class="c6">
+                <p><a href="#movement">Movement After Initial Compromise</a></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="c4">
+                <p>11:15-11:30</p>
+              </td>
+
+              <td class="c5">
+                <p>Staff</p>
+              </td>
+
+              <td class="c6">
+                <p>Break</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="c4">
+                <p>11:30-12:30</p>
+              </td>
+
+              <td class="c5">
+                <p>Joel Lathrop</p>
+              </td>
+
+              <td class="c6">
+                <p><a href="#our">Our Docker app got hacked. Now what?</a></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="c4">
+                <p>12:30-2:00</p>
+              </td>
+
+              <td class="c5">
+                <p>Staff</p>
+              </td>
+
+              <td class="c6">
+                <p>Lunch</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="c4">
+                <p>2:00-2:30</p>
+              </td>
+
+              <td class="c5">
+                <p>Eric Waters</p>
+              </td>
+
+              <td class="c6">
+                <p><a href="#security">Security Automation for the Blue Team</a></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="c4">
+                <p>3:15-4:15</p>
+              </td>
+
+              <td class="c5">
+                <p>Matt Martin &amp; Panel Guests</p>
+              </td>
+
+              <td class="c6">
+                <p><a href="#you">You Can't Dial 911</a></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="c4">
+                <p>4:15-4:30</p>
+              </td>
+
+              <td class="c5">
+                <p>Staff</p>
+              </td>
+
+              <td class="c6">
+                <p>Break</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="c4">
+                <p>4:30-5:30</p>
+              </td>
+
+              <td class="c5">
+                <p>@aarondlancaster</p>
+              </td>
+
+              <td class="c6">
+                <p><a href="#sky">Sky-high IR - IR at Cloud Scale</a></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="c4">
+                <p>5:30-6:00</p>
+              </td>
+
+              <td class="c5">
+                <p>Sam Granger</p>
+              </td>
+
+              <td class="c6">
+                <p><a href="#when">When it rains it pours</a></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="c4">
+                <p>6:00-6:45</p>
+              </td>
+
+              <td class="c5">
+                <p>Neal Humphrey</p>
+              </td>
+
+              <td class="c6">
+                <p><a href="#rise">Rise of the Advisor</a></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="c4">
+                <p>6:45-8:30</p>
+              </td>
+
+              <td class="c5">
+                <p>Staff</p>
+              </td>
+
+              <td class="c6">
+                <p>Hacker Jeopardy &amp; Social</p>
+              </td>
+            </tr>
+          </tbody>
+        </table><a name="keynote"></a>
+        <hr />
+        <br />
+        <br />
+
+        <h2>Keynote</h2>
+
+        <h3>Abstract</h3>
+
+        <p>For a word that appears nowhere in the U.S. Constitution, privacy holds
+        outsized&#8212;and underappreciated&#8212;significance to constitutional rights.
+        Why does privacy matter, and how does its erosion undermine not only
+        constitutional rights but also democracy in America writ large? Beyond exploring
+        and applying constitutional theory to topics from mass surveillance to police
+        militarization, we will also discuss how concerned Americans are already taking
+        action every day to reclaim freedom of expression in an era of arbitrary
+        surveillance.</p>
+
+        <h3>About Shahid</h3><strong>Shahid</strong> leads EFF's grassroots and student
+        outreach efforts. He's a constitutional lawyer focused on the intersection of
+        community organizing and policy reform as a lever to shift legal norms, with
+        roots in communities across the country resisting mass surveillance. From 2009 to
+        2015, he led the Bill of Rights Defense Committee as Executive Director. In 2018,
+        Shahid ran for Congress, seeking to represent California's 12th congressional
+        district in the U.S. House of Representatives.
+
+        <p>After graduating from Stanford Law School in 2003, where he grew immersed in
+        the movement to stop the war in Iraq, Shahid worked for a decade in Washington,
+        D.C. He first worked in private practice for a California-based law firm, with
+        public interest litigation projects advancing campaign finance reform and
+        marriage equality for same-sex couples (as early as 2004, when LGBT rights
+        remained politically marginal). From 2005 to 2008, he helped build a national
+        progressive legal network and managed the communications team at the American
+        Constitution Society for Law &amp; Policy, before founding the program to combat
+        racial &amp; religious profiling at Muslim Advocates in 2008.</p>
+
+        <p>Outside of his work at EFF, Shahid also DJs and produces electronic music,
+        writes poetry &amp; prose, kicks rhymes, organizes guerilla poetry insurgencies,
+        plays capoeira, speaks truth to power on Truthout, occasionally elucidates legal
+        scholarship, and documents counter-cultural activism for the Burning Man Journal.
+        He also serves on the Boards of Directors of Defending Rights and Dissent, the
+        Center for Media Justice, and the Fund for Constitutional Government.</p><a name=
+        "approaching"></a>
+        <hr />
+        <br />
+        <br />
+
+        <h2>Approaching Parity: Considerations for adapting enterprise monitoring and
+        incident response (IR) capabilities for efficacy in cloud environments, and how
+        to operationalize these capabilities with a playbook.</h2>
+
+        <h3>Abstract</h3>
+
+        <p>There is no denying the ubiquity of cloud computing, and for most
+        organizations, Infrastructure as a Service (IaaS) in particular as the new norm.
+        The model for cloud security is typically a shared responsibility between the
+        provider and the consumer, which really means the consumer is ultimately
+        responsible. Whether your infrastructure is completely hosted, is partly hosted,
+        or is soon-to-be hosted in the cloud, your security posture must adapt
+        appropriately if your monitoring and Incident response capabilities are to remain
+        effective.</p>
+
+        <p>Developing an accurate view of nefarious activity in cloud environments still
+        requires the multi-layered approach it did in the enterprise; however, it must
+        adapt to include sources such as Amazon Web Services (AWS) CloudTrail IaaS logs,
+        VPC Flow logs, endpoint logs, and more. This data must be captured and arranged
+        in a manner to make it actionable, requiring you to have a plan for the IR
+        lifecycle&#8212;even though you might not own the mitigation process.</p>
+
+        <p>Approaching Parity is a talk about adapting your security posture for
+        monitoring and IR in IaaS environments, through native capabilities, third-party
+        products, via workaround, or any combination of the three, and then
+        operationalizing this telemetry with the CSIRT playbook. Though this talk
+        provides AWS IaaS examples, the topics presented are applicable to other IaaS
+        providers too.</p>
+
+        <h3>About Matt</h3>
+
+        <p>As an information security practitioner with 20 years of IT experience, Matt
+        helps protect Cisco&#8217;s network and assets as a first responder on the
+        Computer Security Incident Response Team (CSIRT). Matt shares his monitoring and
+        incident response expertise with the InfoSec community by participating in groups
+        such as the Defense Security Information Exchange (DSIE) and the North Carolina
+        InfraGard. Matt&#8217;s hobbies include making his own sauerkraut and competitive
+        rifle shooting, both activities that have absolutely nothing to do with
+        information security.</p><a name="movement"></a>
+        <hr />
+        <br />
+        <br />
+
+        <h2>Movement After Initial Compromise</h2>
+
+        <h3>Abstract</h3>
+
+        <p>Once a system is compromised there are many avenues to consider. It brings up
+        a lot of questions. Who am I on this network? Where am I in this network? Can I
+        move to another system with my current permissions? Can I privilege escalate on
+        my current system? We are going to go over enumeration utilizing &#8220;living
+        off the land&#8221; techniques and on tools that an attacker can use for
+        enumeration. Examples of some tools that we will go over for enumeration are
+        SharpHound, Powersploit&#8217;s collection of Microsoft Powershell modules and
+        others.</p>
+
+        <p>We will then go into what is Port Forwarding and why it is useful. Then we
+        will show several ways to execute Port Forwarding. We will have video examples
+        for utilizing SOCKS in Cobalt Strike and SSH port forwarding techniques. Once
+        enumeration is done we will go over how to move to another system on the network.
+        We will provide multiple examples such as; WMIC, Psexec, AT, Schtasks, WINrm,
+        Remote Registry, DCOM, Multi-relay, SMB-relay. Screenshot and videos will be
+        provided during the talk. The last part we will go over is how to detect or
+        attempt to protect against these techniques that attackers implement.</p>
+
+        <h3>About Matt Batten</h3>
+
+        <p>Red Team Security Engineer conducting Red Team operations and penetration
+        tests for SixGen. Matt has seven years of experience in the information security
+        field and operated on an NSA Certified DOD Red Team. U.S. Marine Corps Veteran
+        that specialized in Signals Intelligence. Current certifications include, CISSP,
+        OSCP, CEH, and more.</p>
+
+        <h3>AboutCollyn Hartley</h3>
+
+        <p>Persistent Cyber Operator for NSA Certified DOD Red Team. Where my main focus
+        is lateral movement and persistent access in a variety of DOD networks. My
+        current certifications are CEH, Sec+, Net+, Linux+, OMA, WEA, and
+        SANS511.</p><a name="our"></a>
+        <hr />
+        <br />
+        <br />
+
+        <h2>Our Docker app got hacked. Now what?</h2>
+
+        <h3>Abstract</h3>
+
+        <p>Someone deployed their application as a Docker container. Then another someone
+        came along and hacked it. Now everyone is looking at you asking, "How did this
+        happen? What did the attacker do? How do we stop this from happening again!?" If
+        this were a normal physical server or VM, it'd be no problem: you'd just crack
+        open traditional forensic tools and start building a forensic history from the
+        disk image. But this is a Docker container... and your tools don't know what
+        Docker containers are. So now what?</p>In this talk, we'll go over what a Docker
+        container looks like from a forensic viewpoint. We'll dig into how you can get
+        access to the underlying disk/filesystem data of a compromised container and
+        which existing forensic tools that you may already use can still apply. We'll
+        also cover what new forensic opportunities Docker provides and new metadata that
+        can be extracted that wouldn't be available on a conventional system. When we're
+        done, you'll know how to tear apart a Docker container and get all those people
+        turning to you the answers they need.
+
+        <h3>About Joel Lathrop</h3>
+
+        <p>Joel Lathrop spent his childhood developing computer software, a path which
+        eventually led him into the field of cybersecurity. Beginning with work in
+        developing distributed systems for ensuring privacy and anonymity, he picked up
+        an interest in cryptography which led to an M.S. focused on cryptanalysis.
+        Delving deeper into the subfield of threat intelligence, Joel has applied his
+        occasionally unorthodox approach to reverse engineering and forensic analysis
+        toward research into topics such as malware counter-exploitation, malware
+        obfuscation evolution, and botnet neutralization.</p>
+
+        <p>In what spare time he has, he enjoys keeping up with advances in programming
+        language theory, cryptography, and distributed systems design as well as
+        attending the occasional opera.</p><a name="security"></a>
+        <hr />
+        <br />
+        <br />
+
+        <h2>Security Automation for the Blue Team</h2>
+
+        <h3>Abstract</h3>
+
+        <p>Supposedly, there's a shortage of Information Security professionals. Some
+        people agree while others disagree. However, there is one thing most infosec
+        professionals will agree on&#8230; and that is the fact that we all run around
+        like our hair is on fire because we don't have enough resources to accomplish
+        everything that needs to get done. I know this is the case for most infosec
+        people I talk to. Even if we get an additional headcount, our list of compliance
+        check-boxes, projects, and daily responsibilities keep growing at a phenomenal
+        pace. How do we keep up with this fast-paced growth, insane workload, alerts out
+        our ears and no end in sight? One of the best ways to make a big impact is
+        through automation. Whether you have a massive budget or no budget at all, I will
+        discuss your options and how to start the automation journey&#8230; or improve
+        upon what you already have. I'll talk about using existing tools, creating your
+        own scripts, using API's and even the latest fad in security automation, SOAR
+        (security operations analytics and reporting). We will discuss how to determine
+        what you should automate first, automation use cases in infosec, and how to tell
+        if there&#8217;s something you shouldn&#8217;t automate. Let's face it, we are
+        over tooled and understaffed&#8230; We need automation to help us out.</p>
+
+        <h3>About Eric Waters</h3>
+
+        <p>Eric Waters has been an Information Technology professional for over 20 years.
+        He spent almost 10 years in technology management before deciding to concentrate
+        on Information Security full time. He specializes in internal penetration
+        testing, security monitoring, and security automation. He holds a Bachelor of
+        Science in Information Security, GPEN, and is a member of the GIAC advisory
+        board.</p><a name="you"></a>
+        <hr />
+        <br />
+        <br />
+
+        <h2>You Can't Dial 911</h2>
+
+        <h3>Abstract</h3>
+
+        <p>A panel discussion on engaging law enforcement in the incident response
+        process before and after a breach. Cyber incidents that impact business, steal
+        intellectual property or cause financial or other loss happen every day. Do you
+        know when to call Law Enforcement, how to work with them, and what to expect from
+        them? In this panel, moderated by United States Attorney Matt Martin, members of
+        the FBI, US Attorney&#8217;s Office, and Cisco will share insights on when you
+        should engage Law Enforcement, what you should do in preparation for making the
+        call, what you should expect in response, and lessons learned of how NOT to do
+        it.</p>
+
+        <h3>About The Panelists</h3>
+
+        <p>Mike Scheck is the Director of the Cisco Computer Security Incident Response
+        Team (CSIRT). The CSIRT is a team is responsible for monitoring, investigating,
+        and mitigating all computer security incidents on Cisco's corporate network,
+        hosted solutions, clouds, and new ventures. There are over 90 team members within
+        the Cisco CSIRT that are responsible for Analysis, Investigations, Engineering
+        and Threat Intelligence. Mike moved to the Cisco CSIRT in 2004 as an investigator
+        after working for several years in Cisco IT as a Unix system administrator.
+        During his time in the Cisco CSIRT Mike has worked as Lead Investigator, Threat
+        Intelligence team lead, and Manager of the Global Investigations team. Prior to
+        Cisco Mike worked as a Unix Consultant, and was in the infantry as a member of
+        the U.S. Marines.</p>
+
+        <p>Supervisory Special Agent Jessica Nye is the current Supervisor of the FBI
+        Cyber Squad in Raleigh, NC. Prior to her arrival in North Carolina in 2015, Ms.
+        Nye spent eight years working in the Baltimore Field Office on their Cyber Squad
+        and two years at FBI Cyber Division Headquarters in Washington DC. She has
+        significant experience working cyber-related matters including computer intrusion
+        investigations, intellectual property (IP) rights violations, theft of trade
+        secrets, economic espionage and other investigations.</p>
+
+        <p>Anand Ramaswamy is an Assistant United States Attorney in Greensboro, North
+        Carolina, prosecuting cybercrime and human trafficking. AUSA Ramaswamy attended
+        the University of North Carolina at Greensboro before receiving his law degree
+        from the University of North Carolina at Chapel Hill. He served as an Assistant
+        District Attorney, prosecuting for the State of North Carolina for eight years
+        before joining the U.S. Attorney&#8217;s Office in 2007. He is a board certified
+        specialist in state and federal criminal law and vice-chair of the Criminal
+        Specialist Committee of the North Carolina State Board of Legal
+        Specialization.</p>
+
+        <p>Matt Martin serves as the United States Attorney for the Middle District of
+        North Carolina, the chief federal law enforcement officer responsible for federal
+        prosecution in the Middle District. Before becoming US Attorney, Mr. Martin was
+        Associate General Counsel for Duke Energy Corporation and, previously, a partner
+        at Smith Anderson law firm, where he focused on complex litigation. Prior to
+        joining Smith Anderson, Mr. Martin practiced with the law firm of Covington &amp;
+        Burling in Washington, D.C. Mr. Martin has served on the boards of the Food Bank
+        of Central and Eastern North Carolina, Marbles Kids Museum, and Meals on Wheels
+        of Wake County. He received both his B.S., with honors and highest distinction,
+        and his J.D., with high honors, from the University of North Carolina at Chapel
+        Hill.</p><a name="sky"></a>
+        <hr />
+        <br />
+        <br />
+
+        <h2>Sky-high IR - IR at Cloud Scale</h2>
+
+        <h3>Abstract</h3>
+
+        <p>Does your organization plan ahead for Incident Response events? Have you
+        accounted for the unique challenges that diverse cloud environments present to
+        incident responders? In this talk, we'll explore the tactical, strategic and even
+        the legal implications of conducting incident response operations in public,
+        private, and hybrid cloud environments.</p>
+
+        <p>We'll look at supporting architecture, scenarios, and industry trends as well,
+        with the goal of arming you with information and knowledge to conduct IR in the
+        cloud. Finally, we will look at critical components, tools, and crown jewels to
+        discuss how they could be compromised leading to derailing your (or your
+        client's) IR processes.</p>
+
+        <h3>About Aaron</h3>
+
+        <p>Aaron is a trusted and results-oriented InfoSec professional with over 15
+        years of cyber security experience for diverse organizations in healthcare,
+        federal government, software, energy and defense industries. Aaron specializes in
+        managed security and assessment services including managed detection and
+        response, strategic and technical assessments, and training.</p>
+
+        <p>Aaron is also a graduate student at the SANS Technology Institute&#8482; where
+        he is studying Penetration Testing and Ethical Hacking. Aaron often speaks at
+        security bsides and other conferences, in a quest to the InfoSec community a
+        better place through sharing experiences and information resources acquired over
+        the years. Aaron enjoys professional networking through ISSA, playing guitar, and
+        flying drones in his free time.</p><a name="when"></a>
+        <hr />
+        <br />
+        <br />
+
+        <h2>When it rains it pours</h2>
+
+        <h3>Abstract</h3>
+
+        <p>When it rains it pours. Connected devices will expand to over 20 billion
+        devices by 2020. With the speed of adoption for Internet of Things it is no
+        surprise that even the most basic security flaws are again prevalent in our smart
+        devices. In this presentation I explore my journey to uncover several critical
+        security vulnerabilities in a popular smart irrigation system using basic testing
+        tools and techniques. This presentation is the final stage of the responsible
+        disclosure process.</p>
+
+        <h3>About Sam Granger</h3>
+
+        <p>Sam Granger is a senior security consultant with a passion for connected
+        devices and home automation.</p><a name="rise"></a>
+        <hr />
+        <br />
+        <br />
+
+        <h2>Rise of the Advisor</h2>
+
+        <h3>Abstract</h3>
+
+        <p>We have a problem in security today. We simply don&#8217;t have enough people
+        to cover all the needs. Colleges and technical schools are starting Cyber
+        specific programs, but those are going to be academic practitioners and are going
+        to need time to season in the industry. Vendors are pushing out more and more
+        tools or information on what is or isn&#8217;t going wrong in customers networks
+        from not only detection-based alerts, but from vulnerability, risk and compliance
+        standpoints.</p>
+
+        <p>We are monitoring more and more of a user&#8217;s presence on the network but
+        we are creating more and more noise for ourselves while we have been trying to
+        reduce and refine the noise. We need something new, or we need to recognize
+        something that we used to have and bring it back to the front. We lost
+        coordination at the tactical level across the security stack.</p>
+
+        <p>The purpose of this talk is to draw from years of experience in the vendor
+        world in look at customers organization structures and make a case for what works
+        and what doesn&#8217;t work. It&#8217;s based on architectural principles but not
+        specific to a compliance version or to the plumbing of a security stack.</p>
+
+        <p>Attendees will leave with a better understanding of how they can work with and
+        influence their security teams positively along with internally marketing for the
+        recognition of a new role within the security organization.</p>
+
+        <h3>About Neal</h3>
+
+        <p>Neal Humphrey is currently a Threat Intelligence Engineer, working for
+        ThreatQuotient. He has been active and advising in the security industry for over
+        15 years and in technology for 20 plus. Previous to his current position he was a
+        Technical Solution Architect for Cisco, and before that was a Principal Security
+        Engineer for Sourcefire.</p>
+      </div>
+      <hr />
+
+      <div class="container row">
+        <div class="col-md-12 lead">
+          <h1>Side Events</h1>
+          <hr />
+
+          <h2>Capture the Flag (CTF)</h2>
+
+          <p>Please come and participate in the <a href=
+          "https://twitter.com/EverSecCTF">@EverSecCTF</a> Hands-on-Village!</p>
+
+          <h2>Lockpick Village</h2>
+
+          <p>Come and show us your skills at the <a href=
+          "https://twitter.com/OakCityLocks">@OakCityLocks</a> Lockpick Village!</p>
+
+          <h2>Vintage Tech Museum</h2>
+
+          <p><a href="http://mmovt.org/">The Mobile Museum of Vintage Technology</a>
+          brings historically significant vintage technology products to events and
+          conference across the country. We invite the public to interact firsthand with
+          the technology from the golden age of computers. Visitors are free to use many
+          of the items and gadgets in our collection for entertainment, studying or
+          research purposes. The museum is designed to appeal to historians, engineers,
+          researchers, computer enthusiasts both old and young as well as the general
+          public.</p>
         </div>
-    </div>
+        <hr />
 
-    <header class="header">
-        <!-- Navigation -->
-        <nav class="navbar main-menu" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png" alt="BsidesRDU" height="40" width="200"</a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <li class="hidden"><a href="#page-top"></a></li>
-                        <li><a class="page-scroll" href="#section-intro">About</a></li>
-                        <li><a class="page-scroll" href="#section-schedule">Schedule</a></li>
-                        <li><a class="page-scroll" href="#ctf">Side Events</a></li>
-                        <li><a class="page-scroll" href="#tickets">Buy Tickets</a></li>
-                        <li><a class="page-scroll" href="#section-sponsor">Sponsors</a></li>
-                        <li><a class="page-scroll" href="#section-venue">Venue</a></li>
-                        <li><a href="principles.html">Principles</a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
-        </nav>
-
-        <!-- .nav -->
-
-    </header>
-
-    <div class="jumbotron text-center">
-        <div class="content">
-            <div class="event-date">OCTOBER 19th, 2018 | Durham, NC</div>
-            <h1>BSidesRDU</h1>
-            <p class="lead">...a community-driven framework for building events for and by cyber security community members.</p>
-            <a href="#section-venue"<button type="button" class="btn btn-default btn-lg">STAY IN THE LOOP</button></a>
-        </div>
-    </div>
-    <!-- .Jumbotron-->
-
-
-    <section id="section-intro" class="section-wrapper about-event">
         <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <p class="lead">
-Security BSides is a community-driven framework for building events for and by cyber security community members.
-The goal is to expand the spectrum of conversation beyond the traditional confines of space and time. It creates opportunities for individuals to both present and participate in an intimate atmosphere that encourages collaboration.
-It is an intense event with discussions, demos, and interaction from participants. It is where conversations for the next-big-thing are happening.
-<br><br>
-Security is top of mind across the entire sphere of IT and the world beyond. Therefore, more people and organizations are interested in the next new thing in security. BSides is the place where these people come to collaborate, learn and share.
-<br><br>
-With many tech-companies, colleges and universities in Raleigh, Durham, Chapel Hill and surrounding areas, it is also an international center of innovation in the security industry.
-<br><br>
-Security B-Sides Raleigh-Durham (B-Sides RDU) is proud to have had great speaker lineups at our events including keynotes by Dan Kaminsky, Dave Kennedy, Paul Vixie, BenTen, Jay Beale, G.Mark Hardy, and for B-Sides RDU 2017: Cliff Stoll.
-                    </p>
-                    <p class="lead">
-                    </p>
-                </div>
+          <div class="row col-md-12 section-title">
+            <h1>BUY TICKETS NOW!</h1>
+
+            <div id="eventzilla-iframe"></div><script type='text/javascript' src=
+            'https://d2poexpdc5y9vj.cloudfront.net/public/js/eventzilla-embedd.js?eventid=2138717833'>
+</script>
+          </div>
+          <hr />
+
+          <div class="container">
+            <div class="row col-md-12 section-title">
+              <h1>SPONSORS</h1>
             </div>
-        </div>
-    </section>
-    <!-- .about-event -->
 
+            <div>
+              <div class="c8"><img src="img/sponsors.png" /></div><br />
+              <a href="https://bsidesrdusponsor.eventbrite.com/"></a>
 
-<section id="section-schedule" class="section-wrapper about-event">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="lead">
-                    <h1>Schedule</h1>
+              <h3><a href="https://bsidesrdusponsor.eventbrite.com/">Become a Sponsor
+              Today and Help the Local Security Community!</a></h3>Become a sponsor today
+              and reach out to dozens of highly technical engineers and security
+              professionals.<br />
+              <br />
 
+              <div class="c8">
+                <a href="https://bsidesrdusponsor.eventbrite.com">CLICK HERE TO BECOME A
+                SPONSOR!</a>
+              </div><br />
 
-                    <table style="width: 754px;" border="1">
-                    <thead>
-                    <tr>
-                    <th style="width: 147px;">
-                    <p>Time</p>
-                    </th>
-                    <th style="width: 29px;">
-                    <p>Presenter</p>
-                    </th>
-                    <th style="width: 560px;">
-                    <p>Talk Name</p>
-                    </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                    <td style="width: 147px;">
-                    <p>8:00 start</p>
-                    </td>
-                    <td style="width: 29px;">
-                    <p>Staff</p>
-                    </td>
-                    <td style="width: 560px;">
-                    <p>Registration</p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="width: 147px;">
-                    <p>8:30-8:45</p>
-                    </td>
-                    <td style="width: 29px;">
-                    <p>Staff</p>
-                    </td>
-                    <td style="width: 560px;">
-                    <p>Welcome &amp; Opening Remarks</p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="width: 147px;">
-                    <p>8:45-9:45</p>
-                    </td>
-                    <td style="width: 29px;">
-                    <p>Shahid Buttar</p>
-                    </td>
-                    <td style="width: 560px;">
-                    <p><a href="#keynote">Keynote from Shahid Buttar, EFF Director Of Grassroots Advocacy</a></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="width: 147px;">
-                    <p>9:45-10:30</p>
-                    </td>
-                    <td style="width: 29px;">
-                    <p>Matt</p>
-                    </td>
-                    <td style="width: 560px;">
-                    <p><a href="#approaching">Approaching Parity: Considerations for adapting enterprise monitoring and incident response (IR) capabilities for efficacy in cloud environments, and how to operationalize these capabilities with a playbook.</a></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="width: 147px;">
-                    <p>10:30-11:15</p>
-                    </td>
-                    <td style="width: 29px;">
-                    <p>SleepZ3R0 and HA12TL3Y</p>
-                    </td>
-                    <td style="width: 560px;">
-                    <p><a href="#movement">Movement After Initial Compromise</a></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="width: 147px;">
-                    <p>11:15-11:30</p>
-                    </td>
-                    <td style="width: 29px;">
-                    <p>Staff</p>
-                    </td>
-                    <td style="width: 560px;">
-                    <p>Break</p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="width: 147px;">
-                    <p>11:30-12:30</p>
-                    </td>
-                    <td style="width: 29px;">
-                    <p>Joel Lathrop</p>
-                    </td>
-                    <td style="width: 560px;">
-                    <p><a href="#our">Our Docker app got hacked. Now what?</a></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="width: 147px;">
-                    <p>12:30-2:00</p>
-                    </td>
-                    <td style="width: 29px;">
-                    <p>Staff</p>
-                    </td>
-                    <td style="width: 560px;">
-                    <p>Lunch</p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="width: 147px;">
-                    <p>2:00-2:30</p>
-                    </td>
-                    <td style="width: 29px;">
-                    <p>Eric Waters</p>
-                    </td>
-                    <td style="width: 560px;">
-                    <p><a href="#security">Security Automation for the Blue Team</a></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="width: 147px;">
-                    <p>3:15-4:15</p>
-                    </td>
-                    <td style="width: 29px;">
-                    <p>Matt Martin &amp; Panel Guests</p>
-                    </td>
-                    <td style="width: 560px;">
-                    <p><a href="#you">You Can't Dial 911</a></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="width: 147px;">
-                    <p>4:15-4:30</p>
-                    </td>
-                    <td style="width: 29px;">
-                    <p>Staff</p>
-                    </td>
-                    <td style="width: 560px;">
-                    <p>Break</p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="width: 147px;">
-                    <p>4:30-5:30</p>
-                    </td>
-                    <td style="width: 29px;">
-                    <p>@aarondlancaster</p>
-                    </td>
-                    <td style="width: 560px;">
-                    <p><a href="#sky">Sky-high IR - IR at Cloud Scale</a></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="width: 147px;">
-                    <p>5:30-6:00</p>
-                    </td>
-                    <td style="width: 29px;">
-                    <p>Sam Granger</p>
-                    </td>
-                    <td style="width: 560px;">
-                    <p><a href="#when">When it rains it pours</a></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="width: 147px;">
-                    <p>6:00-6:45</p>
-                    </td>
-                    <td style="width: 29px;">
-                    <p>Neal Humphrey</p>
-                    </td>
-                    <td style="width: 560px;">
-                    <p><a href="#rise">Rise of the Advisor</a></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="width: 147px;">
-                    <p>6:45-8:30</p>
-                    </td>
-                    <td style="width: 29px;">
-                    <p>Staff</p>
-                    </td>
-                    <td style="width: 560px;">
-                    <p>Hacker Jeopardy &amp; Social</p>
-                    </td>
-                    </tr>
-                    </tbody>
-                    </table>
-
-
-
-
-
-
-<a name="keynote">  </a>
-<hr><br><br>
-<h2>Keynote<h2>
-<h3>Abstract</h3>
-<p>
-For a word that appears nowhere in the U.S. Constitution, privacy holds outsized—and underappreciated—significance to constitutional rights. Why does privacy matter, and how does its erosion undermine not only constitutional rights but also democracy in America writ large? Beyond exploring and applying constitutional theory to topics from mass surveillance to police militarization, we will also discuss how concerned Americans are already taking action every day to reclaim freedom of expression in an era of arbitrary surveillance.
-</p>
-
-<p>
-<h3>About Shahid</h3>
-<strong>Shahid</strong> leads EFF's grassroots and student outreach efforts. He's a constitutional lawyer focused on the intersection of community organizing and policy reform as a lever to shift legal norms, with roots in communities across the country resisting mass surveillance. From 2009 to 2015, he led the Bill of Rights Defense Committee as Executive Director. In 2018, Shahid ran for Congress, seeking to represent California's 12th congressional district in the U.S. House of Representatives.
-</p><p>
-After graduating from Stanford Law School in 2003, where he grew immersed in the movement to stop the war in Iraq, Shahid worked for a decade in Washington, D.C. He first worked in private practice for a California-based law firm, with public interest litigation projects advancing campaign finance reform and marriage equality for same-sex couples (as early as 2004, when LGBT rights remained politically marginal). From 2005 to 2008, he helped build a national progressive legal network and managed the communications team at the American Constitution Society for Law & Policy, before founding the program to combat racial & religious profiling at Muslim Advocates in 2008.
-</p><p>
-Outside of his work at EFF, Shahid also DJs and produces electronic music, writes poetry & prose, kicks rhymes, organizes guerilla poetry insurgencies, plays capoeira, speaks truth to power on Truthout, occasionally elucidates legal scholarship, and documents counter-cultural activism for the Burning Man Journal. He also serves on the Boards of Directors of Defending Rights and Dissent, the Center for Media Justice, and the Fund for Constitutional Government.
-</p>
-
-
-<a name="approaching">  </a>
-<hr><br><br>
-<h2>Approaching Parity: Considerations for adapting enterprise monitoring and incident response (IR) capabilities for efficacy in cloud environments, and how to operationalize these capabilities with a playbook.</h2>
-
-<h3>Abstract</h3>
-<p>There is no denying the ubiquity of cloud computing, and for most organizations, Infrastructure as a Service (IaaS) in particular as the new norm. The model for cloud security is typically a shared responsibility between the provider and the consumer, which really means the consumer is ultimately responsible. Whether your infrastructure is completely hosted, is partly hosted, or is soon-to-be hosted in the cloud, your security posture must adapt appropriately if your monitoring and Incident response capabilities are to remain effective.
-</p><p>
-Developing an accurate view of nefarious activity in cloud environments still requires the multi-layered approach it did in the enterprise; however, it must adapt to include sources such as Amazon Web Services (AWS) CloudTrail IaaS logs, VPC Flow logs, endpoint logs, and more. This data must be captured and arranged in a manner to make it actionable, requiring you to have a plan for the IR lifecycle—even though you might not own the mitigation process.
-</p><p>
-Approaching Parity is a talk about adapting your security posture for monitoring and IR in IaaS environments, through native capabilities, third-party products, via workaround, or any combination of the three, and then operationalizing this telemetry with the CSIRT playbook. Though this talk provides AWS IaaS examples, the topics presented are applicable to other IaaS providers too.
-</p>
-
-<h3>About Matt</h3>
-<p>
-As an information security practitioner with 20 years of IT experience, Matt helps protect Cisco’s network and assets as a first responder on the Computer Security Incident Response Team (CSIRT). Matt shares his monitoring and incident response expertise with the InfoSec community by participating in groups such as the Defense Security Information Exchange (DSIE) and the North Carolina InfraGard. Matt’s hobbies include making his own sauerkraut and competitive rifle shooting, both activities that have absolutely nothing to do with information security.
-</p>
-
-
-<a name="movement">  </a>
-<hr><br><br>
-
-<h2>Movement After Initial Compromise</h2>
-<h3>Abstract</h3>
-<p>
-Once a system is compromised there are many avenues to consider. It brings up a lot of questions. Who am I on this network? Where am I in this network? Can I move to another system with my current permissions? Can I privilege escalate on my current system? We are going to go over enumeration utilizing “living off the land” techniques and on tools that an attacker can use for enumeration. Examples of some tools that we will go over for enumeration are SharpHound, Powersploit’s collection of Microsoft Powershell modules and others.
-</p><p>
-We will then go into what is Port Forwarding and why it is useful. Then we will show several ways to execute Port Forwarding. We will have video examples for utilizing SOCKS in Cobalt Strike and SSH port forwarding techniques. Once enumeration is done we will go over how to move to another system on the network. We will provide multiple examples such as; WMIC, Psexec, AT, Schtasks, WINrm, Remote Registry, DCOM, Multi-relay, SMB-relay. Screenshot and videos will be provided during the talk. The last part we will go over is how to detect or attempt to protect against these techniques that attackers implement.</p>
-
-<h3>About Matt Batten</h3>
-<p>
-  Red Team Security Engineer conducting Red Team operations and penetration tests for SixGen. Matt has seven years of experience in the information security field and operated on an NSA Certified DOD Red Team. U.S. Marine Corps Veteran that specialized in Signals Intelligence. Current certifications include, CISSP, OSCP, CEH, and more.
-</p>
-
-
-<h3>AboutCollyn Hartley</h3>
-<p>
-  Persistent Cyber Operator for NSA Certified DOD Red Team. Where my main focus is lateral movement and persistent access in a variety of DOD networks. My current certifications are CEH, Sec+, Net+, Linux+, OMA, WEA, and SANS511.
-</p>
-
-
-<a name="our">  </a>
-<hr><br><br>
-
-<h2>Our Docker app got hacked. Now what?</h2>
-<h3>Abstract</h3>
-<p>
-  Someone deployed their application as a Docker container. Then another someone came along and hacked it. Now everyone is looking at you asking, "How did this happen? What did the attacker do? How do we stop this from happening again!?" If this were a normal physical server or VM, it'd be no problem: you'd just crack open traditional forensic tools and start building a forensic history from the disk image. But this is a Docker container... and your tools don't know what Docker containers are. So now what?
-<p></p>
-In this talk, we'll go over what a Docker container looks like from a forensic viewpoint. We'll dig into how you can get access to the underlying disk/filesystem data of a compromised container and which existing forensic tools that you may already use can still apply. We'll also cover what new forensic opportunities Docker provides and new metadata that can be extracted that wouldn't be available on a conventional system. When we're done, you'll know how to tear apart a Docker container and get all those people turning to you the answers they need.
-</p>
-
-<h3>About Joel Lathrop</h3>
-<p>
-Joel Lathrop spent his childhood developing computer software, a path which eventually led him into the field of cybersecurity. Beginning with work in developing distributed systems for ensuring privacy and anonymity, he picked up an interest in cryptography which led to an M.S. focused on cryptanalysis. Delving deeper into the subfield of threat intelligence, Joel has applied his occasionally unorthodox approach to reverse engineering and forensic analysis toward research into topics such as malware counter-exploitation, malware obfuscation evolution, and botnet neutralization.
-</p>
-<p>
-In what spare time he has, he enjoys keeping up with advances in programming language theory, cryptography, and distributed systems design as well as attending the occasional opera.
-</p>
-
-
-<a name="security">  </a>
-<hr><br><br>
-
-<h2>Security Automation for the Blue Team</h2>
-<h3>Abstract</h3>
-<p>
-  Supposedly, there's a shortage of Information Security professionals. Some people agree while others disagree. However, there is one thing most infosec professionals will agree on… and that is the fact that we all run around like our hair is on fire because we don't have enough resources to accomplish everything that needs to get done. I know this is the case for most infosec people I talk to. Even if we get an additional headcount, our list of compliance check-boxes, projects, and daily responsibilities keep growing at a phenomenal pace.
-  How do we keep up with this fast-paced growth, insane workload, alerts out our ears and no end in sight? One of the best ways to make a big impact is through automation. Whether you have a massive budget or no budget at all, I will discuss your options and how to start the automation journey… or improve upon what you already have. I'll talk about using existing tools, creating your own scripts, using API's and even the latest fad in security automation, SOAR (security operations analytics and reporting). We will discuss how to determine what you should automate first, automation use cases in infosec, and how to tell if there’s something you shouldn’t automate. Let's face it, we are over tooled and understaffed… We need automation to help us out.
-</p>
-
-<h3>About Eric Waters</h3>
-<p>
-Eric Waters has been an Information Technology professional for over 20 years. He spent almost 10 years in technology management before deciding to concentrate on Information Security full time. He specializes in internal penetration testing, security monitoring, and security automation. He holds a Bachelor of Science in Information Security, GPEN, and is a member of the GIAC advisory board.
-</p>
-
-<a name="you">  </a>
-<hr><br><br>
-
-<h2>You Can't Dial 911</h2>
-<h3>Abstract</h3>
-<p>
-A panel discussion on engaging law enforcement in the incident response process before and after a breach.
-Cyber incidents that impact business, steal intellectual property or cause financial or other loss happen every day. Do you know when to call Law Enforcement, how to work with them, and what to expect from them? In this panel, moderated by United States Attorney Matt Martin, members of the FBI, US Attorney’s Office, and Cisco will share insights on when you should engage Law Enforcement, what you should do in preparation for making the call, what you should expect in response, and lessons learned of how NOT to do it.
-</p>
-
-<h3>About The Panelists</h3>
-<p>
-Mike Scheck is the Director of the Cisco Computer Security Incident Response Team (CSIRT). The CSIRT is a team is responsible for monitoring, investigating, and mitigating all computer security incidents on Cisco's corporate network, hosted solutions, clouds, and new ventures. There are over 90 team members within the Cisco CSIRT that are responsible for Analysis, Investigations, Engineering and Threat Intelligence. Mike moved to the Cisco CSIRT in 2004 as an investigator after working for several years in Cisco IT as a Unix system administrator. During his time in the Cisco CSIRT Mike has worked as Lead Investigator, Threat Intelligence team lead, and Manager of the Global Investigations team. Prior to Cisco Mike worked as a Unix Consultant, and was in the infantry as a member of the U.S. Marines.
-</p><p>
-Supervisory Special Agent Jessica Nye is the current Supervisor of the FBI Cyber Squad in Raleigh, NC. Prior to her arrival in North Carolina in 2015, Ms. Nye spent eight years working in the Baltimore Field Office on their Cyber Squad and two years at FBI Cyber Division Headquarters in Washington DC. She has significant experience working cyber-related matters including computer intrusion investigations, intellectual property (IP) rights violations, theft of trade secrets, economic espionage and other investigations.
-</p><p>
-Anand Ramaswamy is an Assistant United States Attorney in Greensboro, North Carolina, prosecuting cybercrime and human trafficking. AUSA Ramaswamy attended the University of North Carolina at Greensboro before receiving his law degree from the University of North Carolina at Chapel Hill. He served as an Assistant District Attorney, prosecuting for the State of North Carolina for eight years before joining the U.S. Attorney’s Office in 2007. He is a board certified specialist in state and federal criminal law and vice-chair of the Criminal Specialist Committee of the North Carolina State Board of Legal Specialization.
-</p><p>
-Matt Martin serves as the United States Attorney for the Middle District of North Carolina, the chief federal law enforcement officer responsible for federal prosecution in the Middle District. Before becoming US Attorney, Mr. Martin was Associate General Counsel for Duke Energy Corporation and, previously, a partner at Smith Anderson law firm, where he focused on complex litigation. Prior to joining Smith Anderson, Mr. Martin practiced with the law firm of Covington & Burling in Washington, D.C. Mr. Martin has served on the boards of the Food Bank of Central and Eastern North Carolina, Marbles Kids Museum, and Meals on Wheels of Wake County. He received both his B.S., with honors and highest distinction, and his J.D., with high honors, from the University of North Carolina at Chapel Hill.
-</p>
-
-
-<a name="sky">  </a>
-<hr><br><br>
-
-<h2>Sky-high IR - IR at Cloud Scale</h2>
-<h3>Abstract</h3>
-<p>
-  Does your organization plan ahead for Incident Response events? Have you accounted for the unique challenges that diverse cloud environments present to incident responders? In this talk, we'll explore the tactical, strategic and even the legal implications of conducting incident response operations in public, private, and hybrid cloud environments.
-</p><p>
-  We'll look at supporting architecture, scenarios, and industry trends as well, with the goal of arming you with information and knowledge to conduct IR in the cloud. Finally, we will look at critical components, tools, and crown jewels to discuss how they could be compromised leading to derailing your (or your client's) IR processes.
-</p>
-
-<h3>About Aaron</h3>
-<p>
-Aaron is a trusted and results-oriented InfoSec professional with over 15 years of cyber security experience for diverse organizations in healthcare, federal government, software, energy and defense industries. Aaron specializes in managed security and assessment services including managed detection and response, strategic and technical assessments, and training.
-</p><p>
-Aaron is also a graduate student at the SANS Technology Institute™ where he is studying Penetration Testing and Ethical Hacking. Aaron often speaks at security bsides and other conferences, in a quest to the InfoSec community a better place through sharing experiences and information resources acquired over the years. Aaron enjoys professional networking through ISSA, playing guitar, and flying drones in his free time.
-</p>
-
-
-<a name="when">  </a>
-<hr><br><br>
-
-<h2>When it rains it pours</h2>
-<h3>Abstract</h3>
-<p>
-  When it rains it pours. Connected devices will expand to over 20 billion devices by 2020. With the speed of adoption for Internet of Things it is no surprise that even the most basic security flaws are again prevalent in our smart devices. In this presentation I explore my journey to uncover several critical security vulnerabilities in a popular smart irrigation system using basic testing tools and techniques. This presentation is the final stage of the responsible disclosure process.
-</p>
-
-<h3>About Sam Granger</h3>
-<p>
-Sam Granger is a senior security consultant with a passion for connected devices and home automation.
-</p>
-
-
-
-<a name="rise">  </a>
-<hr><br><br>
-
-<h2>Rise of the Advisor</h2>
-<h3>Abstract</h3>
-<p>
-  We have a problem in security today. We simply don’t have enough people to cover all the needs. Colleges and technical schools are starting Cyber specific programs, but those are going to be academic practitioners and are going to need time to season in the industry. Vendors are pushing out more and more tools or information on what is or isn’t going wrong in customers networks from not only detection-based alerts, but from vulnerability, risk and compliance standpoints.
-</p><p>
-  We are monitoring more and more of a user’s presence on the network but we are creating more and more noise for ourselves while we have been trying to reduce and refine the noise. We need something new, or we need to recognize something that we used to have and bring it back to the front. We lost coordination at the tactical level across the security stack.
-</p><p>
-  The purpose of this talk is to draw from years of experience in the vendor world in look at customers organization structures and make a case for what works and what doesn’t work. It’s based on architectural principles but not specific to a compliance version or to the plumbing of a security stack.
-</p><p>
-  Attendees will leave with a better understanding of how they can work with and influence their security teams positively along with internally marketing for the recognition of a new role within the security organization.
-
-</p>
-
-<h3>About Neal</h3>
-<p>
-Neal Humphrey is currently a Threat Intelligence Engineer, working for ThreatQuotient. He has been active and advising in the security industry for over 15 years and in technology for 20 plus. Previous to his current position he was a Technical Solution Architect for Cisco, and before that was a Principal Security Engineer for Sourcefire.
-</p>
-
-
-                </div>
-            </div>
-        </div>
-<hr>
-</section>
-
-
-
-<section id="ctf" class="section-wrapper client-logo">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-              <div class="lead">
-                    <h1>Side Events</h1>
-
-<hr>
-<h2>Capture the Flag (CTF)</h2>
-<p>
- Please come and participate in the <a href="https://twitter.com/EverSecCTF">@EverSecCTF</a> Hands-on-Village!
-</p>
-
-<h2>Lockpick Village</h2>
-<p>
-Come and show us your skills at the <a href="https://twitter.com/OakCityLocks">@OakCityLocks</a> Lockpick Village!
-</p>
-
-<h2>Vintage Tech Museum</h2>
-<p>
-<a href="http://mmovt.org/">The Mobile Museum of Vintage Technology</a> brings historically significant vintage technology products to events and conference across the country. We invite the public to interact firsthand with the technology from the golden age of computers. Visitors are free to use many of the items and gadgets in our collection for entertainment, studying or research purposes. The museum is designed to appeal to historians, engineers, researchers, computer enthusiasts both old and young as well as the general public.
-</p>
-
-</div>
-</div>
-<hr>
-</section>
-
-
-
-<section id="tickets" class="section-wrapper client-logo">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h1>BUY TICKETS NOW!</h1>
-
-<div id="eventzilla-iframe"></div><script type='text/javascript' src='https://d2poexpdc5y9vj.cloudfront.net/public/js/eventzilla-embedd.js?eventid=2138717833'></script>
-                </div>
-            </div>
-        </div>
-<hr>
-</section>
-
-    <section id="section-sponsor" class="section-wrapper client-logo">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title">
-                        <h1>SPONSORS</h1>
-                    </div>
-                </div>
-            </div>
-<div>
-  <center> <img src="img/sponsors.png"></center>
-  <br>
-
-<a href="https://bsidesrdusponsor.eventbrite.com/">  <h3>Become a Sponsor Today and Help the Local Security Community!</h3> </a>
-            Become a sponsor today and reach out to dozens of highly technical engineers and security professionals.
-<br>
-<br>
-<center><a href="https://bsidesrdusponsor.eventbrite.com"> CLICK HERE TO BECOME A SPONSOR! </a></center>
-<br>
-            <h4> Platinum Sponsor – $2500</h4>
-
-            Our Platinum level includes all of the benefits of our silver sponsors, plus:
-
-            <pre>
+              <h4>Platinum Sponsor &#8211; $2500</h4>Our Platinum level includes all of
+              the benefits of our silver sponsors, plus:
+              <pre>
                 * Company logo on event T-shirts - largest logos with most visible placement
-                * Company logo on intermission slides – full slide
-                * Vendor booth – choice of location in venue
+                * Company logo on intermission slides &#8211; full slide
+                * Vendor booth &#8211; choice of location in venue
                 * Four (4) sponsor badges (to attend talks)
                 * Swag bag provided with badge pickup
                 * Other ideas, let us know (we are flexible)
-              </pre>
+              
+</pre>
 
-          <h4> Gold Sponsor – $1000</h4>
-
-            Our Gold level includes all of the benefits of our silver sponsors, plus:
-
+              <h4>Gold Sponsor &#8211; $1000</h4>Our Gold level includes all of the
+              benefits of our silver sponsors, plus:
               <pre>
-                * Logo on event T-shirts – medium sized logo
-                * Company logo on intermission slides – shared slide
+                * Logo on event T-shirts &#8211; medium sized logo
+                * Company logo on intermission slides &#8211; shared slide
                 * Vendor booth
                 * Swag bag provided with badge pickup
                 * Two (2) sponsor badge (to attend talks)
-              </pre>
-          <h4>  Silver Sponsor $500 </h4>
+              
+</pre>
 
-            Recognition will be posted to online resources bsidesrdu.org, Facebook, Twitter, Google+, and associated mailing lists. Sponsors will have their name displayed on the BSides RDU Wall of Supporters.
-
-            Silver sponsors receive:
-
-            <pre>
+              <h4>Silver Sponsor $500</h4>Recognition will be posted to online resources
+              bsidesrdu.org, Facebook, Twitter, Google+, and associated mailing lists.
+              Sponsors will have their name displayed on the BSides RDU Wall of
+              Supporters. Silver sponsors receive:
+              <pre>
                 * Listing on the Wall of Support
                 * Thank you during Sponsor Roll Call before and after the event
-                * Logo on event T-shirts – smallest logo size
-            </pre>
-          <h4>  Individual Sponsor $50 </h4>
+                * Logo on event T-shirts &#8211; smallest logo size
+            
+</pre>
 
-            This is for those individuals (not businesses) who would like to set the example and let others know that BSidesRDU is something worth keeping alive and going! Recognition will be posted to online resources bsidesrdu.org, Facebook, Twitter, Google+, and associated mailing lists.
+              <h4>Individual Sponsor $50</h4>This is for those individuals (not
+              businesses) who would like to set the example and let others know that
+              BSidesRDU is something worth keeping alive and going! Recognition will be
+              posted to online resources bsidesrdu.org, Facebook, Twitter, Google+, and
+              associated mailing lists.<br />
+              <br />
 
-            <br>  <br>
-            <center><a href="https://bsidesrdusponsor.eventbrite.com"> CLICK HERE TO BECOME A SPONSOR! </a></center>
+              <div class="c8">
+                <a href="https://bsidesrdusponsor.eventbrite.com">CLICK HERE TO BECOME A
+                SPONSOR!</a>
+              </div>
+            </div><!--end of .container -->
+            <!-- .client-logo -->
 
-
-        </div>
-        <!--end of .container -->
-    </section>
-    <!-- .client-logo -->
-
-
-    <section id="section-venue" class="section-wrapper  gray-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title">
-                        <h1>THE VENUE</h1>
-
-                        <p><a href="http://www.carolinatheatre.org/about">The Carolina Theatre </a> is a performing arts and cinema complex in downtown Durham, North Carolina. It is an AMAZING venue in the Raleigh Durham area!  </p>
-                        <p>We are growing! The main conference will be at the Fletcher Hall -- an auditorium with 1,048 seats hosting a diverse lineup of live events and film. Fletcher Hall has been restored to its 1926 décor, and is the only downtown building designed in the Beaux Arts style.<p><hr>
-                    </div>
-                </div>
-            </div>
-            <!-- /.row-->
-
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- google maps -->
-                    <center>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.920509790882!2d-78.90492508468472!3d35.99780882015186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ace4725cefabbd%3A0xef73a72afcc70843!2sThe+Carolina+Theatre!5e0!3m2!1sen!2sus!4v1517173518215" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </center>
-
-                </div>
-            </div>
-            <!-- .row-->
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title">
-                        <h2>STAY INFORMED</h2>
-                        <p>Don't miss the event!</p>
-
-                            Follow us on:
-                            <a href="https://facebook.com/bsidesrdu"><i class="fa fa-facebook" aria-hidden="true"></i> </a>
-                            | <a href="https://twitter.com/bsidesrdu"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            | <a href="mailto:bsidesrdu@gmail.com"><i class="fa fa-envelope"></i></a>
-
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- contact-section -->
-
-
-    <footer class="footer">
-        <div class="copyright-section">
             <div class="container">
-                <div class="col-md-12">
-                    <div class="copytext text-center">&copy; BSidesRDU. All rights reserved</div>
+              <div class="row col-md-12 section-title">
+                <h1>THE VENUE</h1>
+
+                <p><a href="http://www.carolinatheatre.org/about">The Carolina
+                Theatre</a> is a performing arts and cinema complex in downtown Durham,
+                North Carolina. It is an AMAZING venue in the Raleigh Durham area!</p>
+
+                <p>We are growing! The main conference will be at the Fletcher Hall -- an
+                auditorium with 1,048 seats hosting a diverse lineup of live events and
+                film. Fletcher Hall has been restored to its 1926 d&#233;cor, and is the
+                only downtown building designed in the Beaux Arts style.</p>
+                <hr />
+              </div><!-- /.row-->
+
+              <div class="row col-md-12">
+                <!-- google maps -->
+
+                <div class="c8">
+                  <iframe src=
+                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.920509790882!2d-78.90492508468472!3d35.99780882015186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ace4725cefabbd%3A0xef73a72afcc70843!2sThe+Carolina+Theatre!5e0!3m2!1sen!2sus!4v1517173518215"
+                  width="600" height="450" frameborder="0" class="c9" allowfullscreen=
+                  ""></iframe>
                 </div>
-            </div>
-            <!-- .container -->
-        </div>
-        <!-- .copyright-section -->
-    </footer>
-    <!-- .footer -->
+              </div><!-- .row-->
 
-</div>
-<!-- #main-wrapper -->
+              <div class="row col-md-12 section-title">
+                <h2>STAY INFORMED</h2>
 
+                <p>Don't miss the event!</p>Follow us on: <a href=
+                "https://facebook.com/bsidesrdu"></a> | <a href=
+                "https://twitter.com/bsidesrdu"></a> | <a href=
+                "mailto:bsidesrdu@gmail.com"></a>
+              </div>
+            </div><!-- contact-section -->
 
-<!-- jquery -->
-<script src="js/jquery-2.1.4.min.js"></script>
-
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-
+            <div class="copyright-section">
+              <div class="container col-md-12 copytext text-center">
+                &#169; BSidesRDU. All rights reserved
+              </div><!-- .container -->
+            </div><!-- .copyright-section -->
+            <!-- .footer -->
+          </div><!-- #main-wrapper -->
+          <!-- jquery -->
+          <script src="js/jquery-2.1.4.min.js" type="text/javascript">
+</script> <!-- Bootstrap -->
+          <script src="js/bootstrap.min.js" type="text/javascript">
+</script> <!-- Plugin JavaScript -->
+          <script src="js/jquery.easing.min.js" type="text/javascript">
+</script> 
 <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-
-<!--<script src="js/one-page-nav.js"></script>-->
-<script src="js/scripts.js"></script>
+          <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript">
+</script> <!--<script src="js/one-page-nav.js"></script>-->
+          <script src="js/scripts.js" type="text/javascript">
+</script>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
