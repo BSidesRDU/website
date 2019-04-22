@@ -1,5 +1,5 @@
 # Security BSides RDU Website
-This repository hosts the Security BSides RDU website.
+This repository hosts the Security [BSides RDU website](https://bsidesrdu.org).
 
 ## About BSides RDU
 
