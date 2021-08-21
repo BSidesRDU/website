@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/eversec-ctf", {data:[{}],fetch:{},mutations:[]});
