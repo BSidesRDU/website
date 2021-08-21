@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/secure-code-warrior", {data:[{}],fetch:{},mutations:[]});
