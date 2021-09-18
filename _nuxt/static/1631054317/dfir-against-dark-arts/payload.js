@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/dfir-against-dark-arts", {data:[{}],fetch:{},mutations:[]});
