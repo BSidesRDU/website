@@ -29,7 +29,7 @@ Ira Winkler<br>
 [Secure Code Warrior Tournament](https://www.securecodewarrior.com/)<br>
 [DFIR Against The Dark Arts](https://twitter.com/dfir_ada)
 
-### Sponsors
+### 2021 Sponsors
 
 [Avalara](https://www.avalara.com)<br>
 [Guidepoint Security](https://www.guidepointsecurity.com/)<br>
