@@ -1,3 +1,5 @@
-# BSides RDU
+# BSides RDU 2022 Hacktoberfest
 
-![BSides RDU 2021 Return Logo](/img/bsides-2021-logo-2-color-black-red.png "BSides RDU 2021 Return")
+## Saturday, October 15th, 2022
+
+![BSides RDU 2022 Hacktoberfest Logo](/img/bsides-2022-logo.png "BSides RDU 2022 Hacktoberfest")
