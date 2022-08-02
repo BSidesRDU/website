@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/streaming", {data:[{}],fetch:{},mutations:[]});
