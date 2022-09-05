@@ -1,13 +1,9 @@
 <template>
-
     <fragment>
-
         <nuxt-content class="hero" :document="contents.hero"></nuxt-content>
 
         <nuxt-content class="cfp" :document="contents.cfp"></nuxt-content>
-
     </fragment>
-
 </template>
 
 <script>
