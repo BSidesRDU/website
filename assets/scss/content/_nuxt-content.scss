@@ -1,64 +1,64 @@
 .nuxt-content {
-  margin-bottom: var(--l12);
+  margin-bottom: 1.2rem;
 
   h1 {
-    font-size: var(--x2l);
-    margin-bottom: var(--l28);
+    font-size: 3.2rem;
+    margin-bottom: 2.8rem;
   }
 
   h2 {
-    font-size: var(--xl);
-    margin-bottom: var(--l24);
+    font-size: 2.8rem;
+    margin-bottom: 2.4rem;
   }
 
   h3 {
-    font-size: var(--lg);
-    margin-bottom: var(--l20);
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
 
     &.data {
       position: relative;
-      padding-left: var(--l36);
+      padding-left: 3.6rem;
 
       data {
         position: absolute;
         top: 0;
         left: 0;
-        font-size: var(--sm);
+        font-size: 1.6rem;
         font-weight: normal;
-        border: 1px solid var(--grey-100);
-        width: var(--l28);
-        height: var(--l28);
-        line-height: var(--l28);
-        border-radius: var(--l28);
+        border: 1px solid $grey-100;
+        width: 2.8rem;
+        height: 2.8rem;
+        line-height: 2.8rem;
+        border-radius: 2.8rem;
         text-align: center;
       }
     }
   }
 
   h4 {
-    font-size: var(--md);
+    font-size: 2rem;
   }
 
   h4,
   p,
   ol,
   ul {
-    margin-bottom: var(--md);
+    margin-bottom: 2rem;
   }
 
   p,
   ol li,
   ul li {
-    font-size: var(--md);
-    line-height: var(--lhmd);
+    font-size: 2rem;
+    line-height: 3.3rem;
   }
 
   ol li,
   ul li {
-    margin-left: var(--l20);
+    margin-left: 2rem;
   }
 
   img {
-    max-width: var(--full);
+    max-width: 100%;
   }
 }

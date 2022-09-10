@@ -1,14 +1,12 @@
 <template>
-    <a href="https://events.eventzilla.net/e/bsidesrdu-2022-hacktoberfest-2138578662" class="cta" target="_blank"
-        >Register Now
-    </a>
+    <a :href="$config.eventZillaLink" class="cta" target="_blank">Register Now</a>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .cta {
     position: relative;
-    background: var(--cta);
-    color: var(--bright);
+    background: $cta;
+    color: $bright;
     text-align: center;
     font-size: 3rem;
     font-weight: 500;

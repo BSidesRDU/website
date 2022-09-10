@@ -15,9 +15,10 @@
 html {
   font-size: 62.5%;
   overflow-y: scroll;
-  font-family: var(--sans);
-  background-color: var(--bright);
-  color: var(--dark);
+  font-family: $sans;
+  background-color: $bright;
+  color: $dark;
+  // transform: rotate(180deg);
 }
 
 body {
@@ -25,6 +26,6 @@ body {
 }
 
 ::selection {
-  background-color: var(--primary);
-  color: var(--white);
+  background-color: $primary;
+  color: $white;
 }

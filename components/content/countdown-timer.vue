@@ -6,18 +6,19 @@
         </div>
         <div v-else-if="ready && !done">
             <div class="countdown-timer__ticking-time-bomb">{{ days }}:{{ hours }}:{{ minutes }}:{{ seconds }}</div>
-            <div class="countdown-timer__until">Until BSidesRDU 2022!</div>
+            <div class="countdown-timer__until">Until BSidesRDU {{ $bDate({ year: true }) }}!</div>
         </div>
         <div v-else class="countdown-timer__bsides">Time for BSides!</div>
     </div>
 </template>
 
 <script>
+const { DateTime } = require('luxon');
+
 export default {
     data() {
         return {
             timeout: null,
-            target: new Date('2022-10-15T08:00:00').getTime(),
             interval: null,
             days: 0,
             hours: 0,
@@ -37,20 +38,19 @@ export default {
     },
 
     mounted() {
-        this.timer = setInterval(() => {
-            const now = new Date().getTime();
-            this.interval = this.target - now;
+        this.timeout = setInterval(() => {
+            const now = DateTime.now().setZone('America/New_York');
+            const bSides = DateTime.fromISO(this.$config.bsidesDate).setZone('America/New_York');
 
-            this.days = Math.floor(this.interval / 86400000)
+            this.interval = bSides.diff(now);
+            this.days = Math.floor(bSides.diff(now, 'days').days).toString().padStart(2, '0');
+            this.hours = Math.floor(bSides.diff(now, 'hours').hours % 24)
                 .toString()
                 .padStart(2, '0');
-            this.hours = Math.floor((this.interval % 86400000) / 3600000)
+            this.minutes = Math.floor(bSides.diff(now, 'minutes').minutes % 60)
                 .toString()
                 .padStart(2, '0');
-            this.minutes = Math.floor((this.interval % 3600000) / 60000)
-                .toString()
-                .padStart(2, '0');
-            this.seconds = Math.floor((this.interval % 60000) / 1000)
+            this.seconds = Math.floor(bSides.diff(now, 'seconds').seconds % 60)
                 .toString()
                 .padStart(2, '0');
 
@@ -66,20 +66,22 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .countdown-timer {
     text-align: center;
-}
-.countdown-timer__ticking-time-bomb {
-    font-family: var(--mono);
-    font-style: italic;
-    font-size: 4.5rem;
-    color: var(--cta);
-}
-.countdown-timer__bsides {
-    font-size: 4.5rem;
-}
-.countdown-timer__until {
-    font-size: 2.5rem;
+
+    &__ticking-time-bomb {
+        font-family: $mono;
+        font-style: italic;
+        font-size: 4.5rem;
+        color: $cta;
+    }
+    &__bsides {
+        font-size: 4.5rem;
+    }
+
+    &__until {
+        font-size: 2.5rem;
+    }
 }
 </style>

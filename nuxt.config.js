@@ -1,3 +1,8 @@
+// update the year in the license, too
+const year = '2022';
+const bsidesDate = `${year}-10-15T08:00:00`;
+const eventZillaLink = 'https://events.eventzilla.net/e/bsidesrdu-2022-hacktoberfest-2138578662';
+
 export default {
     // Target: https://go.nuxtjs.dev/config-target
     target: 'static',
@@ -34,11 +39,11 @@ export default {
             },
             {
                 property: 'og:image',
-                content: 'https://bsidesrdu.org/img/bsides-2022-logo-og.png',
+                content: `https://bsidesrdu.org/img/bsides-${year}-logo-og.png`,
             },
             {
                 property: 'og:image:secure_url',
-                content: 'https://bsidesrdu.org/img/bsides-2022-logo-og.png',
+                content: `https://bsidesrdu.org/img/bsides-${year}-logo-og.png`,
             },
         ],
         link: [
@@ -120,13 +125,17 @@ export default {
     css: ['~/assets/scss/main.scss'],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: ['~/plugins/fragment.js', '~/plugins/camel-cased.js'],
+    plugins: ['~/plugins/fragment.js', '~/plugins/camel-cased.js', '~/plugins/b-date.js'],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-    buildModules: [],
+    buildModules: ['@nuxtjs/style-resources'],
+
+    styleResources: {
+        scss: ['~/assets/scss/abstracts/_variables.scss'],
+    },
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
@@ -145,5 +154,10 @@ export default {
     server: {
         host: '0.0.0.0',
         port: 3004,
+    },
+
+    publicRuntimeConfig: {
+        bsidesDate,
+        eventZillaLink,
     },
 };

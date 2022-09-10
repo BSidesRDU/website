@@ -1,21 +1,12 @@
 <template>
-
     <header class="header">
-
         <div class="header__inner">
-
             <svg>
-
                 <title>BSides RDU</title>
-
                 <use xlink:href="/img/icons.svg#icon-bsides-logo-small"></use>
-
             </svg>
-
         </div>
-
     </header>
-
 </template>
 
 <style lang="scss" scoped>
@@ -24,10 +15,10 @@
     align-items: center;
     justify-content: space-between;
     gap: 4rem;
-    background-color: var(--dark);
-    background-image: linear-gradient(var(--dark), var(--grey-500));
-    // color: var(--light); padding: 0.8rem; // margin-bottom: var(--l32);
-    border-bottom: 1px solid var(--dark);
+    background-color: $dark;
+    background-image: linear-gradient($dark, $grey-500);
+    // color: $light; padding: 0.8rem; // margin-bottom: $l32;
+    border-bottom: 1px solid $dark;
     padding: 1.4rem 0 0.8rem 0;
     margin-bottom: 3rem;
 

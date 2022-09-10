@@ -1,5 +1,9 @@
 <template>
-    <img :src="logo" alt="BSides RDU 2022 Hacktoberfest Logo" title="BSides RDU 2022 Hacktoberfest" />
+    <img
+        :src="logo"
+        :alt="`BSides RDU ${$config.year} Hacktoberfest Logo`"
+        :title="`BSides RDU ${$config.year} Hacktoberfest`"
+    />
 </template>
 
 <script>
@@ -14,7 +18,7 @@ export default {
         logo() {
             let face = this.faces[Math.floor(Math.random() * this.faces.length)];
             let hair = this.braids[Math.floor(Math.random() * this.braids.length)];
-            return `/img/bsides-2022-logo-${face}-${hair}.png`;
+            return `/img/bsides-{this.$config.year}-logo-${face}-${hair}.png`;
         },
     },
 };
