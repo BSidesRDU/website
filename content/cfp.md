@@ -1,5 +1,5 @@
 # Call For Papers
 
-Our call for 2022 papers is _open!_
+The BSidesRDU 2022 Call for Presenters has closed.
 
-[Click here to submit your CFP on Sessionize](https://sessionize.com/bsidesrdu2022)
+Stay tuned for speaker announcements!

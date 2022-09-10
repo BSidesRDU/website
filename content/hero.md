@@ -2,6 +2,10 @@
 
 ## Saturday, October 15th, 2022
 
-<!-- <content-random-image /> -->
+#### _Tickets are available!_
+
+<content-tickets-button></content-tickets-button>
+
+<content-countdown-timer></content-countdown-timer>
 
 ![BSides RDU 2022 Hacktoberfest Logo](/img/bsides-2022-logo.png "BSides RDU 2022 Hacktoberfest")
