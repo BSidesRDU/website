@@ -1,6 +1,6 @@
-## Venue
+## The Venue
 
-### The Carolina Theatre
+### The Carolina Theatre 🎭
 
 [The Carolina Theatre](http://www.carolinatheatre.org/about) is a performing arts and cinema complex in downtown Durham, North Carolina. It is an AMAZING venue in the Raleigh Durham area!
 

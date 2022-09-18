@@ -1,8 +1,8 @@
 # BSides RDU <content-bsides-date year></content-bsides-date> Hacktoberfest
 
-## <content-bsides-date hero></content-bsides-date>
+## <content-bsides-date hero class="hero__date"></content-bsides-date>
 
-#### _Tickets are available!_
+## 💥 _Tickets are available!_ &nbsp;👀
 
 <content-tickets-button></content-tickets-button>
 

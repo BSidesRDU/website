@@ -3,9 +3,9 @@ type: event
 title: "Lockpick Village"
 what: "Event"
 short-title: "Lockpick Village"
-start: "9:40"
-end: "15:15"
-floor: 1st
+start: ""
+end: ""
+floor: ""
 twitter: "https://twitter.com/OakCityLocks"
 twitter-text: "Oak City Locksport"
 description: "Join Oak City Locksport to have fun and learn about the relative security of the locks we use in everyday life." 
