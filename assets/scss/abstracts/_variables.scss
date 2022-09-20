@@ -1,63 +1,19 @@
-:root {
-  // fonts
-  --sans: Rubik, sans-serif;
-  --serif: 'Crimson Text', serif;
-  --mono: 'Ubuntu Mono', monospace;
+$sans: Rubik, sans-serif;
+$serif: 'Crimson Text', serif;
+$mono: 'Ubuntu Mono', monospace;
 
-  // colors
-  --white: #ffffff;
-  --bright: #f6f6f6;
-  --light: #bbbbbb;
-  --grey-100: #595959;
-  --grey-500: #373737;
-  --dark: #151411;
-  --black: #1f1f1f;
+// colors
+$white: #ffffff;
+$bright: #f6f6f6;
+$light: #bbbbbb;
+$grey-100: #595959;
+$grey-500: #373737;
+$dark: #151411;
+$black: #1f1f1f;
 
-  --primary: #ff0000;
-  --secondary: #1f1e16;
-  --cta: #b33018;
-  --links: #0d607b;
+$primary: #ff0000;
+$secondary: #1f1e16;
+$cta: #b33018;
+$links: #0d607b;
 
-  // lengths
-  --full: 100%;
-  --vw100: 100vw;
-  --vh100: 100vh;
-  --l10: 1rem;
-  --l12: 1.2rem;
-  --l14: 1.4rem;
-  --l16: 1.6rem;
-  --l20: 2rem;
-  --l24: 2.4rem;
-  --l28: 2.8rem;
-  --l32: 3.2rem;
-  --l36: 3.6rem;
-  --l40: 4rem;
-  --l48: 4.8rem;
-
-  // char lengths
-  --ch80: 80ch;
-
-  // font-sizes
-  --x2s: 1.2rem;
-  --xs: 1.4rem;
-  --sm: 1.6rem;
-  --md: 2rem;
-  --lg: 2.4rem;
-  --xl: 2.8rem;
-  --x2l: 3.2rem;
-  --x3l: 3.6rem;
-  --x4l: 4rem;
-  --x5l: 4.8rem;
-
-  // line heights
-  --lhxxs: 1.8rem;
-  --lhxs: 2.1rem;
-  --lhsm: 2.4rem;
-  --lhmd: 3.3rem;
-  --lhlg: 3.6rem;
-  --lhxl: 4.2rem;
-  --lhx2l: 4.8rem;
-  --lhx3l: 5.4rem;
-  --lhx4l: 6rem;
-  --lhx5l: 7.2rem;
-}
+$width: 100ch;

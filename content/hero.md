@@ -1,11 +1,11 @@
-# BSides RDU 2022 Hacktoberfest
+# BSides RDU <content-bsides-date year></content-bsides-date> Hacktoberfest
 
-## Saturday, October 15th, 2022
+## <content-bsides-date hero class="hero__date"></content-bsides-date>
 
-#### _Tickets are available!_
+## 💥 _Tickets are available!_ &nbsp;👀
 
 <content-tickets-button></content-tickets-button>
 
 <content-countdown-timer></content-countdown-timer>
 
-![BSides RDU 2022 Hacktoberfest Logo](/img/bsides-2022-logo.png "BSides RDU 2022 Hacktoberfest")
+<content-bsides-logo></content-bsides-logo>

@@ -1,7 +1,7 @@
 <template>
-  <fragment>
+  <div>
     <layouts-page-header />
     <layouts-page-main />
     <layouts-page-footer />
-  </fragment>
+  </div>
 </template>

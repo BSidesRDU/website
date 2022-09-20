@@ -1,0 +1,85 @@
+.content-section {
+  margin-bottom: 1.2rem;
+
+  h1 {
+    font-size: 3.2rem;
+    margin-bottom: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+
+    &.data {
+      position: relative;
+      padding-left: 3.6rem;
+
+      data {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 1.6rem;
+        font-weight: normal;
+        border: 1px solid $grey-100;
+        width: 2.8rem;
+        height: 2.8rem;
+        line-height: 2.8rem;
+        border-radius: 2.8rem;
+        text-align: center;
+      }
+    }
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  h4,
+  p,
+  ol,
+  ul {
+    margin-bottom: 2rem;
+  }
+
+  p,
+  ol li,
+  ul li {
+    font-size: 2rem;
+    line-height: 3.3rem;
+  }
+
+  ol li,
+  ul li {
+    margin-left: 2rem;
+  }
+
+  img {
+    margin: 0 auto;
+    max-width: 100%;
+
+    &.center {
+      display: block;
+      margin: 0 auto 7rem;
+    }
+  }
+
+  &.center {
+    text-align: center;
+  }
+
+  & .google-map {
+    height: 35rem;
+    position: relative;
+
+    iframe {
+      border: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

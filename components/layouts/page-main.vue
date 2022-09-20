@@ -4,11 +4,11 @@
   </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 main {
-  width: min(80ch, 100vw - 3.2rem);
+  width: min($width, 100vw - 3.2rem);
   margin: auto;
-  background-color: var(--bright);
-  color: var(--dark);
+  background-color: $bright;
+  color: $dark;
 }
 </style>

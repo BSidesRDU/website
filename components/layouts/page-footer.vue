@@ -1,19 +1,31 @@
 <template>
   <footer class="footer">
     <div class="footer__inner">
-      <p>
-        @ Copyright 2022 BSides RDU - All rights reserved
-      </p>
+      <p>@ Copyright {{ $config.year }} BSides RDU - All rights reserved</p>
       <a href="https://twitter.com/BSidesRDU">
-        <svg>
+        <svg width="32" height="32">
           <title>BSides RDU on Twitter</title>
-          <use xlink:href="/img/icons.svg#icon-twitter"></use>
+          <use href="/img/icons.svg#iconTwitter" width="32" height="32"></use>
         </svg>
       </a>
       <a href="https://www.facebook.com/BSidesRDU/">
-        <svg>
+        <svg width="32" height="32">
           <title>BSides RDU on Facebook</title>
-          <use xlink:href="/img/icons.svg#icon-facebook"></use>
+          <use href="/img/icons.svg#iconFacebook" width="32" height="32"></use>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/company/bsides-rdu/">
+        <svg width="32" height="32">
+          <title>BSides RDU on LinkedIn</title>
+          <use href="/img/icons.svg#iconLinkedIn" width="32" height="32"></use>
+        </svg>
+      </a>
+      <a
+        href="https://join.slack.com/t/bsidesrdu/shared_invite/zt-vzzyjdau-susGppH5dIl8hKWZZuiBqg"
+      >
+        <svg width="32" height="32">
+          <title>Join the conversation with BSides RDU on Slack</title>
+          <use href="/img/icons.svg#iconSlack" width="32" height="32"></use>
         </svg>
       </a>
     </div>
@@ -23,39 +35,39 @@
 <style lang="scss" scoped>
 .footer {
   width: 100%;
-  margin-top: var(--l48);
-  background-color: var(--dark);
-  color: var(--light);
-  padding-top: var(--l32);
-  padding-bottom: var(--l48);
+  margin-top: 4.8rem;
+  background-color: $dark;
+  color: $light;
+  padding-top: 3.2rem;
+  padding-bottom: 4.8rem;
 
   &__inner {
-    width: min(80ch, 100vw - 3.2rem);
+    width: min($width, 100vw - 3.2rem);
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 
     p {
-      font-size: var(--xs);
+      font-size: 1.4rem;
       margin-right: auto;
     }
 
     a {
       &:link,
       &:visited {
-        color: var(--light);
+        color: $light;
       }
 
       &:not(:first-child) {
-        margin-left: var(--l10);
+        margin-left: 1rem;
       }
     }
 
     svg {
       fill: currentColor;
-      width: var(--l20);
-      height: var(--l20);
+      width: 3.2rem;
+      height: 3.2rem;
     }
   }
 }
