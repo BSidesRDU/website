@@ -9,9 +9,7 @@
         {{ days }}:{{ hours }}:{{ minutes }}:{{ seconds }}
         <span class="countdown-timer__ticking-time-bomb--clock">⏰</span>
       </div>
-      <div class="countdown-timer__until">
-        Until BSidesRDU {{ $bDate({ year: true }) }}!
-      </div>
+      <div class="countdown-timer__until">Until BSidesRDU {{ year }}!</div>
     </div>
     <div v-else class="countdown-timer__bsides">Time for BSides!</div>
   </div>
@@ -23,6 +21,7 @@ const { DateTime } = require('luxon');
 export default {
   data() {
     return {
+      year: null,
       timeout: null,
       interval: null,
       days: 0,
@@ -43,6 +42,7 @@ export default {
   },
 
   mounted() {
+    this.year = this.$bDate({ year: true });
     this.timeout = setInterval(() => {
       const now = DateTime.now().setZone('America/New_York');
       const bSides = DateTime.fromISO(this.$config.bsidesDate).setZone(
