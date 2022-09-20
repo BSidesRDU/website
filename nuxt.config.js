@@ -3,8 +3,12 @@ const year = '2022';
 const bsidesDate = `${year}-10-15T08:00:00`;
 const eventZillaLink =
   'https://events.eventzilla.net/e/bsidesrdu-2022-hacktoberfest-2138578662';
+const sponsorshipLink =
+  'https://events.eventzilla.net/e/bsidesrdu-2022-hacktoberfest-sponsorships-2138576095';
 
 export default {
+  ssr: true,
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -127,7 +131,11 @@ export default {
   css: ['~/assets/scss/main.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/camel-cased.js', '~/plugins/b-date.js'],
+  plugins: [
+    '~/plugins/sections.js',
+    '~/plugins/camel-cased.js',
+    '~/plugins/b-date.js',
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -161,8 +169,30 @@ export default {
     port: 3004,
   },
 
+  generate: {
+    fallback: '404.html',
+  },
+
   publicRuntimeConfig: {
     bsidesDate,
     eventZillaLink,
+    sponsorshipLink,
+    sections: {
+      hero: process.env.HERO || 'true',
+      healthSafety: process.env.HEALTH_SAFETY || 'false',
+      streamingSocial: process.env.STREAMING_SOCIAL || 'false',
+      schedule: process.env.SCHEDULE || 'true',
+      eventsWorkshops: process.env.EVENTS_WORKSHOPS || 'true',
+      // off by default
+      cfp: process.env.CFP || 'false',
+      parking: process.env.PARKING || 'false', // true for now!
+      food: process.env.FOOD || 'false', // true for now!
+      // the rest are on by default
+      updates: process.env.UPDATES || 'true',
+      sponsors: process.env.SPONSORS || 'true',
+      about: process.env.ABOUT || 'true',
+      venue: process.env.VENUE || 'true',
+      principles: process.env.PRINCIPLES || 'true',
+    },
   },
 };

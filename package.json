@@ -1,24 +1,24 @@
 {
-    "name": "bsidesrdu",
-    "version": "1.0.0",
-    "private": true,
-    "scripts": {
-        "dev": "nuxt",
-        "build": "nuxt build",
-        "start": "nuxt start",
-        "generate": "nuxt generate"
-    },
-    "dependencies": {
-        "@nuxt/content": "^1.15.1",
-        "core-js": "^3.22.5",
-        "luxon": "^3.0.3",
-        "nuxt": "^2.15.8"
-    },
-    "devDependencies": {
-        "@nuxtjs/style-resources": "^1.0.0",
-        "fibers": "^5.0.2",
-        "sass": "^1.54.0",
-        "sass-loader": "10",
-        "slugify": "^1.6.5"
-    }
+  "name": "bsidesrdu",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "MINIMAL=1 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.15.1",
+    "core-js": "^3.22.5",
+    "luxon": "^3.0.3",
+    "nuxt": "^2.15.8"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "fibers": "^5.0.2",
+    "sass": "^1.54.0",
+    "sass-loader": "10",
+    "slugify": "^1.6.5"
+  }
 }

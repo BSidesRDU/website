@@ -9,10 +9,31 @@
       <h2>Events &amp; Workshops</h2>
       <content-events-list :events="events" />
     </content-section>
+    <content-section anchor="updates">
+      <h2>Updates</h2>
+      <a
+        class="twitter-timeline"
+        data-lang="en"
+        data-height="726"
+        data-tweet-limit="5"
+        data-dnt="true"
+        href="https://twitter.com/BSidesRDU?ref_src=twsrc%5Etfw"
+        >Tweets by BSidesRDU</a
+      >
+      <script
+        async
+        src="https://platform.twitter.com/widgets.js"
+        charset="utf-8"
+      ></script>
+    </content-section>
     <content-section
       v-if="false"
       anchor="parking"
       :document="contents.parking"
+    ></content-section>
+    <content-section
+      anchor="sponsors"
+      :document="contents.sponsors"
     ></content-section>
     <content-section
       anchor="about"
@@ -40,10 +61,10 @@ export default {
         slug: {
           $in: [
             'hero',
-            'cfp',
             'schedule',
-            'hacker-jeopardy',
-            'parking',
+            'sponsors',
+            // 'hacker-jeopardy',
+            // 'parking',
             'venue',
             'about',
             'principles',

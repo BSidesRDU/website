@@ -1,6 +1,6 @@
 <template>
-  <a :href="$config.eventZillaLink" class="cta" target="_blank">
-    Register Now
+  <a :href="$config.sponsorshipLink" class="sponsorships" target="_blank">
+    Sponsorships!
     <svg width="20" height="20">
       <title>New Window</title>
       <use href="/img/icons.svg#iconNewWindow" width="20" height="20"></use>
@@ -9,23 +9,18 @@
 </template>
 
 <style lang="scss" scoped>
-.cta {
-  // position: relative;
-  background: $cta;
-  color: $bright;
-  text-align: center;
+.sponsorships {
+  color: $links;
   font-size: 3rem;
   font-weight: 500;
   font-style: italic;
-  padding: 1.2rem 2.2rem;
-  margin-bottom: 2.2rem;
-  display: inline-block;
-  border-radius: 3rem;
-  transition: all 0.2s;
+  text-decoration: underline;
   border: none;
-  cursor: pointer;
   // z-index: 1;
   white-space: nowrap;
+  display: block;
+  width: 100%;
+  text-align: center;
 
   svg {
     fill: currentColor;

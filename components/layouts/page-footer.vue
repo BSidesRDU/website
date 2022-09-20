@@ -14,6 +14,20 @@
           <use href="/img/icons.svg#iconFacebook" width="32" height="32"></use>
         </svg>
       </a>
+      <a href="https://www.linkedin.com/company/bsides-rdu/">
+        <svg width="32" height="32">
+          <title>BSides RDU on LinkedIn</title>
+          <use href="/img/icons.svg#iconLinkedIn" width="32" height="32"></use>
+        </svg>
+      </a>
+      <a
+        href="https://join.slack.com/t/bsidesrdu/shared_invite/zt-vzzyjdau-susGppH5dIl8hKWZZuiBqg"
+      >
+        <svg width="32" height="32">
+          <title>Join the conversation with BSides RDU on Slack</title>
+          <use href="/img/icons.svg#iconSlack" width="32" height="32"></use>
+        </svg>
+      </a>
     </div>
   </footer>
 </template>
