@@ -19,6 +19,7 @@
   top: 0;
   right: 0;
   left: 0;
+  z-index: 25;
   background-color: $dark;
   background-image: linear-gradient($dark, $grey-500);
   // color: $light; padding: 0.8rem; // margin-bottom: $l32;

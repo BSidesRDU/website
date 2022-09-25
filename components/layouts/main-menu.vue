@@ -2,16 +2,16 @@
   <nav :class="mainMenuClass" @click.self="hideMenu">
     <ul>
       <li v-for="link in links" :key="link.name">
-        <nuxt-link
-          :to="link.url"
+        <a
+          :href="`#${link.url.hash}`"
           class="menu-link"
           v-html="link.label"
-          @click.native.self="
+          @click.self="
             (event) => {
               hideMenu(event, !!link.scroll);
             }
           "
-        ></nuxt-link>
+        ></a>
       </li>
       <li class="cta">
         <a :href="$config.eventZillaLink" target="_blank"

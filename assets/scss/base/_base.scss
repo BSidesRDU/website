@@ -19,11 +19,13 @@ html {
   background-color: $bright;
   color: $dark;
   // transform: rotate(180deg);
+  scroll-padding-top: 12rem;
+  scroll-behavior: smooth;
 }
 
 body {
   box-sizing: border-box;
-  padding-top: 10rem;
+  padding-top: 12rem;
 }
 
 ::selection {
