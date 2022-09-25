@@ -10,7 +10,7 @@
       <h2>Schedule</h2>
       <iframe
         ref="sessions"
-        src="/sessionize/sessions.html"
+        src="/sessionize/grid.html"
         scrolling="no"
       ></iframe>
       <h2>Speakers</h2>
