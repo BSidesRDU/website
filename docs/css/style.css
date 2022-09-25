@@ -543,7 +543,13 @@ iframe {
 }
 
 iframe#speakers {
-  min-height: 1050px;
+  min-height: 1820px;
+}
+
+@media only screen and (min-width: 35em) {
+  iframe#speakers {
+    min-height: 1050px;
+  }
 }
 
 .content-section__separator {
