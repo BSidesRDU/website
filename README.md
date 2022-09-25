@@ -1,27 +1,5 @@
 # Security BSides RDU Website
-
 This repository hosts the Security [BSides RDU website](https://bsidesrdu.org).
-
-## Workflow
-
-Work out of main branch. Make any changes there. When ready to publish, do `yarn generate` to create dist folder. Make a PR against the `gh-pages` branch from the content in `dist`.
-
-## Build Setup
-
-```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3004
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
 
 ## About BSides RDU
 
