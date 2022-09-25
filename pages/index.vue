@@ -1,15 +1,30 @@
 <template>
   <div>
     <content-section anchor="hero" :document="contents.hero"></content-section>
-    <content-section anchor="cfp" :document="contents.cfp"></content-section>
-    <content-section anchor="schedule">
-      <h2>Schedule of Talks &amp; Speakers Coming Soon!</h2>
+    <content-section
+      anchor="cfp"
+      :document="contents.cfp"
+      v-if="$sections.cfp"
+    ></content-section>
+    <content-section anchor="schedule" v-if="$sections.schedule">
+      <h2>Schedule</h2>
+      <iframe
+        ref="sessions"
+        src="/sessionize/sessions.html"
+        scrolling="no"
+      ></iframe>
+      <h2>Speakers</h2>
+      <iframe
+        ref="speakers"
+        src="/sessionize/speaker-wall.html"
+        scrolling="no"
+      ></iframe>
     </content-section>
-    <content-section anchor="events-workshops">
+    <content-section anchor="events-workshops" v-if="$sections.eventsWorkshops">
       <h2>Events &amp; Workshops</h2>
       <content-events-list :events="events" />
     </content-section>
-    <content-section anchor="updates">
+    <content-section anchor="updates" v-if="$sections.updates">
       <h2>Updates</h2>
       <a
         class="twitter-timeline"
@@ -27,25 +42,29 @@
       ></script>
     </content-section>
     <content-section
-      v-if="false"
       anchor="parking"
       :document="contents.parking"
+      v-if="$sections.parking"
     ></content-section>
     <content-section
       anchor="sponsors"
       :document="contents.sponsors"
+      v-if="$sections.sponsors"
     ></content-section>
     <content-section
       anchor="about"
       :document="contents.about"
+      v-if="$sections.about"
     ></content-section>
     <content-section
       anchor="venue"
       :document="contents.venue"
+      v-if="$sections.venue"
     ></content-section>
     <content-section
       anchor="principles"
       :document="contents.principles"
+      v-if="$sections.principles"
       last
     ></content-section>
   </div>
@@ -83,5 +102,19 @@ export default {
 
     return { contents, events };
   },
+  mounted() {
+    const sessions = this.$refs.sessions;
+    const speakers = this.$refs.speakers;
+    setTimeout(() => {
+      sessions.height = sessions.contentWindow.document.body.scrollHeight;
+      speakers.height = speakers.contentWindow.document.body.scrollHeight;
+    }, 1000);
+  },
 };
 </script>
+
+<style>
+iframe {
+  width: 100%;
+}
+</style>

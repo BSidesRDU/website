@@ -1,6 +1,6 @@
 <template>
   <section class="content-section">
-    <div v-if="anchor" class="content-section__anchor" :id="anchor"></div>
+    <div v-if="anchor" :id="anchor"></div>
     <template v-if="document !== null">
       <nuxt-content :class="articleClass" :document="document"></nuxt-content>
     </template>
@@ -58,11 +58,6 @@ export default {
 
 <style lang="scss" scoped>
 .content-section {
-  &__anchor {
-    padding-top: 10rem;
-    margin-top: -10rem;
-  }
-
   &__separator {
     color: $grey-500;
 

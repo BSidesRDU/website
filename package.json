@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "MINIMAL=1 nuxt",
-    "build": "nuxt build",
+    "build": "MINIMAL=1 nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "MINIMAL=1 nuxt generate"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
