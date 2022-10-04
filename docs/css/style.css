@@ -111,6 +111,31 @@ body {
   max-width: 100%;
 }
 
+h3.coffee {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+span.little-chocolate-donuts {
+  font-size: 1.2rem;
+}
+
+span.little-chocolate-donuts a {
+  text-decoration: none;
+  color: #000000;
+  cursor: default;
+}
+
+.content-section .food__provider {
+  text-align: center;
+}
+
+.content-section .food__provider img {
+  min-width: 50%;
+  max-width: 70%;
+}
+
 .content-section img.center {
   display: block;
   margin: 0 auto 7rem;
@@ -282,27 +307,6 @@ pre[class*='language-'] {
   cursor: help;
 }
 
-.nuxt-progress {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  width: 0;
-  opacity: 1;
-  transition: width 0.1s, opacity 0.4s;
-  background-color: #000;
-  z-index: 999999;
-}
-
-.nuxt-progress.nuxt-progress-notransition {
-  transition: none;
-}
-
-.nuxt-progress-failed {
-  background-color: red;
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -333,7 +337,7 @@ pre[class*='language-'] {
 
 @media only screen and (min-width: 63.75em) {
   .header__inner {
-    max-width: 100rem;
+    max-width: 115rem;
   }
 }
 

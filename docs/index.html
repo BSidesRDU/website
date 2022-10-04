@@ -2,438 +2,470 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>BSides RDU - Hacktoberfest! - Oct 15th 2022</title>
-	<meta charset="utf-8">
-	<meta name="description"
-		content="Hacktoberfest! Oct 15th 2022 - Security BSides is a community-driven framework for building events for and by cyber security community members. The goal is to expand the spectrum of conversation beyond the traditional confines of space and time. It creates opportunities for individuals to both present and participate in an intimate atmosphere that encourages collaboration. It is an intense event with discussions, demos, and interaction from participants. It is where conversations for the next-big-thing are happening. Security is top of mind across the entire sphere of IT and the world beyond. Therefore, more people and organizations are interested in the next new thing in security. BSides is the place where these people come to collaborate, learn and share. With many tech-companies, colleges and universities in Raleigh, Durham, Chapel Hill and surrounding areas, it is also an international center of innovation in the security industry. Security B-Sides Raleigh-Durham (B-Sides RDU) is proud to have had great speaker lineups at our events including keynotes by Dan Kaminsky, Dave Kennedy, Paul Vixie, BenTen, Jay Beale, G.Mark Hardy, and for B-Sides RDU 2017: Cliff Stoll.">
-	<meta name="format-detection" content="telephone=no">
-	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ff0000">
-	<meta property="og:url" content="https://bsidesrdu.org">
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="BSidesRDU">
-	<meta property="og:description"
-		content="Hacktoberfest! Oct 15th 2022 - Security BSides is a community-driven framework for building events for and by cyber security community members. The goal is to expand the spectrum of conversation beyond the traditional confines of space and time. It creates opportunities for individuals to both present and participate in an intimate atmosphere that encourages collaboration. It is an intense event with discussions, demos, and interaction from participants.">
-	<meta property="og:image" content="https://bsidesrdu.org/img/bsides-2022-logo-og.png">
-	<meta property="og:image:secure_url" content="https://bsidesrdu.org/img/bsides-2022-logo-og.png">
-	<link rel="icon" type="image/x-icon" href="/favicon.ico">
-	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
-	<script src="/js/svguse.js" defer></script>
-	<script src="/js/countdown-timer.js" defer></script>
-	<script src="/js/nav.js" defer></script>
-	<link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSides RDU - Hacktoberfest! - Oct 15th 2022</title>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Hacktoberfest! Oct 15th 2022 - Security BSides is a community-driven framework for building events for and by cyber security community members. The goal is to expand the spectrum of conversation beyond the traditional confines of space and time. It creates opportunities for individuals to both present and participate in an intimate atmosphere that encourages collaboration. It is an intense event with discussions, demos, and interaction from participants. It is where conversations for the next-big-thing are happening. Security is top of mind across the entire sphere of IT and the world beyond. Therefore, more people and organizations are interested in the next new thing in security. BSides is the place where these people come to collaborate, learn and share. With many tech-companies, colleges and universities in Raleigh, Durham, Chapel Hill and surrounding areas, it is also an international center of innovation in the security industry. Security B-Sides Raleigh-Durham (B-Sides RDU) is proud to have had great speaker lineups at our events including keynotes by Dan Kaminsky, Dave Kennedy, Paul Vixie, BenTen, Jay Beale, G.Mark Hardy, and for B-Sides RDU 2017: Cliff Stoll.">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ff0000">
+  <meta property="og:url" content="https://bsidesrdu.org">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BSidesRDU">
+  <meta property="og:description"
+    content="Hacktoberfest! Oct 15th 2022 - Security BSides is a community-driven framework for building events for and by cyber security community members. The goal is to expand the spectrum of conversation beyond the traditional confines of space and time. It creates opportunities for individuals to both present and participate in an intimate atmosphere that encourages collaboration. It is an intense event with discussions, demos, and interaction from participants.">
+  <meta property="og:image" content="https://bsidesrdu.org/img/bsides-2022-logo-og.png">
+  <meta property="og:image:secure_url" content="https://bsidesrdu.org/img/bsides-2022-logo-og.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <script src="/js/svguse.js" defer></script>
+  <script src="/js/countdown-timer.js" defer></script>
+  <script src="/js/nav.js" defer></script>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-	<header class="header">
-		<div class="header__inner"><a href="/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active"><svg>
-					<title>BSides RDU</title>
-					<use xlink:href="/img/icons.svg#iconBsidesLogo"></use>
-				</svg></a>
-			<div class="hamburger-menu header__box">
-				<div class="hamburger"><span></span> <span></span> <span></span></div>
-			</div>
-			<nav class="main-menu main-menu__closed">
-				<ul>
-					<li><a href="#schedule" class="menu-link">Schedule</a></li>
-					<li><a href="#speakers" class="menu-link">Speakers</a></li>
-					<li><a href="#events-workshops" class="menu-link">Events & Workshops</a></li>
-					<li><a href="#updates" class="menu-link">Updates</a></li>
-					<li><a href="#sponsors" class="menu-link">Sponsors</a></li>
-					<li><a href="#about" class="menu-link">About</a></li>
-					<li><a href="#venue" class="menu-link">Venue</a></li>
-					<li><a href="#principles" class="menu-link">Principles</a></li>
-					<li class="cta"><a href="https://events.eventzilla.net/e/bsidesrdu-2022-hacktoberfest-2138578662"
-							target="_blank">Register Now
-							<svg>
-								<use xlink:href="/img/icons.svg#iconNewWindow"></use>
-							</svg></a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<main>
-		<div>
-			<section class="content-section">
-				<div id="hero"></div>
-				<div class="content-section__content hero nuxt-content">
-					<h1 id="bsides-rdu-content-bsides-date-yearcontent-bsides-date-hacktoberfest" data-v-40384906><a
-							aria-hidden="true"
-							href="#bsides-rdu-content-bsides-date-yearcontent-bsides-date-hacktoberfest"
-							tabindex="-1"><span class="icon icon-link"></span></a>BSides RDU <span>2022</span>
-						Hacktoberfest
-					</h1>
-					<h2 id="content-bsides-date-hero-classhero__datecontent-bsides-date" data-v-40384906><a
-							aria-hidden="true" href="#content-bsides-date-hero-classhero__datecontent-bsides-date"
-							tabindex="-1"><span class="icon icon-link" data-v-40384906></span></a><span
-							class="hero__date">Saturday,
-							October
-							15, 2022</span></h2>
-					<h2 id="-tickets-are-available-"><a aria-hidden="true" href="#-tickets-are-available-"
-							tabindex="-1"><span class="icon icon-link"></span></a>💥 <em>Tickets are available!</em>
-						👀</h2>
-					<a href="https://events.eventzilla.net/e/bsidesrdu-2022-hacktoberfest-2138578662" target="_blank"
-						class="cta">
-						Register Now
-						<svg width="20" height="20">
-							<title>New Window</title>
-							<use href="/img/icons.svg#iconNewWindow" width="20" height="20"></use>
-						</svg></a>
-					<div class="countdown-timer">
-						<div>
-							<div class="countdown-timer__ticking-time-bomb">
-								<span class="countdown-timer__ticking-time-bomb--time"></span>
-								<span class="countdown-timer__ticking-time-bomb--icon"></span>
-							</div>
-							<div class="countdown-timer__until"></div>
-							<div class="countdown-timer__bsides"></div>
-						</div>
-					</div>
-					<img src="/img/bsides-2022-logo.png" alt="BSides RDU 2022 undefined Logo"
-						title="BSides RDU 2022 undefined">
-				</div>
-				<div class="content-section__separator"><svg>
-						<title>==========</title>
-						<use xlink:href="/img/decorations.svg#icon-divider"></use>
-					</svg></div>
-			</section>
-			<section class="content-section content-section__wide">
-				<div id="schedule"></div>
-				<article class="content-section__content schedule">
-					<h2>Schedule</h2>
-					<script type="application/javascript"
-						src="https://sessionize.com/api/v2/ksnyl58x/view/GridSmart"></script>
-				</article>
-				<div class="content-section__separator"><svg>
-						<title>==========</title>
-						<use xlink:href="/img/decorations.svg#icon-divider"></use>
-					</svg></div>
-			</section>
-			<section class="content-section">
-				<div id="speakers"></div>
-				<article class="content-section__content speakers">
-					<h2>Speakers</h2> <iframe src="/sessionize/speaker-wall.html" id="speakers"></iframe>
-				</article>
-				<div class="content-section__separator"><svg>
-						<title>==========</title>
-						<use xlink:href="/img/decorations.svg#icon-divider"></use>
-					</svg></div>
-			</section>
-			<section class="content-section">
-				<div id="events-workshops"></div>
-				<article class="content-section__content events-workshops">
-					<h2>Events & Workshops</h2>
-					<div>
-						<div class="events-spacetime">
-							<p>
-								Events take place starting at 9:40 AM on the 1st, 2nd and 3rd floors
-							</p>
-						</div>
-						<div class="events-single"
-							style="--dark:#003300;--med:#006600;--light:#00cc00;--bright:#f6f6f6"><a
-								href="/oak-city-locksport">
-								<div class="events-single__img"><img src="/img/events/oak-city-locksport-list.png"
-										alt="Oak City Locksport Logo" class="events-single__link"></div>
-								<div>
-									<div class="events-single__header">
-										<h4><span class="events-single__link">Lockpick Village</span></h4>
-										<p><span class="events-single__floor"> Floor</span>
-										</p>
-									</div>
-									<p>
-										Join Oak City Locksport to have fun and learn about the relative security of
-										the
-										locks we use in everyday life.
-									</p>
-									<p><span class="events-single__link">Learn more »</span></p>
-								</div>
-							</a></div>
-						<div class="events-single"
-							style="--dark:#3e334d;--med:#7c42cd;--light:#c94dce;--bright:#f6f6f6"><a
-								href="/eversec-ctf">
-								<div class="events-single__img"><img src="/img/events/eversec-ctf-list.png"
-										alt="Eversec CTF Logo" class="events-single__link"></div>
-								<div>
-									<div class="events-single__header">
-										<h4><span class="events-single__link">Eversec CTF</span></h4>
-										<p><span class="events-single__floor"> Floor</span> <span
-												class="events-single__virtual">and Virtual</span></p>
-									</div>
-									<p>
-										Scenario based CTFs about a fictitious company that continually gets hacked
-										and
-										needs some friendly hacker help.
-									</p>
-									<p><span class="events-single__link">Learn more »</span></p>
-								</div>
-							</a></div>
-						<div class="events-single"
-							style="--dark:#101051;--med:#aa5a14;--light:#f87808;--bright:#f6f6f6"><a
-								href="/software-spelunking-101">
-								<div class="events-single__img"><img src="/img/events/software-spelunking-101-list.png"
-										alt="Software Spelunking 101 Logo" class="events-single__link"></div>
-								<div>
-									<div class="events-single__header">
-										<h4><span class="events-single__link">Software Spelunking 101</span></h4>
-										<p><span class="events-single__floor"> Floor</span>
-										</p>
-									</div>
-									<p>
-										This workshop will focus less on specific tools, and more on “What questions
-										do
-										I have, what tool(s) can help answer them, and how should I go about it?”
-									</p>
-									<p><span class="events-single__link">Learn more »</span></p>
-								</div>
-							</a></div>
-					</div>
-				</article>
-				<div class="content-section__separator"><svg>
-						<title>==========</title>
-						<use xlink:href="/img/decorations.svg#icon-divider"></use>
-					</svg></div>
-			</section>
-			<section class="content-section">
-				<div id="updates"></div>
-				<article class="content-section__content updates">
-					<h2>Updates</h2> <a data-lang="en" data-height="726" data-tweet-limit="5" data-dnt="true"
-						href="https://twitter.com/BSidesRDU?ref_src=twsrc%5Etfw" class="twitter-timeline">Tweets by
-						BSidesRDU</a>
-					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-				</article>
-				<div class="content-section__separator"><svg>
-						<title>==========</title>
-						<use xlink:href="/img/decorations.svg#icon-divider"></use>
-					</svg></div>
-			</section>
-			<section class="content-section">
-				<div id="sponsors"></div>
-				<div class="content-section__content sponsors nuxt-content">
-					<h2 id="sponsors"><a aria-hidden="true" href="#sponsors" tabindex="-1"><span
-								class="icon icon-link"></span></a>Sponsors</h2>
-					<p>Sign up to sponsor BSides RDU 2022 at the link below:</p>
-					<a href="https://events.eventzilla.net/e/bsidesrdu-2022-hacktoberfest-sponsorships-2138576095"
-						target="_blank" class="sponsorships">
-						Sponsorships!
-						<svg width="20" height="20">
-							<title>New Window</title>
-							<use href="/img/icons.svg#iconNewWindow" width="20" height="20"></use>
-						</svg></a>
-				</div>
-				<div class="content-section__separator"><svg>
-						<title>==========</title>
-						<use xlink:href="/img/decorations.svg#icon-divider"></use>
-					</svg></div>
-			</section>
-			<section class="content-section">
-				<div id="about"></div>
-				<div class="content-section__content about nuxt-content">
-					<h2 id="about"><a aria-hidden="true" href="#about" tabindex="-1"><span class="icon icon-link"
-								data-v-40384906></span></a>About</h2>
-					<p><strong>Security
-							BSides</strong>
-						is a community-driven framework for building events for and by cyber security community
-						members.
-						The goal is to expand the spectrum of conversation beyond the traditional confines of space
-						and
-						time. It creates opportunities for individuals to both present and participate in an
-						intimate
-						atmosphere that encourages collaboration. It is an intense event with discussions, demos,
-						and
-						interaction from participants. It is where conversations for the next-big-thing are
-						happening.
-					</p>
-					<p>Security is top of mind across the entire sphere of IT and
-						the
-						world beyond. Therefore, more people and organizations are interested in the next new thing
-						in
-						security. BSides is the place where these people come to collaborate, learn and share.</p>
-					<p>With many tech-companies, colleges and universities in
-						Raleigh,
-						Durham, Chapel Hill and surrounding areas, it is also an international center of innovation
-						in
-						the security industry.</p>
-					<p>Security B-Sides Raleigh-Durham (B-Sides RDU) is proud to
-						have
-						had great speaker lineups at our events including keynotes by Dan Kaminsky, Dave Kennedy,
-						Paul
-						Vixie, BenTen, Jay Beale, G.Mark Hardy, Cliff Stoll, Shahid Buttar, Chris Wysopal and Bruce
-						Potter.</p>
-				</div>
-				<div class="content-section__separator"><svg>
-						<title>==========</title>
-						<use xlink:href="/img/decorations.svg#icon-divider"></use>
-					</svg></div>
-			</section>
-			<section class="content-section">
-				<div id="venue"></div>
-				<div class="content-section__content venue nuxt-content">
-					<h2 id="the-venue"><a href="#the-venue" aria-hidden="true" tabindex="-1"><span
-								class="icon icon-link"></span></a>The Venue</h2>
-					<h3 id="the-carolina-theatre-"><a href="#the-carolina-theatre-" aria-hidden="true"
-							tabindex="-1"><span class="icon icon-link"></span></a>The Carolina
-						Theatre
-						🎭</h3>
-					<p><a href="http://www.carolinatheatre.org/about" rel="nofollow noopener noreferrer"
-							target="_blank">The
-							Carolina Theatre</a> is a performing arts and cinema complex in downtown Durham, North
-						Carolina. It is an AMAZING venue in the Raleigh Durham area!</p>
-					<p>We are growing! The main conference will be at the Fletcher
-						Hall
-						-- an auditorium with 1,048 seats hosting a diverse lineup of live events and film. Fletcher
-						Hall has been restored to its 1926 décor, and is the only downtown building designed in the
-						Beaux Arts style.</p>
-					<div class="google-map">
-						<iframe
-							src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCNveGQ9bfpKFwWzQLLftrR9hNiHwdqQG8&q=place_id:ChIJvavvXHLkrIkRQwjH_Cqnc-8"
-							allowfullscreen frameborder="0"></iframe>
-					</div>
-				</div>
-				<div class="content-section__separator"><svg>
-						<title>==========</title>
-						<use xlink:href="/img/decorations.svg#icon-divider"></use>
-					</svg></div>
-			</section>
-			<section class="content-section">
-				<div id="principles"></div>
-				<div class="content-section__content principles nuxt-content">
-					<h2 id="principles"><a aria-hidden="true" href="#principles" tabindex="-1"><span
-								class="icon icon-link"></span></a>Principles</h2>
-					<p>We don't think this should be too complicated. Conduct of all
-						who
-						participate in our community should be based on open dialog, a willingness to learn, and
-						helping
-						each other out. For Security BSidesRDU, our rules of conduct, principles, and values are
-						listed
-						here.</p>
-					<h3 class="data"><data>1</data>
-						Conduct</h3>
-					<p>We believe that there are simple rules for governance at any
-						meeting of people striving to be a community:</p>
-					<ol>
-						<li>Don't be an asshole.</li>
-						<li>Be willing to learn.</li>
-						<li>Be willing to share.</li>
-						<li>Be willing to help.</li>
-						<li>Be willing to listen.</li>
-						<li>Accept criticism.</li>
-						<li>Be kind.</li>
-					</ol>
-					<p>BSidesRDU is not an elementary school. It’s not a land full
-						of
-						rainbows and unicorns. Neither is it hell on earth. If you believe someone is misbehaving,
-						acting inappropriately, or acting illegally, start by talking to that person. Confirm your
-						perspective. If you are unable, or unwilling, to do that, that’s OK -- find a BSidesRDU
-						Staff
-						member and talk to them.</p>
-					<h3 class="data"><data>2</data>
-						Principles</h3>
-					<p>Security BSides operates under three simple principles:</p>
-					<ul>
-						<li>Expand the conversation.</li>
-						<li>Enable people to join the discussion.</li>
-						<li>Get people involved.</li>
-					</ul>
-					<p>BSidesRDU supports those principles as part of our regional
-						BSides operation. What that means is that BSidesRDU is your conference. It is up to everyone
-						involved to make it happen, to engage in the debates, to speak up and give voice to the
-						issues.
-						Feedback to the organizers is always welcome.</p>
-					<h3 class="data"><data>3</data>
-						Values</h3>
-					<p>Each BSides is a community-driven framework for building
-						events
-						for, and by, information security professionals. The goal is to expand the spectrum of
-						conversation beyond the traditional confines of space and time. BSides creates opportunities
-						for
-						individuals to both present and participate in an intimate atmosphere that encourages
-						collaboration. It is an intense event with discussions, demos, and interaction from
-						participants. It is where conversations for the next big thing are happening.</p>
-					<h4 id="we-value"><a aria-hidden="true" href="#we-value" tabindex="-1"><span
-								class="icon icon-link"></span></a>We value</h4>
-					<ul>
-						<li>We lower the barriers for people to participate.</li>
-						<li>We involve people in organizing the events, to help them
-							participate, involve a diversity of input, and teach a new generation of organizers.
-						</li>
-						<li>We build and use tools that enable greater
-							participation,
-							share ideas, and enable others to share the magic we collectively create. We share our
-							work
-							openly.</li>
-						<li>We help grow the community, because a stronger group
-							helps
-							everyone involved.</li>
-					</ul>
-					<h4 id="we-participate"><a aria-hidden="true" href="#we-participate" tabindex="-1"><span
-								class="icon icon-link"></span></a>We participate
-					</h4>
-					<ul>
-						<li>There are no bystanders.</li>
-						<li>We all participate in different ways, including:
-							audience,
-							speakers, organizers, sponsors, volunteers.</li>
-						<li>We encourage everyone to share their skills, expertise,
-							and
-							talent.</li>
-					</ul>
-					<h4 id="we-steward"><a aria-hidden="true" href="#we-steward" tabindex="-1"><span
-								class="icon icon-link"></span></a>We steward</h4>
-					<ul>
-						<li>We make decisions that strengthen the brand for
-							everyone,
-							not just ourselves.</li>
-						<li>We remember that we are not owners of the brand, or the
-							event, but simply caretakers that carry the torch for a period of time, until we - pass
-							it
-							to others.</li>
-						<li>We treat others with grace and respect at all times.
-						</li>
-					</ul>
-					<p>This work is licensed under a Creative Commons
-						Attribution-NonCommercial 3.0 Unported License.</p>
-				</div>
-			</section>
-		</div>
-	</main>
-	<footer class="footer">
-		<div class="footer__inner">
-			<p>@ Copyright BSides RDU - All rights reserved</p> <a href="https://twitter.com/BSidesRDU"><svg width="32"
-					height="32">
-					<title>BSides RDU on Twitter</title>
-					<use href="/img/icons.svg#iconTwitter" width="32" height="32"></use>
-				</svg></a> <a href="https://www.facebook.com/BSidesRDU/"><svg width="32" height="32">
-					<title>BSides RDU on Facebook</title>
-					<use href="/img/icons.svg#iconFacebook" width="32" height="32"></use>
-				</svg></a> <a href="https://www.linkedin.com/company/bsides-rdu/"><svg width="32" height="32">
-					<title>BSides RDU on LinkedIn</title>
-					<use href="/img/icons.svg#iconLinkedIn" width="32" height="32"></use>
-				</svg></a> <a
-				href="https://join.slack.com/t/bsidesrdu/shared_invite/zt-vzzyjdau-susGppH5dIl8hKWZZuiBqg"><svg
-					width="32" height="32">
-					<title>Join the conversation with BSides RDU on Slack</title>
-					<use href="/img/icons.svg#iconSlack" width="32" height="32"></use>
-				</svg></a>
-		</div>
-	</footer>
+  <header class="header">
+    <div class="header__inner"><a href="/"><svg>
+          <title>BSides RDU</title>
+          <use xlink:href="/img/icons.svg#iconBsidesLogo"></use>
+        </svg></a>
+      <div class="hamburger-menu header__box">
+        <div class="hamburger"><span></span> <span></span> <span></span></div>
+      </div>
+      <nav class="main-menu main-menu__closed">
+        <ul>
+          <li><a href="#schedule" class="menu-link">Schedule</a></li>
+          <li><a href="#speakers" class="menu-link">Speakers</a></li>
+          <li><a href="#events-workshops" class="menu-link">Events & Workshops</a></li>
+          <li><a href="#updates" class="menu-link">Updates</a></li>
+          <li><a href="#sponsors" class="menu-link">Sponsors</a></li>
+          <li><a href="#food" class="menu-link">Food</a></li>
+          <li><a href="#parking" class="menu-link">Parking</a></li>
+          <li><a href="#about" class="menu-link">About</a></li>
+          <li><a href="#venue" class="menu-link">Venue</a></li>
+          <li><a href="#principles" class="menu-link">Principles</a></li>
+          <li class="cta"><a href="https://events.eventzilla.net/e/bsidesrdu-2022-hacktoberfest-2138578662"
+              target="_blank">Register Now
+              <svg>
+                <use xlink:href="/img/icons.svg#iconNewWindow"></use>
+              </svg></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div>
+      <section class="content-section">
+        <div id="hero"></div>
+        <div class="content-section__content hero">
+          <h1>BSides
+            RDU <span>2022</span>
+            Hacktoberfest
+          </h1>
+          <h2><span class="hero__date">Saturday,
+              October
+              15, 2022</span></h2>
+          <h2>💥 <em>Tickets are available!</em>
+            👀</h2>
+          <a href="https://events.eventzilla.net/e/bsidesrdu-2022-hacktoberfest-2138578662" target="_blank" class="cta">
+            Register Now
+            <svg width="20" height="20">
+              <title>New Window</title>
+              <use href="/img/icons.svg#iconNewWindow" width="20" height="20"></use>
+            </svg></a>
+          <div class="countdown-timer">
+            <div>
+              <div class="countdown-timer__ticking-time-bomb">
+                <span class="countdown-timer__ticking-time-bomb--time"></span>
+                <span class="countdown-timer__ticking-time-bomb--icon"></span>
+              </div>
+              <div class="countdown-timer__until"></div>
+              <div class="countdown-timer__bsides"></div>
+            </div>
+          </div>
+          <img src="/img/bsides-2022-logo.png" alt="BSides RDU 2022 undefined Logo" title="BSides RDU 2022 undefined">
+        </div>
+        <div class="content-section__separator"><svg>
+            <title>==========</title>
+            <use xlink:href="/img/decorations.svg#icon-divider"></use>
+          </svg></div>
+      </section>
+      <section class="content-section content-section__wide">
+        <div id="schedule"></div>
+        <article class="content-section__content schedule">
+          <h2>Schedule</h2>
+          <script type="application/javascript" src="https://sessionize.com/api/v2/ksnyl58x/view/GridSmart"></script>
+        </article>
+        <div class="content-section__separator"><svg>
+            <title>==========</title>
+            <use xlink:href="/img/decorations.svg#icon-divider"></use>
+          </svg></div>
+      </section>
+      <section class="content-section">
+        <div id="speakers"></div>
+        <article class="content-section__content speakers">
+          <h2>Speakers</h2> <iframe src="/sessionize/speaker-wall.html" id="speakers"></iframe>
+        </article>
+        <div class="content-section__separator"><svg>
+            <title>==========</title>
+            <use xlink:href="/img/decorations.svg#icon-divider"></use>
+          </svg></div>
+      </section>
+      <section class="content-section">
+        <div id="events-workshops"></div>
+        <article class="content-section__content events-workshops">
+          <h2>Events & Workshops</h2>
+          <div>
+            <div class="events-spacetime">
+              <p>
+                Events take place starting at 9:40 AM on the 1st, 2nd and 3rd floors
+              </p>
+            </div>
+            <div class="events-single" style="--dark:#003300;--med:#006600;--light:#00cc00;--bright:#f6f6f6"><a
+                href="/oak-city-locksport">
+                <div class="events-single__img"><img src="/img/events/oak-city-locksport-list.png"
+                    alt="Oak City Locksport Logo" class="events-single__link"></div>
+                <div>
+                  <div class="events-single__header">
+                    <h4><span class="events-single__link">Lockpick Village</span></h4>
+                    <p><span class="events-single__floor"> Floor</span>
+                    </p>
+                  </div>
+                  <p>
+                    Join Oak City Locksport to have fun and learn about the relative security of
+                    the
+                    locks we use in everyday life.
+                  </p>
+                  <p><span class="events-single__link">Learn more »</span></p>
+                </div>
+              </a></div>
+            <div class="events-single" style="--dark:#3e334d;--med:#7c42cd;--light:#c94dce;--bright:#f6f6f6"><a
+                href="/eversec-ctf">
+                <div class="events-single__img"><img src="/img/events/eversec-ctf-list.png" alt="Eversec CTF Logo"
+                    class="events-single__link"></div>
+                <div>
+                  <div class="events-single__header">
+                    <h4><span class="events-single__link">Eversec CTF</span></h4>
+                    <p><span class="events-single__floor"> Floor</span> <span class="events-single__virtual">and
+                        Virtual</span></p>
+                  </div>
+                  <p>
+                    Scenario based CTFs about a fictitious company that continually gets hacked
+                    and
+                    needs some friendly hacker help.
+                  </p>
+                  <p><span class="events-single__link">Learn more »</span></p>
+                </div>
+              </a></div>
+            <div class="events-single" style="--dark:#101051;--med:#aa5a14;--light:#f87808;--bright:#f6f6f6"><a
+                href="/software-spelunking-101">
+                <div class="events-single__img"><img src="/img/events/software-spelunking-101-list.png"
+                    alt="Software Spelunking 101 Logo" class="events-single__link"></div>
+                <div>
+                  <div class="events-single__header">
+                    <h4><span class="events-single__link">Software Spelunking 101</span></h4>
+                    <p><span class="events-single__floor"> Floor</span>
+                    </p>
+                  </div>
+                  <p>
+                    This workshop will focus less on specific tools, and more on “What questions
+                    do
+                    I have, what tool(s) can help answer them, and how should I go about it?”
+                  </p>
+                  <p><span class="events-single__link">Learn more »</span></p>
+                </div>
+              </a></div>
+          </div>
+        </article>
+        <div class="content-section__separator"><svg>
+            <title>==========</title>
+            <use xlink:href="/img/decorations.svg#icon-divider"></use>
+          </svg></div>
+      </section>
+      <section class="content-section">
+        <div id="updates"></div>
+        <article class="content-section__content updates">
+          <h2>Updates</h2> <a data-lang="en" data-height="726" data-tweet-limit="5" data-dnt="true"
+            href="https://twitter.com/BSidesRDU?ref_src=twsrc%5Etfw" class="twitter-timeline">Tweets by
+            BSidesRDU</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </article>
+        <div class="content-section__separator"><svg>
+            <title>==========</title>
+            <use xlink:href="/img/decorations.svg#icon-divider"></use>
+          </svg></div>
+      </section>
+      <section class="content-section">
+        <div id="sponsors"></div>
+        <div class="content-section__content sponsors">
+          <h2>Sponsors</h2>
+          <p>Sign up to sponsor BSides RDU 2022 at the link below:</p>
+          <a href="https://events.eventzilla.net/e/bsidesrdu-2022-hacktoberfest-sponsorships-2138576095" target="_blank"
+            class="sponsorships">
+            Sponsorships!
+            <svg width="20" height="20">
+              <title>New Window</title>
+              <use href="/img/icons.svg#iconNewWindow" width="20" height="20"></use>
+            </svg></a>
+        </div>
+        <div class="content-section__separator"><svg>
+            <title>==========</title>
+            <use xlink:href="/img/decorations.svg#icon-divider"></use>
+          </svg></div>
+      </section>
+      <section class="content-section">
+        <div id="food"></div>
+        <div class="content-section__content sponsors">
+          <h2>Food</h2>
+          <div>
+            <h3 class="coffee">Coffee
+              <span class="little-chocolate-donuts"
+                title="Little Chocolate Donuts have been on my training table since i was a kid">(<a
+                  href="https://www.youtube.com/watch?v=CxCUHjx7U7Y">the breakfast of champions</a>)</span>
+            </h3>
+            <p><a href="https://www.wakethetruckup.com/menu">Wake the Truck Up</a> will be outside the theatre in the
+              morning.</p>
+            <p class="food__provider"><a href="https://www.wakethetruckup.com/menu" target="_blank"><img
+                  src="/img/food/wake-the-truck-up.png" alt="Wake the Truck Up"><br />Wake the Truck Up Menu</a></p>
+          </div>
+          <div>
+            <h3>Lunch</h3>
+            <p>The Lunch Truck Rodeo will be outside the theatre from 11:00 AM to 2:00 PM</p>
+            <p class="food__provider">
+              <a href="https://www.arepaculturenc.com/foodtruckmenu" target="_blank"><img
+                  src="/img/food/arepa-culture-nc.png" alt="Arepa Culture, NC"><br />Arepa Culture, NC Menu</a>
+            </p>
+            <p class="food__provider">
+              <a href="https://drive.google.com/file/d/1Ii0PP3CHsqbXFk-9KH5qZLWEBv2HHKZz/view" target="_blank"><img
+                  src="/img/food/mr-cheesesteak.png" alt="Mr Cheesesteak"><br />Mr. Cheesesteak Menu</a> | <a
+                href="https://mrcheesesteak.com" target="_blank">Website</a>
+            </p>
+            <p class="food__provider">
+              <a href="https://www.willandpops.com/menu" target="_blank"><img src="/img/food/will-n-pops.png"
+                  alt="Will & Pop's"><br />Will &amp; Pop's Menu</a>
+            </p>
+          </div>
+        </div>
+        <div class="content-section__separator"><svg>
+            <title>==========</title>
+            <use xlink:href="/img/decorations.svg#icon-divider"></use>
+          </svg></div>
+      </section>
+      <section class="content-section">
+        <div id="parking"></div>
+        <div class="content-section__content sponsors">
+          <h2>Parking</h2>
+          <h3>Validated Parking Available</h3>
+          <p>We will validate parking <em>only</em> at the <u>Morgan-Rigsbee Garage</u></p>
+          <p><b>105 W Morgan St, Durham, NC 27701</b></p>
+          <p>We <em>cannot</em> validate parking for the garage across from Carolina Theatre</p>
+        </div>
+        <div class="content-section__separator"><svg>
+            <title>==========</title>
+            <use xlink:href="/img/decorations.svg#icon-divider"></use>
+          </svg></div>
+      </section>
+      <section class="content-section">
+        <div id="about"></div>
+        <div class="content-section__content about">
+          <h2>About</h2>
+          <p><strong>Security
+              BSides</strong>
+            is a community-driven framework for building events for and by cyber security community
+            members.
+            The goal is to expand the spectrum of conversation beyond the traditional confines of space
+            and
+            time. It creates opportunities for individuals to both present and participate in an
+            intimate
+            atmosphere that encourages collaboration. It is an intense event with discussions, demos,
+            and
+            interaction from participants. It is where conversations for the next-big-thing are
+            happening.
+          </p>
+          <p>Security is top of mind across the entire sphere of IT and
+            the
+            world beyond. Therefore, more people and organizations are interested in the next new thing
+            in
+            security. BSides is the place where these people come to collaborate, learn and share.</p>
+          <p>With many tech-companies, colleges and universities in
+            Raleigh,
+            Durham, Chapel Hill and surrounding areas, it is also an international center of innovation
+            in
+            the security industry.</p>
+          <p>Security B-Sides Raleigh-Durham (B-Sides RDU) is proud to
+            have
+            had great speaker lineups at our events including keynotes by Dan Kaminsky, Dave Kennedy,
+            Paul
+            Vixie, BenTen, Jay Beale, G.Mark Hardy, Cliff Stoll, Shahid Buttar, Chris Wysopal and Bruce
+            Potter.</p>
+        </div>
+        <div class="content-section__separator"><svg>
+            <title>==========</title>
+            <use xlink:href="/img/decorations.svg#icon-divider"></use>
+          </svg></div>
+      </section>
+      <section class="content-section">
+        <div id="venue"></div>
+        <div class="content-section__content venue">
+          <h2>The Venue</h2>
+          <h3>The Carolina
+            Theatre
+            🎭</h3>
+          <p><a href="http://www.carolinatheatre.org/about" rel="nofollow noopener noreferrer" target="_blank">The
+              Carolina Theatre</a> is a performing arts and cinema complex in downtown Durham, North
+            Carolina. It is an AMAZING venue in the Raleigh Durham area!</p>
+          <p>We are growing! The main conference will be at the Fletcher
+            Hall
+            -- an auditorium with 1,048 seats hosting a diverse lineup of live events and film. Fletcher
+            Hall has been restored to its 1926 décor, and is the only downtown building designed in the
+            Beaux Arts style.</p>
+          <div class="google-map">
+            <iframe
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCNveGQ9bfpKFwWzQLLftrR9hNiHwdqQG8&q=place_id:ChIJvavvXHLkrIkRQwjH_Cqnc-8"
+              allowfullscreen frameborder="0"></iframe>
+          </div>
+        </div>
+        <div class="content-section__separator"><svg>
+            <title>==========</title>
+            <use xlink:href="/img/decorations.svg#icon-divider"></use>
+          </svg></div>
+      </section>
+      <section class="content-section">
+        <div id="principles"></div>
+        <div class="content-section__content principles">
+          <h2>Principles</h2>
+          <p>We don't think this should be too complicated. Conduct of all
+            who
+            participate in our community should be based on open dialog, a willingness to learn, and
+            helping
+            each other out. For Security BSidesRDU, our rules of conduct, principles, and values are
+            listed
+            here.</p>
+          <h3 class="data"><data>1</data>
+            Conduct</h3>
+          <p>We believe that there are simple rules for governance at any
+            meeting of people striving to be a community:</p>
+          <ol>
+            <li>Don't be an asshole.</li>
+            <li>Be willing to learn.</li>
+            <li>Be willing to share.</li>
+            <li>Be willing to help.</li>
+            <li>Be willing to listen.</li>
+            <li>Accept criticism.</li>
+            <li>Be kind.</li>
+          </ol>
+          <p>BSidesRDU is not an elementary school. It’s not a land full
+            of
+            rainbows and unicorns. Neither is it hell on earth. If you believe someone is misbehaving,
+            acting inappropriately, or acting illegally, start by talking to that person. Confirm your
+            perspective. If you are unable, or unwilling, to do that, that’s OK -- find a BSidesRDU
+            Staff
+            member and talk to them.</p>
+          <h3 class="data"><data>2</data>
+            Principles</h3>
+          <p>Security BSides operates under three simple principles:</p>
+          <ul>
+            <li>Expand the conversation.</li>
+            <li>Enable people to join the discussion.</li>
+            <li>Get people involved.</li>
+          </ul>
+          <p>BSidesRDU supports those principles as part of our regional
+            BSides operation. What that means is that BSidesRDU is your conference. It is up to everyone
+            involved to make it happen, to engage in the debates, to speak up and give voice to the
+            issues.
+            Feedback to the organizers is always welcome.</p>
+          <h3 class="data"><data>3</data>
+            Values</h3>
+          <p>Each BSides is a community-driven framework for building
+            events
+            for, and by, information security professionals. The goal is to expand the spectrum of
+            conversation beyond the traditional confines of space and time. BSides creates opportunities
+            for
+            individuals to both present and participate in an intimate atmosphere that encourages
+            collaboration. It is an intense event with discussions, demos, and interaction from
+            participants. It is where conversations for the next big thing are happening.</p>
+          <h4>We value</h4>
+          <ul>
+            <li>We lower the barriers for people to participate.</li>
+            <li>We involve people in organizing the events, to help them
+              participate, involve a diversity of input, and teach a new generation of organizers.
+            </li>
+            <li>We build and use tools that enable greater
+              participation,
+              share ideas, and enable others to share the magic we collectively create. We share our
+              work
+              openly.</li>
+            <li>We help grow the community, because a stronger group
+              helps
+              everyone involved.</li>
+          </ul>
+          <h4>We participate
+          </h4>
+          <ul>
+            <li>There are no bystanders.</li>
+            <li>We all participate in different ways, including:
+              audience,
+              speakers, organizers, sponsors, volunteers.</li>
+            <li>We encourage everyone to share their skills, expertise,
+              and
+              talent.</li>
+          </ul>
+          <h4>We steward</h4>
+          <ul>
+            <li>We make decisions that strengthen the brand for
+              everyone,
+              not just ourselves.</li>
+            <li>We remember that we are not owners of the brand, or the
+              event, but simply caretakers that carry the torch for a period of time, until we - pass
+              it
+              to others.</li>
+            <li>We treat others with grace and respect at all times.
+            </li>
+          </ul>
+          <p>This work is licensed under a Creative Commons
+            Attribution-NonCommercial 3.0 Unported License.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>@ Copyright BSides RDU - All rights reserved</p> <a href="https://twitter.com/BSidesRDU"><svg width="32"
+          height="32">
+          <title>BSides RDU on Twitter</title>
+          <use href="/img/icons.svg#iconTwitter" width="32" height="32"></use>
+        </svg></a> <a href="https://www.facebook.com/BSidesRDU/"><svg width="32" height="32">
+          <title>BSides RDU on Facebook</title>
+          <use href="/img/icons.svg#iconFacebook" width="32" height="32"></use>
+        </svg></a> <a href="https://www.linkedin.com/company/bsides-rdu/"><svg width="32" height="32">
+          <title>BSides RDU on LinkedIn</title>
+          <use href="/img/icons.svg#iconLinkedIn" width="32" height="32"></use>
+        </svg></a> <a href="https://join.slack.com/t/bsidesrdu/shared_invite/zt-vzzyjdau-susGppH5dIl8hKWZZuiBqg"><svg
+          width="32" height="32">
+          <title>Join the conversation with BSides RDU on Slack</title>
+          <use href="/img/icons.svg#iconSlack" width="32" height="32"></use>
+        </svg></a>
+    </div>
+  </footer>
 
 </body>
 
