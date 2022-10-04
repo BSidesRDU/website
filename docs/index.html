@@ -54,6 +54,7 @@
 			<nav class="main-menu main-menu__closed">
 				<ul>
 					<li><a href="#schedule" class="menu-link">Schedule</a></li>
+					<li><a href="#speakers" class="menu-link">Speakers</a></li>
 					<li><a href="#events-workshops" class="menu-link">Events & Workshops</a></li>
 					<li><a href="#updates" class="menu-link">Updates</a></li>
 					<li><a href="#sponsors" class="menu-link">Sponsors</a></li>
@@ -114,13 +115,21 @@
 						<use xlink:href="/img/decorations.svg#icon-divider"></use>
 					</svg></div>
 			</section>
-			<!---->
-			<section class="content-section">
+			<section class="content-section content-section__wide">
 				<div id="schedule"></div>
 				<article class="content-section__content schedule">
 					<h2>Schedule</h2>
 					<script type="application/javascript"
 						src="https://sessionize.com/api/v2/ksnyl58x/view/GridSmart"></script>
+				</article>
+				<div class="content-section__separator"><svg>
+						<title>==========</title>
+						<use xlink:href="/img/decorations.svg#icon-divider"></use>
+					</svg></div>
+			</section>
+			<section class="content-section">
+				<div id="speakers"></div>
+				<article class="content-section__content speakers">
 					<h2>Speakers</h2> <iframe src="/sessionize/speaker-wall.html" id="speakers"></iframe>
 				</article>
 				<div class="content-section__separator"><svg>
@@ -147,7 +156,6 @@
 									<div class="events-single__header">
 										<h4><span class="events-single__link">Lockpick Village</span></h4>
 										<p><span class="events-single__floor"> Floor</span>
-											<!---->
 										</p>
 									</div>
 									<p>
@@ -186,7 +194,6 @@
 									<div class="events-single__header">
 										<h4><span class="events-single__link">Software Spelunking 101</span></h4>
 										<p><span class="events-single__floor"> Floor</span>
-											<!---->
 										</p>
 									</div>
 									<p>
@@ -217,7 +224,6 @@
 						<use xlink:href="/img/decorations.svg#icon-divider"></use>
 					</svg></div>
 			</section>
-			<!---->
 			<section class="content-section">
 				<div id="sponsors"></div>
 				<div class="content-section__content sponsors nuxt-content">
@@ -405,7 +411,6 @@
 					<p>This work is licensed under a Creative Commons
 						Attribution-NonCommercial 3.0 Unported License.</p>
 				</div>
-				<!---->
 			</section>
 		</div>
 	</main>
