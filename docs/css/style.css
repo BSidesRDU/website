@@ -644,12 +644,7 @@ iframe#speakers {
 .events-single {
   padding: 3rem;
   text-align: left;
-  background-image: linear-gradient(
-    180deg,
-    var(--dark) 0,
-    var(--dark) 40%,
-    var(--med)
-  );
+  background-image: linear-gradient(180deg, var(--dark) 0, var(--dark) 40%, var(--med));
   background-color: var(--dark);
 }
 
@@ -724,6 +719,11 @@ iframe#speakers {
     padding-right: 0;
     padding-bottom: 2rem;
   }
+}
+
+.sponsors__sponsor {
+  text-align: center;
+  margin-bottom: 8rem;
 }
 
 .sponsorships {
