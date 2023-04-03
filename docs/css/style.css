@@ -657,6 +657,26 @@ iframe#speakers {
   font-weight: 700;
 }
 
+.sponsor-thanks p {
+  text-align: center;
+  line-height: 4.8rem;
+  font-size: 3rem;
+  font-family: serif;
+  font-style: italic;
+  column-count: 1;
+  column-gap: 0;
+}
+
+@media (min-width: 63.75em) {
+  .sponsor-thanks p {
+    column-count: 2;
+    column-gap: 3rem;
+    column-rule-width: 0.1rem;
+    column-rule-style: dashed;
+    column-rule-color: #999;
+  }
+}
+
 .events-spacetime {
   margin-bottom: 2.5rem;
 }
