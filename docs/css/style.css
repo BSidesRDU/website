@@ -171,14 +171,14 @@ span.little-chocolate-donuts a {
   background-image: url(/img/glitter-rule.png);
   background-size: cover;
   width: 90%;
-  height: 2rem;
-  margin: 4rem auto 5rem;
+  height: 7rem;
+  margin: 2rem auto 4rem;
 }
 
 @media only screen and (min-width: 63.75em) {
   .separator {
-    width: 70rem;
-    height: 3rem;
+    width: 72rem;
+    height: 7rem;
   }
 }
 
