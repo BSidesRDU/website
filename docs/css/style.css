@@ -148,12 +148,22 @@ span.little-chocolate-donuts a {
 .content-section .google-map {
   height: 35rem;
   position: relative;
+  margin-bottom: 4rem;
 }
 
 .content-section .google-map iframe {
   border: 0;
   height: 100%;
   width: 100%;
+}
+
+.content-section .floor-plan {
+  margin-bottom: 4rem;
+}
+
+.content-section .note {
+  font-size: 1.6rem;
+  color: #474747;
 }
 
 .content-section__separator {
@@ -616,7 +626,7 @@ iframe#speakers {
 
 @media only screen and (min-width: 35em) {
   iframe#speakers {
-    min-height: 2300px;
+    min-height: 2400px;
   }
 }
 
