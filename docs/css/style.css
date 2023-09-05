@@ -106,6 +106,10 @@ body {
   margin-left: 2rem;
 }
 
+.content-section span.nobr {
+  white-space: nowrap;
+}
+
 .content-section img {
   margin: 0 auto;
   max-width: 100%;
