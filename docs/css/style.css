@@ -165,6 +165,41 @@ span.little-chocolate-donuts a {
   margin-bottom: 4rem;
 }
 
+.content-section .after-party .table-esque p strong {
+  display: block;
+}
+
+@media only screen and (min-width: 63.75em) {
+  .content-section .after-party .table-esque {
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+  }
+
+  .content-section .after-party .table-esque p {
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  .content-section .after-party .table-esque p strong {
+    display: block;
+    width: 12rem;
+    background-color: #ddd;
+    border-right: 1px solid #999;
+    padding: 0.2rem 0.4rem;
+    font-size: 1.6rem;
+  }
+
+  .content-section .after-party .table-esque p span {
+    text-align: left;
+    padding: 0.2rem 0.6rem;
+  }
+}
+
 .content-section .note {
   font-size: 1.6rem;
   color: #474747;
@@ -368,7 +403,7 @@ pre[class*='language-'] {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 25;
+  z-index: 500;
   background-color: #151411;
   background-image: linear-gradient(#151411, #373737);
   border-bottom: 1px solid #151411;
@@ -805,6 +840,49 @@ iframe#speakers {
 .sponsors__sponsor {
   text-align: center;
   margin-bottom: 8rem;
+}
+
+.sponsors__sponsor img {
+  max-height: 10rem;
+}
+
+.sponsors__sponsor.safebase img {
+  max-height: 9rem;
+}
+
+.sponsors__sponsor.guidepoint-security img {
+  max-height: 11rem;
+}
+
+.sponsors__sponsor.lenovo img,
+.sponsors__sponsor.stern-security img,
+.sponsors__sponsor.trend-micro img {
+  max-height: 12rem;
+}
+
+@media (min-width: 48em) {
+  .sponsors__logos {
+    margin: 0 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 70px;
+    grid-row-gap: 20px;
+    align-items: center;
+  }
+
+  .sponsors__sponsor img {
+    max-height: 9rem;
+  }
+
+  .sponsors__sponsor.guidepoint-security img {
+    max-height: 11rem;
+  }
+
+  .sponsors__sponsor.safebase img,
+  .sponsors__sponsor.cisco img {
+    max-height: 10rem;
+  }
 }
 
 .sponsorships {
