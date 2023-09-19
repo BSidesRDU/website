@@ -660,12 +660,12 @@ iframe {
 }
 
 iframe#speakers {
-  min-height: 4500px;
+  min-height: 5000px;
 }
 
 @media only screen and (min-width: 35em) {
   iframe#speakers {
-    min-height: 2400px;
+    min-height: 2800px;
   }
 }
 
