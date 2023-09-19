@@ -883,6 +883,14 @@ iframe#speakers {
   .sponsors__sponsor.cisco img {
     max-height: 10rem;
   }
+
+  .sponsors__sponsor.crowdstrike {
+    grid-column: span 2;
+  }
+
+  .sponsors__sponsor.crowdstrike img {
+    max-width: 35rem;
+  }
 }
 
 .sponsorships {
