@@ -854,10 +854,12 @@ iframe#speakers {
   max-height: 11rem;
 }
 
-.sponsors__sponsor.lenovo img,
-.sponsors__sponsor.stern-security img,
-.sponsors__sponsor.trend-micro img {
+.sponsors__sponsor.lenovo img .sponsors__sponsor.trend-micro img {
   max-height: 12rem;
+}
+
+.sponsors__sponsor.stern-security img {
+  min-height: 15rem;
 }
 
 @media (min-width: 48em) {
@@ -884,11 +886,11 @@ iframe#speakers {
     max-height: 10rem;
   }
 
-  .sponsors__sponsor.crowdstrike {
+  .sponsors__logos.odd .sponsors__sponsor.last {
     grid-column: span 2;
   }
 
-  .sponsors__sponsor.crowdstrike img {
+  .sponsors__logos.odd .sponsors__sponsor.last img {
     max-width: 35rem;
   }
 }
