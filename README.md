@@ -13,7 +13,7 @@ With many tech-companies, colleges and universities in Raleigh, Durham, Chapel H
 
 ## Development
 
-Work in a branch.
+Work in a branch. In fact, fork the main repo on GitHub, and work in a branch on your fork.
 
 ```shell
 git checkout -b my-new-branch
