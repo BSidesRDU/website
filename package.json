@@ -1,0 +1,30 @@
+{
+  "name": "bsidesrdu-website",
+  "version": "2.0.0",
+  "description": "The website for BSides RDU",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel server:dev watch:tailwind",
+    "server:dev": "live-server docs --no-css-inject --ignore=./docs/css",
+    "watch:tailwind": "tailwindcss -i ./src/input.css -o ./docs/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/BSidesRDU/website.git"
+  },
+  "keywords": [
+    "BSides",
+    "RDU",
+    "Security"
+  ],
+  "author": "Phillip Harrington <phillip@phillipharrington.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BSidesRDU/website/issues"
+  },
+  "homepage": "https://github.com/BSidesRDU/website#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.4.1"
+  }
+}
