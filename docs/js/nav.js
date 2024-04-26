@@ -1,28 +1,39 @@
 const open = false;
-const hamburger = document.querySelector('.hamburger');
-const menu = document.querySelector('.main-menu');
+
+const hamburger = document.querySelector('#hamburger');
+const hamburgerClosed = document.querySelector('#hamburger-closed');
+const hamburgerOpen = document.querySelector('#hamburger-open');
+
+const mobileMenu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelectorAll('.menu-link');
 
-const toggleClass = (element, className, otherClassName) => {
-  element.classList.toggle(className);
-  if (otherClassName) {
-    element.classList.toggle(otherClassName);
-  }
+const toggleClass = (element, ...classNames) => {
+  classNames.forEach((className) => {
+    element.classList.toggle(className);
+  })
 };
 
 const toggleMenu = () => {
-  toggleClass(hamburger, 'open');
-  toggleClass(menu, 'main-menu__open', 'main-menu__closed');
+  toggleClass(hamburgerClosed, 'block', 'hidden');
+  toggleClass(hamburgerOpen, 'block', 'hidden');
+  toggleClass(mobileMenu, 'block', 'hidden')
 };
 
-const maybeToggleMenu = () => {
-  if (!hamburger.classList.contains('open')) {
+hamburger.addEventListener('click', toggleMenu);
+
+const maybeCloseMenu = () => {
+  if (!mobileMenu.classList.contains('block')) {
     return;
   }
   toggleMenu();
 };
 
-hamburger.addEventListener('click', toggleMenu);
 menuLinks.forEach((menuLink) => {
-  menuLink.addEventListener('click', maybeToggleMenu);
+  menuLink.addEventListener('click', maybeCloseMenu);
 });
+
+window.addEventListener('load', () => {
+  if (open) {
+    toggleMenu();
+  }
+})

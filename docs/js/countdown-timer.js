@@ -1,42 +1,41 @@
-const target = new Date('2022-10-15T08:00:00').getTime();
+const target = new Date('2024-09-13T08:00:00').getTime();
+
+let initialized = false;
 let diff = null;
-let initialized = 0;
 
-let days = 0;
-let hours = 0;
-let minutes = 0;
-let seconds = 0;
+let tsD = 0;
+let tsH = 0;
+let tsM = 0;
+let tsS = 0;
 
-const tickingTimeBomb = document.querySelector(
-  '.countdown-timer__ticking-time-bomb--time'
-);
-const icon = document.querySelector(
-  '.countdown-timer__ticking-time-bomb--icon'
-);
-const until = document.querySelector('.countdown-timer__until');
-const bsides = document.querySelector('.countdown-timer__bsides');
-const untilText = 'Until BSides RDU 2022!';
-const itsTimeText = 'Time for BSides RDU 2022!';
-const iconText = '⏰';
+let elD = document.getElementById('elD');
+let elH = document.getElementById('elH');
+let elM = document.getElementById('elM');
+let elS = document.getElementById('elS');
 
-const isDone = () => {
+const after = () => {
   return diff !== null && diff < 0;
 };
 
-const updateCountdownTimer = (days, hours, minutes, seconds) => {
-  if (isDone()) {
-    tickingTimeBomb.textContent = '';
-    until.textContent = '';
-    bsides.textContent = itsTimeText;
-    bsides.classList.toggle('countdown-timer__bsides--its-time');
+const updateCountdownTimer = (stD, stH, stM, stS) => {
+  if (after()) {
+    elD.textContent = '0';
+    elH.textContent = '00';
+    elM.textContent = '00';
+    elS.textContent = '00';
     return;
   }
 
-  tickingTimeBomb.textContent = `${days}:${hours}:${minutes}:${seconds}`;
+  elD.textContent = stD;
+  elH.textContent = stH;
+  elM.textContent = stM;
+  elS.textContent = stS;
 
   if (!initialized) {
-    icon.textContent = iconText;
-    until.textContent = untilText;
+    elD.innerHTML = "&nbsp;";
+    elH.innerHTML = "&nbsp;";
+    elM.innerHTML = "&nbsp;";
+    elS.innerHTML = "&nbsp;";
     initialized = true;
   }
 };
@@ -45,20 +44,20 @@ let interval = setInterval(() => {
   const now = new Date().getTime();
   diff = target - now;
 
-  days = Math.floor(diff / 86400000)
+  stD = Math.floor(diff / 86400000)
+    .toString()
+    .padStart(1, '0');
+  stH = Math.floor((diff % 86400000) / 3600000)
     .toString()
     .padStart(2, '0');
-  hours = Math.floor((diff % 86400000) / 3600000)
+  stM = Math.floor((diff % 3600000) / 60000)
     .toString()
     .padStart(2, '0');
-  minutes = Math.floor((diff % 3600000) / 60000)
-    .toString()
-    .padStart(2, '0');
-  seconds = Math.floor((diff % 60000) / 1000)
+  stS = Math.floor((diff % 60000) / 1000)
     .toString()
     .padStart(2, '0');
 
-  updateCountdownTimer(days, hours, minutes, seconds);
+  updateCountdownTimer(stD, stH, stM, stS);
 
   if (diff <= 0) {
     clearInterval(interval);

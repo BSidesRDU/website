@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+
+/* Custom styles go here, before utilities */
+::-moz-selection {
+  background-color: red;
+  color: #fff;
+}
+
+::selection {
+  background-color: red;
+  color: #fff;
+}
+
+
+
+@tailwind utilities;
