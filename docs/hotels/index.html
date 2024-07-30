@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="1;url=https://mckimmoncenter.ncsu.edu/area-hotels/" />
+    <title>Redirecting...</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      .centered {
+        text-align: center;
+      }
+      .dots {
+        display: inline-block;
+        width: 1em;
+        overflow: hidden;
+        vertical-align: bottom;
+      }
+      .dots::after {
+        content: '...';
+        animation: ellipsis 1s steps(3, end) infinite;
+      }
+      @keyframes ellipsis {
+        to {
+          width: 1em;
+        }
+        from {
+          width: 0;
+        }
+      }
+    </style>
+    <script>
+      setTimeout(function () {
+        window.location.href = 'https://mckimmoncenter.ncsu.edu/area-hotels/';
+      }, 1000);
+    </script>
+  </head>
+  <body>
+    <div class="centered">
+      <svg class="mt-px h-10 w-16 sm:-mt-1 sm:h-16 sm:w-28">
+        <title>BSides RDU</title>
+        <use xlink:href="/img/icons.svg#iconBsidesLogo"></use>
+      </svg>
+      <p>Redirecting you<span class="dots"></span> one moment</p>
+    </div>
+  </body>
+</html>
