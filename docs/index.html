@@ -46,7 +46,7 @@
   <!-- ANCHOR body -->
   <body class="flex min-h-screen flex-col bg-slate-50 font-sans text-slate-900">
     <!-- ANCHOR header -->
-    <header class="sticky top-0 flex-shrink border-b border-b-slate-300 shadow-xl">
+    <header class="sticky top-0 z-[100] flex-shrink border-b border-b-slate-300 shadow-xl">
       <!-- ANCHOR social bar -->
       <div id="social-bar" class="flex h-10 flex-row items-center bg-slate-900 fill-slate-50 text-sm text-slate-50">
         <div class="container mx-auto flex h-10 flex-row items-center gap-2 px-4">
@@ -128,9 +128,13 @@
                 >Hotels</a
               >
               <!-- <a href="#parking" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Parking</a>
-              <a href="#after-party" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">After Party</a>
-              <a href="#schedule" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Schedule</a>
-              <a href="#speakers" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Speakers</a> -->
+              <a href="#after-party" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">After Party</a> -->
+              <a href="#schedule" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline"
+                >Schedule</a
+              >
+              <a href="#speakers" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline"
+                >Speakers</a
+              >
               <a href="#principles" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline"
                 >Principles</a
               >
@@ -217,9 +221,17 @@
               >Venue</a
             >
             <!-- <a href="#parking" class="menu-link text-white block px-3 py-2 text-base font-medium hover:bg-slate-200 hover:text-slate-900">Parking</a>
-              <a href="#after-party" class="menu-link text-white block px-3 py-2 text-base font-medium hover:bg-slate-200 hover:text-slate-900">After Party</a>
-              <a href="#schedule" class="menu-link text-white block px-3 py-2 text-base font-medium hover:bg-slate-200 hover:text-slate-900">Schedule</a>
-              <a href="#speakers" class="menu-link text-white block px-3 py-2 text-base font-medium hover:bg-slate-200 hover:text-slate-900">Speakers</a> -->
+              <a href="#after-party" class="menu-link text-white block px-3 py-2 text-base font-medium hover:bg-slate-200 hover:text-slate-900">After Party</a> -->
+            <a
+              href="#schedule"
+              class="menu-link block px-3 py-2 text-base font-medium text-white hover:bg-slate-200 hover:text-slate-900"
+              >Schedule</a
+            >
+            <a
+              href="#speakers"
+              class="menu-link block px-3 py-2 text-base font-medium text-white hover:bg-slate-200 hover:text-slate-900"
+              >Speakers</a
+            >
             <a
               href="#principles"
               class="menu-link block px-3 py-2 text-base font-medium text-white hover:bg-slate-200 hover:text-slate-900"
@@ -436,7 +448,7 @@
         </div>
         <!-- ANCHOR hotels -->
         <div id="hotels" class="container mx-auto px-4 pb-16 sm:w-4/5">
-          <div class="mx-auto mb-4 flex flex-row items-center justify-between sm:w-2/3 md:w-1/2">
+          <div class="mx-auto mb-4 flex flex-row items-center justify-between gap-8 sm:w-2/3 md:w-1/2">
             <div>
               <img src="/img/hotels.jpg" alt="A photo of some area hotels. Click the link already." class="mb-3" />
             </div>
@@ -457,13 +469,16 @@
           <h2 class="text-4xl font-bold mb-4">After Party</h2>
         </div> -->
         <!-- ANCHOR schedule -->
-        <!-- <div id="schedule" class="container mx-auto px-4 pb-16 sm:w-4/5">
-          <h2 class="text-4xl font-bold mb-4">Schedule</h2>
-        </div> -->
+        <div id="schedule" class="container mx-auto px-4 pb-16 sm:w-4/5">
+          <h2 class="mb-4 text-4xl font-bold">Schedule</h2>
+          <script type="application/javascript" src="https://sessionize.com/api/v2/u2gsa61c/view/GridSmart"></script>
+        </div>
         <!-- ANCHOR speakers -->
-        <!-- <div id="speakers" class="container mx-auto px-4 pb-16 sm:w-4/5">
-          <h2 class="text-4xl font-bold mb-4">Speakers</h2>
-        </div> -->
+        <div id="speakers" class="container mx-auto px-4 pb-16 sm:w-4/5">
+          <h2 class="mb-4 text-4xl font-bold">Speakers</h2>
+          <iframe id="speaker-wall" title="Speakers" src="/sessionize/speaker-wall.html"></iframe>
+          <!-- <script type="application/javascript" src="https://sessionize.com/api/v2/u2gsa61c/view/SpeakerWall"></script> -->
+        </div>
         <!-- ANCHOR principles -->
         <div id="principles" class="container mx-auto px-4 pb-16 sm:w-4/5">
           <h2 class="mb-4 text-4xl font-bold">Principles</h2>
@@ -573,5 +588,6 @@
     </footer>
     <script src="/js/nav.js"></script>
     <script src="/js/countdown-timer.js"></script>
+    <script src="/js/sessionize.js"></script>
   </body>
 </html>
