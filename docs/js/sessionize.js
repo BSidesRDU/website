@@ -13,7 +13,7 @@ const startChecking = () => {
   count = 0;
   checking = false;
   ready = false;
-  window.setTimeout(canCheck, 1000);
+  window.setTimeout(canCheck, 1500);
 };
 
 const canCheck = () => {
