@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="sm:scoll-pt-40 scroll-pt-24 scroll-smooth">
+<html lang="en" class="scroll-pt-32 scroll-smooth sm:scroll-pt-36 md:scroll-pt-40">
   <!-- ANCHOR head -->
   <head>
     <meta charset="UTF-8" />
@@ -46,10 +46,21 @@
   <!-- ANCHOR body -->
   <body class="flex min-h-screen flex-col bg-slate-50 font-sans text-slate-900">
     <!-- ANCHOR header -->
-    <header class="sticky top-0 flex-shrink border-b border-b-slate-300 shadow-xl">
+    <header class="sticky top-0 z-[100] flex-shrink border-b border-b-slate-300 shadow-xl">
       <!-- ANCHOR social bar -->
       <div id="social-bar" class="flex h-10 flex-row items-center bg-slate-900 fill-slate-50 text-sm text-slate-50">
         <div class="container mx-auto flex h-10 flex-row items-center gap-2 px-4">
+          <div>
+            <a
+              href="https://events.eventzilla.net/e/bsidesrdu-2024-friday-the-13th-2138632454"
+              class="mr-2 flex flex-row items-center gap-1 rounded-xl bg-gradient-to-b from-green-600 to-green-300 px-3 py-1 font-semibold italic text-gray-950 hover:from-green-500 hover:to-green-200 hover:text-green-900"
+            >
+              Register Now
+              <svg class="h-3 w-3 fill-slate-800">
+                <use xlink:href="/img/icons.svg#iconNewWindow"></use>
+              </svg>
+            </a>
+          </div>
           <div class="grow">
             <span class="font-semibold">📣 Updates:</span>
             <a href="https://linktr.ee/BSidesRDU" class="text-slate-50 hover:text-red-600">LinkTree</a>
@@ -108,26 +119,25 @@
               <a href="#sponsors" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline"
                 >Sponsors</a
               >
-              <!-- <a href="#cfp" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">CFP</a>
-              <a href="#events-workshops" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Events & Workshops</a>
+              <a href="#cfp" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline">CFP</a>
+              <!-- <a href="#events-workshops" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Events & Workshops</a>
               <a href="#updates" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Updates</a>
               <a href="#food" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Food</a> -->
               <a href="#venue" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline">Venue</a>
+              <a href="#hotels" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline"
+                >Hotels</a
+              >
               <!-- <a href="#parking" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Parking</a>
-              <a href="#after-party" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">After Party</a>
-              <a href="#schedule" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Schedule</a>
-              <a href="#speakers" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Speakers</a> -->
+              <a href="#after-party" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">After Party</a> -->
+              <a href="#schedule" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline"
+                >Schedule</a
+              >
+              <a href="#speakers" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline"
+                >Speakers</a
+              >
               <a href="#principles" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline"
                 >Principles</a
               >
-              <!--
-                <a href="" class="flex flex-row items-center gap-1 bg-gradient-to-b from-green-600 to-green-300 hover:from-green-500 hover:to-green-200 py-1 px-3 italic rounded-xl">
-                  Register Now
-                  <svg class="w-3 h-3 fill-slate-800">
-                    <use xlink:href="/img/icons.svg#iconNewWindow"></use>
-                  </svg>
-                </a>
-               -->
             </div>
 
             <!-- ANCHOR mobile menu button -->
@@ -197,8 +207,12 @@
               class="menu-link block px-3 py-2 text-base font-medium text-white hover:bg-slate-200 hover:text-slate-900"
               >Sponsors</a
             >
-            <!-- <a href="#cfp" class="menu-link text-white block px-3 py-2 text-base font-medium hover:bg-slate-200 hover:text-slate-900">CFP</a>
-              <a href="#events-workshops" class="menu-link text-white block px-3 py-2 text-base font-medium hover:bg-slate-200 hover:text-slate-900">Events & Workshops</a>
+            <a
+              href="#cfp"
+              class="menu-link block px-3 py-2 text-base font-medium text-white hover:bg-slate-200 hover:text-slate-900"
+              >CFP</a
+            >
+            <!--   <a href="#events-workshops" class="menu-link text-white block px-3 py-2 text-base font-medium hover:bg-slate-200 hover:text-slate-900">Events & Workshops</a>
               <a href="#updates" class="menu-link text-white block px-3 py-2 text-base font-medium hover:bg-slate-200 hover:text-slate-900">Updates</a>
               <a href="#food" class="menu-link text-white block px-3 py-2 text-base font-medium hover:bg-slate-200 hover:text-slate-900">Food</a> -->
             <a
@@ -207,9 +221,17 @@
               >Venue</a
             >
             <!-- <a href="#parking" class="menu-link text-white block px-3 py-2 text-base font-medium hover:bg-slate-200 hover:text-slate-900">Parking</a>
-              <a href="#after-party" class="menu-link text-white block px-3 py-2 text-base font-medium hover:bg-slate-200 hover:text-slate-900">After Party</a>
-              <a href="#schedule" class="menu-link text-white block px-3 py-2 text-base font-medium hover:bg-slate-200 hover:text-slate-900">Schedule</a>
-              <a href="#speakers" class="menu-link text-white block px-3 py-2 text-base font-medium hover:bg-slate-200 hover:text-slate-900">Speakers</a> -->
+              <a href="#after-party" class="menu-link text-white block px-3 py-2 text-base font-medium hover:bg-slate-200 hover:text-slate-900">After Party</a> -->
+            <a
+              href="#schedule"
+              class="menu-link block px-3 py-2 text-base font-medium text-white hover:bg-slate-200 hover:text-slate-900"
+              >Schedule</a
+            >
+            <a
+              href="#speakers"
+              class="menu-link block px-3 py-2 text-base font-medium text-white hover:bg-slate-200 hover:text-slate-900"
+              >Speakers</a
+            >
             <a
               href="#principles"
               class="menu-link block px-3 py-2 text-base font-medium text-white hover:bg-slate-200 hover:text-slate-900"
@@ -235,17 +257,20 @@
           The McKimmon Conference and Training Center at NC State
         </p>
         <h1 class="mb-4 text-6xl font-black">BSides RDU</h1>
-        <p class="mb-4 text-xl sm:w-3/4 sm:text-center">
+        <p class="mb-8 text-xl sm:w-3/4 sm:text-center">
           A community-driven framework for building events for and by cyber security community members.
         </p>
-        <!-- <p>
-        <a href="" class=" flex-row flex items-center justify-center text-3xl font-semibold bg-gradient-to-b from-green-600 to-green-300 hover:from-green-500 hover:to-green-200 py-2 px-6 italic rounded-3xl gap-3">
-          Register Now
-          <svg class="w-7 h-7 fill-slate-800">
-            <use xlink:href="/img/icons.svg#iconNewWindow"></use>
-          </svg>
-        </a>
-        </p> -->
+        <p>
+          <a
+            href="https://events.eventzilla.net/e/bsidesrdu-2024-friday-the-13th-2138632454"
+            class="flex flex-row items-center justify-center gap-3 rounded-3xl bg-gradient-to-b from-green-600 to-green-300 px-6 py-2 text-3xl font-semibold italic hover:from-green-500 hover:to-green-200"
+          >
+            Register Now
+            <svg class="h-7 w-7 fill-slate-800">
+              <use xlink:href="/img/icons.svg#iconNewWindow"></use>
+            </svg>
+          </a>
+        </p>
       </div>
       <!-- ANCHOR countdown -->
       <div
@@ -312,10 +337,23 @@
         </div>
         <!-- ANCHOR sponsors -->
         <div id="sponsors" class="container mx-auto px-4 pb-16 sm:w-4/5 sm:w-4/5">
-          <h2 class="mb-4 text-4xl font-bold">Sponsors</h2>
-          <h3 class="mb-2 text-3xl font-bold">Call for 2024 Sponsors is <em>almost</em> open!</h3>
-          <p class="mb-12">Check with our updates for more info. The link will be posted here when it's ready.</p>
-          <h3 class="mb-6 font-serif text-2xl italic">Thanks to our past sponsors!</h3>
+          <div class="mx-auto mb-4 flex flex-row items-center justify-between sm:w-3/4 md:w-2/3">
+            <div>
+              <h2 class="mb-4 text-4xl font-bold">Sponsors</h2>
+              <h3 class="mb-2 text-3xl font-semibold">Call for 2024 Sponsors is <em>now open!</em></h3>
+              <p class="mb-12">
+                <a
+                  href="https://events.eventzilla.net/e/bsidesrdu-2024-friday-the-13th-sponsorships-2138632449"
+                  class="text-4xl font-bold italic text-blue-600 underline"
+                  >Sponsor BSides!</a
+                >
+              </p>
+            </div>
+            <div>
+              <img src="/img/sponsors.jpg" alt="Sponsors." class="mb-3" />
+            </div>
+          </div>
+          <h3 class="my-16 text-center font-serif text-3xl italic">Thanks to our super awesome past sponsors!</h3>
           <div class="mx-4 flex flex-row flex-wrap items-center justify-center gap-8">
             <a href="https://www.guidepointsecurity.com/"
               ><img class="w-28 sm:w-48" src="/img/sponsors/guidepoint-security.png" alt="Guidepoint Security"
@@ -368,9 +406,10 @@
           </div>
         </div>
         <!-- ANCHOR cfp -->
-        <!-- <div id="cfp" class="container mx-auto px-4 pb-16 sm:w-4/5">
-          <h2 class="text-4xl font-bold mb-4">Call For Papers</h2>
-        </div> -->
+        <div id="cfp" class="container mx-auto px-4 pb-16 sm:w-4/5">
+          <h2 class="mb-4 text-4xl font-bold">Call For Papers</h2>
+          <p>The call for papers is now closed. Look for our schedule coming up soon!</p>
+        </div>
         <!-- ANCHOR events-workshops -->
         <!-- <div id="events-workshops" class="container mx-auto px-4 pb-16 sm:w-4/5">
           <h2 class="text-4xl font-bold mb-4">Events &amp; Workshops</h2>
@@ -396,15 +435,29 @@
             ></iframe>
           </div>
           <h3 class="mb-4 text-2xl font-bold">Floor Plan</h3>
-          <div class="mb-4 flex flex-col items-center justify-center mx-auto sm:w-2/3 md:w-1/2">
-            <a class="inline" href="/img/venue-floor-plan.png" target="_blank"></a>
-              <img src="/img/venue-floor-plan.png" alt="Venue floor plan" class=" mb-3" />
+          <div class="mx-auto mb-4 flex flex-col items-center justify-center sm:w-2/3 md:w-1/2">
+            <a class="inline" href="/img/venue-floor-plan.png" target="_blank">
+              <img src="/img/venue-floor-plan.png" alt="Venue floor plan" class="mb-3" />
             </a>
-            <p class="text-slate-600 italic font-serif text-center text-sm">
+            <p class="text-center font-serif text-sm italic text-slate-600">
               <!-- for the non-cardinally challenged -->
               <strong>Note: </strong> Floor plan is oriented 90 ° counter-clockwise. That is, North is on the left side.
               <!-- don't ask me why -->
             </p>
+          </div>
+        </div>
+        <!-- ANCHOR hotels -->
+        <div id="hotels" class="container mx-auto px-4 pb-16 sm:w-4/5">
+          <div class="mx-auto mb-4 flex flex-row items-center justify-between gap-8 sm:w-2/3 md:w-1/2">
+            <div>
+              <img src="/img/hotels.jpg" alt="A photo of some area hotels. Click the link already." class="mb-3" />
+            </div>
+            <div>
+              <h2 class="mb-4 text-4xl font-bold">Hotels</h2>
+              <p class="mb-12">
+                <a href="/hotels" class="text-4xl font-bold italic text-blue-600 underline">Area Hotels!</a>
+              </p>
+            </div>
           </div>
         </div>
         <!-- ANCHOR parking -->
@@ -416,13 +469,16 @@
           <h2 class="text-4xl font-bold mb-4">After Party</h2>
         </div> -->
         <!-- ANCHOR schedule -->
-        <!-- <div id="schedule" class="container mx-auto px-4 pb-16 sm:w-4/5">
-          <h2 class="text-4xl font-bold mb-4">Schedule</h2>
-        </div> -->
+        <div id="schedule" class="container mx-auto px-4 pb-16 sm:w-4/5">
+          <h2 class="mb-4 text-4xl font-bold">Schedule</h2>
+          <script type="application/javascript" src="https://sessionize.com/api/v2/u2gsa61c/view/GridSmart"></script>
+        </div>
         <!-- ANCHOR speakers -->
-        <!-- <div id="speakers" class="container mx-auto px-4 pb-16 sm:w-4/5">
-          <h2 class="text-4xl font-bold mb-4">Speakers</h2>
-        </div> -->
+        <div id="speakers" class="container mx-auto px-4 pb-16 sm:w-4/5">
+          <h2 class="mb-4 text-4xl font-bold">Speakers</h2>
+          <iframe id="speaker-wall" title="Speakers" src="/sessionize/speaker-wall.html"></iframe>
+          <!-- <script type="application/javascript" src="https://sessionize.com/api/v2/u2gsa61c/view/SpeakerWall"></script> -->
+        </div>
         <!-- ANCHOR principles -->
         <div id="principles" class="container mx-auto px-4 pb-16 sm:w-4/5">
           <h2 class="mb-4 text-4xl font-bold">Principles</h2>
@@ -532,5 +588,6 @@
     </footer>
     <script src="/js/nav.js"></script>
     <script src="/js/countdown-timer.js"></script>
+    <script src="/js/sessionize.js"></script>
   </body>
 </html>

@@ -32,10 +32,10 @@ const updateCountdownTimer = (stD, stH, stM, stS) => {
   elS.textContent = stS;
 
   if (!initialized) {
-    elD.innerHTML = "&nbsp;";
-    elH.innerHTML = "&nbsp;";
-    elM.innerHTML = "&nbsp;";
-    elS.innerHTML = "&nbsp;";
+    elD.innerHTML = '&nbsp;';
+    elH.innerHTML = '&nbsp;';
+    elM.innerHTML = '&nbsp;';
+    elS.innerHTML = '&nbsp;';
     initialized = true;
   }
 };
@@ -64,6 +64,6 @@ let interval = setInterval(() => {
   }
 }, 1000);
 
-window.onunload = () => {
+window.addEventListener('unload', () => {
   clearInterval(interval);
-};
+});

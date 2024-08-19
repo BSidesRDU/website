@@ -12,6 +12,23 @@
   color: #fff;
 }
 
+iframe {
+  width: 100%;
+}
 
+/* iframe#speaker-wall {
+  min-height: 3400px;
+}
+@media only screen and (min-width: 35.9375em) {
+  iframe#speaker-wall {
+    min-height: 3200px;
+    border: 1px solid blue;
+  }
+}
+@media only screen and (min-width: 48em) {
+  iframe#speaker-wall {
+    min-height: 1800px;
+  }
+} */
 
 @tailwind utilities;
