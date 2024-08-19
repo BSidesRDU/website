@@ -18,14 +18,14 @@ const startChecking = () => {
 
 const canCheck = () => {
   if (count >= max || ready) {
-    console.log('Stop checking');
+    // console.log('Stop checking');
     return;
   }
 
   if (checking) {
-    console.count('Check in progress');
+    // console.count('Check in progress');
   } else {
-    console.count('OK to check iFrame');
+    // console.count('OK to check iFrame');
     checkIFrame();
   }
 
@@ -38,7 +38,7 @@ const checkIFrame = () => {
   iFrameDoc = iFrame.contentDocument || iFrame.contentWindow.document;
 
   if (iFrameDoc.readyState === 'complete' && iFrameDoc.getElementsByClassName(className).length) {
-    console.count('iFrame is ready');
+    // console.count('iFrame is ready');
     window.clearTimeout(timeout);
     ready = true;
     resizeIFrame();
@@ -49,17 +49,17 @@ const checkIFrame = () => {
 };
 
 const resizeIFrame = () => {
-  console.log('Resize iFrame');
+  //   console.log('Resize iFrame');
   const walls = iFrameDoc.getElementsByClassName(className);
-  console.log(walls);
+  //   console.log(walls);
   const wall = walls[0];
-  console.log(wall);
+  //   console.log(wall);
   const height = wall.scrollHeight;
-  console.log(height);
+  //   console.log(height);
   const padded = height + padding;
-  console.log(padded);
+  //   console.log(padded);
   const style = `height:${padded}px;`;
-  console.log(style);
+  //   console.log(style);
   iFrame.setAttribute('style', style);
   ['resize'].forEach((event) => {
     iFrameDoc.addEventListener(event, startChecking);
