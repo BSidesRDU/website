@@ -621,6 +621,10 @@ iframe {
   border-width: 0;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .absolute {
   position: absolute;
 }
@@ -668,8 +672,8 @@ iframe {
   margin-bottom: 3rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .mb-3 {
@@ -694,10 +698,6 @@ iframe {
 
 .mt-px {
   margin-top: 1px;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
 }
 
 .block {
@@ -768,6 +768,10 @@ iframe {
   width: 0.75rem;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .w-5 {
   width: 1.25rem;
 }
@@ -776,16 +780,12 @@ iframe {
   width: 1.5rem;
 }
 
-.w-7 {
-  width: 1.75rem;
-}
-
-.w-full {
-  width: 100%;
-}
-
 .w-64 {
   width: 16rem;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .w-72 {
@@ -794,6 +794,10 @@ iframe {
 
 .w-80 {
   width: 20rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .flex-shrink {
@@ -900,16 +904,16 @@ iframe {
   border-radius: 9999px;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
 }
 
 .border {
@@ -1074,8 +1078,8 @@ iframe {
   line-height: 2.5rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
+.text-5xl {
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -1099,9 +1103,9 @@ iframe {
   line-height: 1.75rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-black {
@@ -1126,6 +1130,21 @@ iframe {
 
 .italic {
   font-style: italic;
+}
+
+.text-\[\#00a\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 170 / var(--tw-text-opacity));
+}
+
+.text-\[\#a00\] {
+  --tw-text-opacity: 1;
+  color: rgb(170 0 0 / var(--tw-text-opacity));
+}
+
+.text-amber-300 {
+  --tw-text-opacity: 1;
+  color: rgb(252 211 77 / var(--tw-text-opacity));
 }
 
 .text-blue-600 {
@@ -1173,53 +1192,9 @@ iframe {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\#f00\] {
-  --tw-text-opacity: 1;
-  color: rgb(255 0 0 / var(--tw-text-opacity));
-}
-
-.text-amber-300 {
-  --tw-text-opacity: 1;
-  color: rgb(252 211 77 / var(--tw-text-opacity));
-}
-
 .text-zinc-300 {
   --tw-text-opacity: 1;
   color: rgb(212 212 216 / var(--tw-text-opacity));
-}
-
-.text-\[\#00c\] {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 204 / var(--tw-text-opacity));
-}
-
-.text-\[\#c00\] {
-  --tw-text-opacity: 1;
-  color: rgb(204 0 0 / var(--tw-text-opacity));
-}
-
-.text-\[\#b00\] {
-  --tw-text-opacity: 1;
-  color: rgb(187 0 0 / var(--tw-text-opacity));
-}
-
-.text-\[\#00b\] {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 187 / var(--tw-text-opacity));
-}
-
-.text-\[\#a00\] {
-  --tw-text-opacity: 1;
-  color: rgb(170 0 0 / var(--tw-text-opacity));
-}
-
-.text-\[\#00a\] {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 170 / var(--tw-text-opacity));
-}
-
-.underline {
-  text-decoration-line: underline;
 }
 
 .underline-offset-2 {
@@ -1316,6 +1291,10 @@ iframe {
 }
 
 @media (min-width: 640px) {
+  .sm\:visible {
+    visibility: visible;
+  }
+
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -1327,6 +1306,10 @@ iframe {
 
   .sm\:-mt-20 {
     margin-top: -5rem;
+  }
+
+  .sm\:inline {
+    display: inline;
   }
 
   .sm\:flex {
@@ -1347,6 +1330,10 @@ iframe {
 
   .sm\:h-40 {
     height: 10rem;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
   }
 
   .sm\:w-2\/3 {
@@ -1385,8 +1372,8 @@ iframe {
     scroll-padding-top: 9rem;
   }
 
-  .sm\:items-center {
-    align-items: center;
+  .sm\:flex-row {
+    flex-direction: row;
   }
 
   .sm\:gap-2 {
@@ -1406,13 +1393,24 @@ iframe {
     padding-left: 1rem;
   }
 
-  .sm\:text-center {
-    text-align: center;
-  }
-
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .sm\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1421,15 +1419,23 @@ iframe {
     width: 50%;
   }
 
-  .md\:w-2\/3 {
-    width: 66.666667%;
-  }
-
   .md\:scroll-pt-40 {
     scroll-padding-top: 10rem;
   }
 
   .md\:gap-3 {
     gap: 0.75rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
