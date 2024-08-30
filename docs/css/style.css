@@ -621,6 +621,10 @@ iframe {
   border-width: 0;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .absolute {
   position: absolute;
 }
@@ -762,6 +766,10 @@ iframe {
 
 .w-3 {
   width: 0.75rem;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .w-5 {
@@ -1075,11 +1083,6 @@ iframe {
   line-height: 1;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1098,6 +1101,11 @@ iframe {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-black {
@@ -1187,11 +1195,6 @@ iframe {
 .text-zinc-300 {
   --tw-text-opacity: 1;
   color: rgb(212 212 216 / var(--tw-text-opacity));
-}
-
-.text-blue-400 {
-  --tw-text-opacity: 1;
-  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
 .underline-offset-2 {
@@ -1288,6 +1291,10 @@ iframe {
 }
 
 @media (min-width: 640px) {
+  .sm\:visible {
+    visibility: visible;
+  }
+
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -1299,6 +1306,10 @@ iframe {
 
   .sm\:-mt-20 {
     margin-top: -5rem;
+  }
+
+  .sm\:inline {
+    display: inline;
   }
 
   .sm\:flex {
@@ -1319,6 +1330,10 @@ iframe {
 
   .sm\:h-40 {
     height: 10rem;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
   }
 
   .sm\:w-2\/3 {
@@ -1357,8 +1372,8 @@ iframe {
     scroll-padding-top: 9rem;
   }
 
-  .sm\:items-center {
-    align-items: center;
+  .sm\:flex-row {
+    flex-direction: row;
   }
 
   .sm\:gap-2 {
@@ -1378,13 +1393,24 @@ iframe {
     padding-left: 1rem;
   }
 
-  .sm\:text-center {
-    text-align: center;
-  }
-
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .sm\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1399,5 +1425,17 @@ iframe {
 
   .md\:gap-3 {
     gap: 0.75rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }

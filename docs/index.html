@@ -55,14 +55,15 @@
               href="https://events.eventzilla.net/e/bsidesrdu-2024-friday-the-13th-2138632454"
               class="mr-2 flex flex-row items-center gap-1 rounded-xl bg-gradient-to-b from-green-600 to-green-300 px-3 py-1 font-semibold italic text-gray-950 hover:from-green-500 hover:to-green-200 hover:text-green-900"
             >
-              Register Now
+              Register
+              <span class="hidden sm:inline">Now</span>
               <svg class="h-3 w-3 fill-slate-800">
                 <use xlink:href="/img/icons.svg#iconNewWindow"></use>
               </svg>
             </a>
           </div>
           <div class="grow">
-            <span class="font-semibold">📣 Updates:</span>
+            <span class="font-semibold">📣 <span class="hidden sm:inline">Updates:</span></span>
             <a href="https://linktr.ee/BSidesRDU" class="text-slate-50 hover:text-red-600">LinkTree</a>
           </div>
           <div>
@@ -122,28 +123,50 @@
 
           <div class="relative flex flex-row items-center justify-evenly">
             <!-- ANCHOR nav web -->
-            <div class="hidden flex-row items-center gap-3 font-semibold sm:flex">
-              <a href="#about" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline">About</a>
-              <a href="#sponsors" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline"
+            <div class="hidden flex-row items-center gap-2 font-semibold sm:flex">
+              <a
+                href="#about"
+                class="text-sm text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline md:text-base"
+                >About</a
+              >
+              <a
+                href="#sponsors"
+                class="text-sm text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline md:text-base"
                 >Sponsors</a
               >
-              <a href="#cfp" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline">CFP</a>
-              <!-- <a href="#events-workshops" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Events & Workshops</a>
-              <a href="#updates" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Updates</a>
-              <a href="#food" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Food</a> -->
-              <a href="#venue" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline">Venue</a>
-              <a href="#hotels" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline"
+              <a
+                href="#cfp"
+                class="text-sm text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline md:text-base"
+                >CFP</a
+              >
+              <!-- <a href="#events-workshops" class="text-sm md:text-base text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Events & Workshops</a>
+              <a href="#updates" class="text-sm md:text-base text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Updates</a>
+              <a href="#food" class="text-sm md:text-base text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Food</a> -->
+              <a
+                href="#venue"
+                class="text-sm text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline md:text-base"
+                >Venue</a
+              >
+              <a
+                href="#hotels"
+                class="text-sm text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline md:text-base"
                 >Hotels</a
               >
-              <!-- <a href="#parking" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Parking</a>
-              <a href="#after-party" class="text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">After Party</a> -->
-              <a href="#schedule" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline"
+              <!-- <a href="#parking" class="text-sm md:text-base text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">Parking</a>
+              <a href="#after-party" class="text-sm md:text-base text-slate-800 hover:text-slate-100 hover:underline underline-offset-2">After Party</a> -->
+              <a
+                href="#schedule"
+                class="text-sm text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline md:text-base"
                 >Schedule</a
               >
-              <a href="#speakers" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline"
+              <a
+                href="#speakers"
+                class="text-sm text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline md:text-base"
                 >Speakers</a
               >
-              <a href="#principles" class="text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline"
+              <a
+                href="#principles"
+                class="text-sm text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline md:text-base"
                 >Principles</a
               >
             </div>
@@ -258,20 +281,20 @@
       <!-- ANCHOR hero -->
       <div
         id="hero"
-        class="container flex flex-col items-start border-b border-b-slate-400 bg-gradient-to-b from-white to-stone-50 p-4 sm:mx-auto sm:items-center sm:pb-32"
+        class="container flex flex-col items-center border-b border-b-slate-400 bg-gradient-to-b from-white to-stone-50 p-4 sm:mx-auto sm:pb-32"
       >
-        <p class="mb-4 text-xl font-light italic sm:text-center">
+        <p class="mx-auto mb-4 w-3/4 text-center text-lg font-light italic sm:text-xl">
           Friday the 13th, September, 2024<br />
           The McKimmon Conference and Training Center at NC State
         </p>
-        <h1 class="mb-4 text-6xl font-black">BSides RDU</h1>
-        <p class="mb-8 text-xl sm:w-3/4 sm:text-center">
+        <h1 class="mb-6 text-center text-5xl font-black sm:text-6xl">BSides RDU</h1>
+        <p class="mb-8 text-center text-xl sm:w-3/4">
           A community-driven framework for building events for and by cyber security community members.
         </p>
         <p>
           <a
             href="https://events.eventzilla.net/e/bsidesrdu-2024-friday-the-13th-2138632454"
-            class="flex flex-row items-center justify-center gap-3 rounded-3xl bg-gradient-to-b from-green-600 to-green-300 px-6 py-2 text-3xl font-semibold italic hover:from-green-500 hover:to-green-200"
+            class="mb-6 flex flex-row items-center justify-center gap-3 rounded-3xl bg-gradient-to-b from-green-600 to-green-300 px-6 py-2 text-3xl font-semibold italic hover:from-green-500 hover:to-green-200"
           >
             Register Now
             <svg class="h-7 w-7 fill-slate-800">
@@ -403,17 +426,21 @@
           <!-- <h3>Bronze</h3>
           <div class="mx-4 mb-16 flex flex-row flex-wrap items-center justify-center gap-16"></div> -->
           <!-- ANCHOR Supporters -->
-          <h3 class="mb-8 text-center text-4xl text-[#a00] font-black drop-shadow-[1.5px_1.5px_1.2px_rgba(0,0,0,0.9)]">Supporters</h3>
+          <h3 class="mb-8 text-center text-4xl font-black text-[#a00] drop-shadow-[1.5px_1.5px_1.2px_rgba(0,0,0,0.9)]">
+            Supporters
+          </h3>
           <div class="mx-4 mb-16 flex flex-row flex-wrap items-center justify-center gap-16">
             <a href="https://alchemytechgroup.com/"
               ><img class="w-28 sm:w-48" src="/img/sponsors/alchemy-tech-group.png" alt="Alchemy Technology Group"
             /></a>
             <a href="https://raleigh.issa.org/"
-            ><img class="w-28 sm:w-48" src="/img/sponsors/issa-raleigh.png" alt="ISSA Raleigh Chapter"
+              ><img class="w-28 sm:w-48" src="/img/sponsors/issa-raleigh.png" alt="ISSA Raleigh Chapter"
             /></a>
           </div>
           <!-- ANCHOR Parters -->
-          <h3 class="mb-8 text-center text-4xl text-[#00a] font-black drop-shadow-[1.5px_1.5px_1.2px_rgba(0,0,0,0.9)]">Partners</h3>
+          <h3 class="mb-8 text-center text-4xl font-black text-[#00a] drop-shadow-[1.5px_1.5px_1.2px_rgba(0,0,0,0.9)]">
+            Partners
+          </h3>
           <div class="mx-4 mb-16 flex flex-row flex-wrap items-center justify-center gap-16">
             <a href="https://www.trendmicro.com/"
               ><img class="w-28 sm:w-48" src="/img/sponsors/trend-micro.png" alt=""
@@ -483,7 +510,10 @@
           <h2 class="mb-4 text-4xl font-bold">Call For Papers</h2>
           <!-- <p>The call for papers is open! <a href="#">Submit your talk now</a>!</p> -->
           <!-- <p>The call for papers is now closed. Look for our schedule coming up soon!</p> -->
-          <p>The call for papers is now closed. <a href="#schedule" class="text-blue-600 font-bold">View the speaker schedule below!</a></p>
+          <p>
+            The call for papers is now closed.
+            <a href="#schedule" class="font-bold text-blue-600">View the speaker schedule below!</a>
+          </p>
         </div>
         <!-- ANCHOR events-workshops -->
         <!-- <div id="events-workshops" class="container mx-auto px-4 pb-16 sm:w-4/5">
@@ -524,35 +554,34 @@
         <!-- ANCHOR hotels -->
         <div id="hotels" class="container mx-auto px-4 pb-16 sm:w-4/5">
           <h2 class="mb-12 text-4xl font-bold">Hotels</h2>
-          <div class="mx-auto mb-4 flex flex-row items-center justify-between gap-8 sm:w-4/5">
-              <div class="w-1/2">
-                <img src="/img/hotels/stateview-hotel.jpg" alt="StateView Hotel on NCSU Campus" class="mb-4 rounded-lg" />
-                <h3 class="text-lg">
-                  <a
-                    href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=NC%20State%20University%5ENQA%60rduas%60&app=resvlink&stop_mobi=yes"
-                    class="font-semibold text-blue-600"
-                    >StateView Hotel</a
-                  >
-                  on NCSU Campus
-                </h3>
-                <p class="text-base">2451 Alumni Drive<br />Raleigh, NC 27606</p>
-                <a><a href="tel:9197430055">919.743.0055</a></p>
-                <p class="italic">Corporate Code: NQA</p>
-              </div>
-              <div class="w-1/2">
-                <img src="/img/hotels/aloft-raleigh.jpg" alt="Aloft Raleigh" class="mb-4 rounded-lg" />
-                <h3 class="text-lg">
-                  <a
-                    href="https://www.marriott.com/hotels/travel/rdura-aloft-raleigh/"
-                    class="font-semibold text-blue-600"
-                    >Aloft Raleigh</a
-                  >
-                </h3>
-                <p class="text-base">2100 Hillsborough Street<br />Raleigh, NC 27607</p>
-                <p><a href="tel:9198289900">919.828.9900</a></p>
-                <p class="italic">Corporate Code: NQA</p>
-              </div>
-
+          <div class="mx-auto mb-4 flex flex-col items-start justify-between gap-8 sm:flex-row">
+            <div class="w-100 sm:w-1/2">
+              <img src="/img/hotels/stateview-hotel.jpg" alt="StateView Hotel on NCSU Campus" class="mb-4 rounded-lg" />
+              <h3 class="text-lg">
+                <a
+                  href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=NC%20State%20University%5ENQA%60rduas%60&app=resvlink&stop_mobi=yes"
+                  class="font-semibold text-blue-600"
+                  >StateView Hotel</a
+                >
+                on NCSU Campus
+              </h3>
+              <p class="text-base">2451 Alumni Drive<br />Raleigh, NC 27606</p>
+              <p><a href="tel:9197430055">919.743.0055</a></p>
+              <p class="italic">Corporate Code: NQA</p>
+            </div>
+            <div class="w-100 sm:w-1/2">
+              <img src="/img/hotels/aloft-raleigh.jpg" alt="Aloft Raleigh" class="mb-4 rounded-lg" />
+              <h3 class="text-lg">
+                <a
+                  href="https://www.marriott.com/hotels/travel/rdura-aloft-raleigh/"
+                  class="font-semibold text-blue-600"
+                  >Aloft Raleigh</a
+                >
+              </h3>
+              <p class="text-base">2100 Hillsborough Street<br />Raleigh, NC 27607</p>
+              <p><a href="tel:9198289900">919.828.9900</a></p>
+              <p class="italic">Corporate Code: NQA</p>
+            </div>
           </div>
         </div>
         <!-- ANCHOR parking -->
