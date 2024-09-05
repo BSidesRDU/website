@@ -1363,6 +1363,10 @@ iframe {
     flex-direction: row;
   }
 
+  .sm\:items-start {
+    align-items: flex-start;
+  }
+
   .sm\:gap-2 {
     gap: 0.5rem;
   }
