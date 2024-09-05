@@ -284,29 +284,40 @@
     <main class="flex-grow">
       <!-- ANCHOR hero -->
       <div
-        id="hero"
-        class="container-full flex flex-col items-center border-b border-b-slate-400 bg-gradient-to-b from-white to-stone-50 p-4 sm:pb-32"
+        class="bg-violet-950"
+        style="
+          background-image: url(/img/json-bg.png);
+          background-size: cover;
+          background-repeat: none;
+          background-position: center;
+        "
       >
-        <p class="mb-4 w-full text-center text-lg font-light italic sm:w-3/4 sm:text-xl">
-          Friday the 13th, <span class="whitespace-nowrap">September, 2024</span><br />
-          The McKimmon Conference and <span class="whitespace-nowrap">Training Center</span>
-          <span class="whitespace-nowrap">at NC State</span>
-        </p>
-        <h1 class="mb-6 text-center text-5xl font-black sm:text-6xl">BSides RDU</h1>
-        <p class="mb-8 text-center text-xl sm:w-3/4">
-          A community-driven framework for building events for and by cyber security community members.
-        </p>
-        <p>
-          <a
-            href="https://events.eventzilla.net/e/bsidesrdu-2024-friday-the-13th-2138632454"
-            class="mb-6 flex flex-row items-center justify-center gap-3 rounded-3xl bg-gradient-to-b from-green-600 to-green-300 px-6 py-2 text-3xl font-semibold italic hover:from-green-500 hover:to-green-200"
-          >
-            Register Now
-            <svg class="h-7 w-7 fill-slate-800">
-              <use xlink:href="/img/icons.svg#iconNewWindow"></use>
-            </svg>
-          </a>
-        </p>
+        <div
+          id="hero"
+          class="container-full flex flex-col items-center border-b border-b-slate-400 bg-gradient-to-b from-black/90 to-gray-200/40 p-4 sm:pb-32"
+        >
+          <div class="mb-4 mt-8 flex flex-row justify-center"><img src="/img/friday-the-13th.png" class="w-3/4" /></div>
+          <p class="mb-4 w-full text-center text-2xl font-medium italic text-slate-200 sm:w-3/4 sm:text-xl">
+            Friday the 13th, <span class="whitespace-nowrap">September, 2024</span><br />
+            The McKimmon Conference and <span class="whitespace-nowrap">Training Center</span>
+            <span class="whitespace-nowrap">at NC State</span>
+          </p>
+          <h1 class="mb-6 text-center text-6xl font-black text-slate-200 sm:text-6xl">BSides RDU</h1>
+          <p class="mb-8 text-center text-xl font-medium text-slate-100 sm:w-3/4">
+            A community-driven framework for building events for and by cyber security community members.
+          </p>
+          <p>
+            <a
+              href="https://events.eventzilla.net/e/bsidesrdu-2024-friday-the-13th-2138632454"
+              class="mb-6 flex flex-row items-center justify-center gap-3 rounded-3xl bg-gradient-to-b from-green-600 to-green-300 px-6 py-2 text-3xl font-semibold italic hover:from-green-500 hover:to-green-200"
+            >
+              Register Now
+              <svg class="h-7 w-7 fill-slate-800">
+                <use xlink:href="/img/icons.svg#iconNewWindow"></use>
+              </svg>
+            </a>
+          </p>
+        </div>
       </div>
       <!-- ANCHOR countdown -->
       <div
@@ -711,8 +722,13 @@
         </div>
       </div>
     </main>
-    <footer class="flex h-20 flex-shrink flex-row items-center justify-center bg-slate-800 text-sm text-slate-200">
-      <p>Copyright &copy; BSides RDU - All rights reserved</p>
+    <!-- ANCHOR: footer -->
+    <footer class="flex h-20 flex-shrink flex-row items-center justify-center bg-gray-900">
+      <div
+        class="flex h-20 w-full flex-row items-center justify-center bg-gradient-to-b from-violet-950/50 to-violet-700/50 text-sm text-slate-200"
+      >
+        <p>Copyright &copy; BSides RDU - All rights reserved</p>
+      </div>
     </footer>
     <script src="/js/nav.js"></script>
     <script src="/js/countdown-timer.js"></script>
