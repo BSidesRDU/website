@@ -1415,6 +1415,10 @@ iframe {
     width: auto;
   }
 
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+
   .sm\:scroll-pt-36 {
     scroll-padding-top: 9rem;
   }
