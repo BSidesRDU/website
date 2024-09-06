@@ -704,6 +704,18 @@ iframe {
   margin-top: 1px;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1077,6 +1089,10 @@ iframe {
   text-align: center;
 }
 
+.align-super {
+  vertical-align: super;
+}
+
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -1130,6 +1146,11 @@ iframe {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -1144,6 +1165,14 @@ iframe {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .italic {
@@ -1384,6 +1413,10 @@ iframe {
 
   .sm\:w-auto {
     width: auto;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
   }
 
   .sm\:scroll-pt-36 {
