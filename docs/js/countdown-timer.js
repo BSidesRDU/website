@@ -1,4 +1,4 @@
-const target = new Date('2024-09-13T08:00:00').getTime();
+const target = new Date('2024-09-13T08:30:00').getTime();
 
 let initialized = false;
 let diff = null;
