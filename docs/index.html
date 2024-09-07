@@ -69,7 +69,7 @@
           </div>
           <div>
             <a href="https://twitter.com/BSidesRDU">
-              <svg class="h-6 w-6">
+              <svg class="h-5 w-5">
                 <title>BSides RDU on Twitter</title>
                 <use href="/img/icons.svg#iconTwitter" class="fill-slate-50 hover:fill-red-600"></use>
               </svg>
@@ -114,12 +114,14 @@
         <div class="container mx-auto flex h-10 flex-row items-center justify-end px-3 sm:h-20">
           <div class="grow">
             <!-- ANCHOR logo-->
-            <a href="/#">
-              <svg class="mt-px h-10 w-16 sm:-mt-1 sm:h-16 sm:w-28">
-                <title>BSides RDU</title>
-                <use xlink:href="/img/icons.svg#iconBsidesLogo"></use>
-              </svg>
-            </a>
+            <div>
+              <a href="/#" class="inline-block w-16 sm:w-28">
+                <svg class="mt-px h-10 w-16 sm:-mt-1 sm:h-16 sm:w-28">
+                  <title>BSides RDU</title>
+                  <use xlink:href="/img/icons.svg#iconBsidesLogo"></use>
+                </svg>
+              </a>
+            </div>
           </div>
 
           <div class="relative flex flex-row items-center justify-evenly">
@@ -143,7 +145,7 @@
               <a
                 href="#events-workshops"
                 class="text-sm text-slate-800 underline-offset-2 hover:text-slate-100 hover:underline md:text-base"
-                >Events & Workshops</a
+                >Events<span class="hidden lg:inline"> & Workshops</span></a
               >
               <a
                 href="#sponsors"
@@ -391,71 +393,75 @@
           <script type="application/javascript" src="https://sessionize.com/api/v2/u2gsa61c/view/SpeakerWall"></script>
         </div>
         <!-- SECTION events-workshops -->
-        <div id="events-workshops" class="container mx-auto px-4 pb-16 sm:w-4/5">
+        <div id="events-workshops" class="container mx-auto px-4 pb-16 sm:w-4/5 sm:px-0">
           <h2 class="mb-4 text-4xl font-bold">Events &amp; Workshops</h2>
           <div
-            class="mx-auto mb-4 flex flex-col items-center justify-between gap-8 sm:flex-row sm:items-start sm:justify-evenly"
+            class="mx-auto mb-4 flex flex-col items-center justify-between gap-8 sm:flex-row sm:flex-wrap sm:items-start sm:justify-center sm:gap-0"
           >
             <!-- ANCHOR GreenH@t Solutions -->
-            <!-- <div class="w-11/12 sm:w-auto">
-              <img src="/img/events/eversec-ctf-show.png" alt="Eversec CTF Logo" class="mb-4 rounded-lg" />
-              <h3 class="mb-3 text-2xl font-semibold">Eversec CTF</h3>
+            <div class="w-11/12 sm:mb-10 sm:w-1/2 sm:pr-4 xl:w-1/3">
+              <img src="/img/events/green-hat-solutions.webp" alt="Green H@t Solutions Logo" class="mb-4" />
+              <h3 class="mb-3 flex flex-row items-center justify-start gap-3 text-2xl font-semibold">
+                Shoothouse for Wireless
+                <a href="https://www.linkedin.com/company/greenhat-solutions/" class="h-6 w-6"
+                  ><svg class="h-6 w-6">
+                    <title>GreenH@t Solutions LinkedIn Profile</title>
+                    <use xlink:href="#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </h3>
+              <p class="mb-3">Presented by GreenH@t Solutions</p>
               <p class="text-base">
-                The Eversec CTF is a series of scenario based CTFs about a fictitious company that continually gets
-                hacked and needs some friendly hacker help. The Eversec CTF was created in 2015 by gabemarshall after
-                being inspired by competing in the DerbyCon CTF.
+                Get ready for epic wireless challenges! Test your skills and compete with the best. Don’t miss out on
+                the GreenH@t Solutions wireless shootout!
               </p>
-            </div> -->
+              <p><b>Location: </b> Room 6</p>
+            </div>
             <!-- ANCHOR Eversec -->
-            <div class="w-11/12 sm:w-1/2">
-              <img src="/img/events/eversec-ctf-show.png" alt="Eversec CTF Logo" class="mb-4 rounded-lg" />
-              <h3 class="mb-3 text-2xl font-semibold">Eversec CTF</h3>
+            <div class="w-11/12 sm:mb-10 sm:w-1/2 sm:pr-4 xl:w-1/3">
+              <img src="/img/events/eversec-ctf.png" alt="Eversec CTF Logo" class="mb-4" />
+              <h3 class="mb-3 flex flex-row items-center justify-start gap-3 text-2xl font-semibold">
+                Eversec CTF
+                <a href="https://twitter.com/EverSecCTF" class="h-5 w-5"
+                  ><svg class="h-5 w-5">
+                    <title>EverSecCTF Twitter Profile</title>
+                    <use xlink:href="/img/icons.svg#iconTwitter"></use>
+                  </svg>
+                </a>
+              </h3>
               <p class="mb-3 text-base">
-                The Eversec CTF is a series of scenario based CTFs about a fictitious company that continually gets
-                hacked and needs some friendly hacker help.
+                Get ready for the Eversec CTF at BSides RDU! Test your hacking skills and compete against others in a
+                series of challenging capture-the-flag puzzles. Whether you're new or experienced, it's fun for all
+                skill levels!
               </p>
-              <p class="mb-3 text-base">
-                The Eversec CTF was created in 2015 by gabemarshall after being inspired by competing in the DerbyCon
-                CTF.
-              </p>
+              <p><b>Location: </b> Room 6</p>
             </div>
             <!-- ANCHOR OCL -->
-            <div class="w-11/12 sm:w-1/2">
-              <img
-                src="/img/events/oak-city-locksport-show.png"
-                alt="Oak City Locksport Logo"
-                class="mb-4 rounded-lg"
-              />
-              <h3 class="mb-1 text-2xl font-semibold">Lockpick Village</h3>
+            <div class="w-11/12 sm:mb-10 sm:w-1/2 sm:pr-4 xl:w-1/3">
+              <img src="/img/events/oak-city-locksport.png" alt="Oak City Locksport Logo" class="mb-4" />
+              <h3 class="mb-3 flex flex-row items-center justify-start gap-3 text-2xl font-semibold">
+                Lockpick Village
+                <a href="https://twitter.com/OakCityLocks" class="h-5 w-5"
+                  ><svg class="h-5 w-5">
+                    <title>Oak City Locksport Twitter Profile</title>
+                    <use xlink:href="/img/icons.svg#iconTwitter"></use>
+                  </svg>
+                </a>
+              </h3>
               <p class="mb-3">Presented by Oak City Locksport</p>
               <p class="mb-3 text-base">
-                Oak City Locksport is the original Raleigh area lockpicking group, founded in 2010 by Katie (aka
-                "squ33k"), and led today by Patrick (aka "unregistered436"). From our small beginnings with just a
-                handful of people getting together to pick locks, we have grown to nearly 140 members and average twenty
-                five people or more at our monthly meetings.
+                Excited for BSides RDU? Don’t miss the Lockpicking Village with Oak City Locksport! Whether you’re a
+                beginner or a pro, come test your skills and learn new tricks. All experience levels welcome—let’s
+                unlock some fun!
               </p>
-              <p class="mb-3 text-base">
-                We're focused on fun and education! It's useful to learn about the relative security (or insecurity) of
-                the locks we use in everyday life. More informed and educated consumers can make better choices
-                regarding what they purchase to protect themselves and their families. There are many different
-                variations of the saying, but "Locks are for honest people". A real criminal is more likely to break a
-                window, use bolt cutters, or crash through a door.
-              </p>
-              <p class="mb-3 text-base">
-                We welcome newcomers to this hobby, and are more than willing to teach the basics to get you started.
-                There are no startup costs or membership fees since we have "community" locks and picks, but most people
-                end up buying their own materials once they're hooked! That said, we'll gladly accept donations to
-                replace lost and damaged equipment from the regular wear and tear it receives at meetings and
-                conferences that we have taught at. Most people pick up this hobby because locks are like little metal
-                puzzles.
-              </p>
+              <p><b>Location: </b> Expo-Hall</p>
             </div>
           </div>
         </div>
         <!-- !SECTION -->
         <!-- SECTION sponsors -->
         <div id="sponsors" class="container mx-auto px-4 pb-16 sm:w-4/5">
-          <h2 class="mb-12 text-center text-4xl font-bold">2024 Sponsors</h2>
+          <h2 class="mb-12 text-center text-5xl font-bold">2024 Sponsors</h2>
           <!-- <h3>Diamond</h3>s
           <div class="mx-4 mb-16 flex flex-row flex-wrap items-center justify-center gap-16"></div> -->
           <!-- ANCHOR Platinum -->
