@@ -764,10 +764,6 @@ iframe {
   min-height: 100vh;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-11\/12 {
   width: 91.666667%;
 }
@@ -974,16 +970,6 @@ iframe {
 .bg-violet-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(46 16 101 / var(--tw-bg-opacity));
-}
-
-.bg-slate-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -1344,22 +1330,6 @@ iframe {
     margin-top: -5rem;
   }
 
-  .sm\:mb-2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .sm\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
-  .sm\:mb-5 {
-    margin-bottom: 1.25rem;
-  }
-
-  .sm\:mb-6 {
-    margin-bottom: 1.5rem;
-  }
-
   .sm\:mb-10 {
     margin-bottom: 2.5rem;
   }
@@ -1386,6 +1356,10 @@ iframe {
 
   .sm\:h-40 {
     height: 10rem;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
   }
 
   .sm\:w-2\/3 {
@@ -1428,14 +1402,6 @@ iframe {
     width: auto;
   }
 
-  .sm\:w-1\/2 {
-    width: 50%;
-  }
-
-  .sm\:w-1\/3 {
-    width: 33.333333%;
-  }
-
   .sm\:scroll-pt-36 {
     scroll-padding-top: 9rem;
   }
@@ -1452,14 +1418,6 @@ iframe {
     align-items: flex-start;
   }
 
-  .sm\:items-center {
-    align-items: center;
-  }
-
-  .sm\:justify-start {
-    justify-content: flex-start;
-  }
-
   .sm\:justify-center {
     justify-content: center;
   }
@@ -1468,21 +1426,12 @@ iframe {
     justify-content: space-evenly;
   }
 
-  .sm\:gap-2 {
-    gap: 0.5rem;
-  }
-
   .sm\:gap-0 {
     gap: 0px;
   }
 
-  .sm\:gap-1 {
-    gap: 0.25rem;
-  }
-
-  .sm\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+  .sm\:gap-2 {
+    gap: 0.5rem;
   }
 
   .sm\:px-0 {
@@ -1490,14 +1439,9 @@ iframe {
     padding-right: 0px;
   }
 
-  .sm\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  .sm\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .sm\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .sm\:pb-32 {
@@ -1533,10 +1477,6 @@ iframe {
     width: 50%;
   }
 
-  .md\:w-1\/3 {
-    width: 33.333333%;
-  }
-
   .md\:scroll-pt-40 {
     scroll-padding-top: 10rem;
   }
@@ -1554,10 +1494,6 @@ iframe {
 @media (min-width: 1024px) {
   .lg\:inline {
     display: inline;
-  }
-
-  .lg\:w-1\/3 {
-    width: 33.333333%;
   }
 }
 
