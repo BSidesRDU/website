@@ -1300,6 +1300,10 @@ iframe {
   color: rgb(147 197 253 / var(--tw-text-opacity));
 }
 
+.line-through {
+  text-decoration-line: line-through;
+}
+
 .underline-offset-2 {
   text-underline-offset: 2px;
 }
@@ -1525,6 +1529,10 @@ iframe {
 
   .sm\:pr-4 {
     padding-right: 1rem;
+  }
+
+  .sm\:pb-16 {
+    padding-bottom: 4rem;
   }
 
   .sm\:text-3xl {
