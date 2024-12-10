@@ -645,40 +645,8 @@ iframe {
   top: 0px;
 }
 
-.right-0 {
-  right: 0px;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.right-24 {
-  right: 6rem;
-}
-
-.top-24 {
-  top: 6rem;
-}
-
-.right-8 {
-  right: 2rem;
-}
-
-.top-8 {
-  top: 2rem;
-}
-
 .z-\[500\] {
   z-index: 500;
-}
-
-.float-end {
-  float: inline-end;
-}
-
-.float-right {
-  float: right;
 }
 
 .mx-4 {
@@ -691,14 +659,14 @@ iframe {
   margin-right: auto;
 }
 
-.my-16 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .mb-12 {
@@ -797,6 +765,10 @@ iframe {
   height: 1.75rem;
 }
 
+.max-h-72 {
+  max-height: 18rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -853,18 +825,6 @@ iframe {
   width: 100%;
 }
 
-.w-24 {
-  width: 6rem;
-}
-
-.w-96 {
-  width: 24rem;
-}
-
-.w-36 {
-  width: 9rem;
-}
-
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -903,14 +863,6 @@ iframe {
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.items-start {
-  align-items: flex-start;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .items-center {
@@ -1029,6 +981,26 @@ iframe {
   background-color: rgb(46 16 101 / var(--tw-bg-opacity));
 }
 
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.bg-gray-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 7 18 / var(--tw-bg-opacity));
+}
+
+.bg-red-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -1057,6 +1029,24 @@ iframe {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-red-950\/50 {
+  --tw-gradient-from: rgb(69 10 10 / 0.5) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(69 10 10 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-red-950\/70 {
+  --tw-gradient-from: rgb(69 10 10 / 0.7) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(69 10 10 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-red-700\/70 {
+  --tw-gradient-from: rgb(185 28 28 / 0.7) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(185 28 28 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-gray-200\/40 {
   --tw-gradient-to: rgb(229 231 235 / 0.4) var(--tw-gradient-to-position);
 }
@@ -1071,6 +1061,18 @@ iframe {
 
 .to-violet-700\/50 {
   --tw-gradient-to: rgb(109 40 217 / 0.5) var(--tw-gradient-to-position);
+}
+
+.to-red-700\/50 {
+  --tw-gradient-to: rgb(185 28 28 / 0.5) var(--tw-gradient-to-position);
+}
+
+.to-red-700\/70 {
+  --tw-gradient-to: rgb(185 28 28 / 0.7) var(--tw-gradient-to-position);
+}
+
+.to-red-950\/70 {
+  --tw-gradient-to: rgb(69 10 10 / 0.7) var(--tw-gradient-to-position);
 }
 
 .fill-slate-50 {
@@ -1129,6 +1131,10 @@ iframe {
 
 .pl-5 {
   padding-left: 1.25rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .text-center {
@@ -1235,6 +1241,11 @@ iframe {
   color: rgb(252 211 77 / var(--tw-text-opacity));
 }
 
+.text-blue-300 {
+  --tw-text-opacity: 1;
+  color: rgb(147 197 253 / var(--tw-text-opacity));
+}
+
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
@@ -1290,14 +1301,14 @@ iframe {
   color: rgb(212 212 216 / var(--tw-text-opacity));
 }
 
-.text-blue-200 {
+.text-red-100 {
   --tw-text-opacity: 1;
-  color: rgb(191 219 254 / var(--tw-text-opacity));
+  color: rgb(254 226 226 / var(--tw-text-opacity));
 }
 
-.text-blue-300 {
+.text-red-50 {
   --tw-text-opacity: 1;
-  color: rgb(147 197 253 / var(--tw-text-opacity));
+  color: rgb(254 242 242 / var(--tw-text-opacity));
 }
 
 .line-through {
@@ -1465,16 +1476,16 @@ iframe {
     width: 18rem;
   }
 
+  .sm\:w-80 {
+    width: 20rem;
+  }
+
   .sm\:w-96 {
     width: 24rem;
   }
 
   .sm\:w-auto {
     width: auto;
-  }
-
-  .sm\:w-80 {
-    width: 20rem;
   }
 
   .sm\:scroll-pt-36 {
@@ -1519,8 +1530,8 @@ iframe {
     padding-bottom: 1.5rem;
   }
 
-  .sm\:pb-32 {
-    padding-bottom: 8rem;
+  .sm\:pb-16 {
+    padding-bottom: 4rem;
   }
 
   .sm\:pl-4 {
@@ -1529,10 +1540,6 @@ iframe {
 
   .sm\:pr-4 {
     padding-right: 1rem;
-  }
-
-  .sm\:pb-16 {
-    padding-bottom: 4rem;
   }
 
   .sm\:text-3xl {
