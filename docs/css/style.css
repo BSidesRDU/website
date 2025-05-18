@@ -1588,3 +1588,12 @@ iframe {
     width: 33.333333%;
   }
 }
+
+hr {
+  height: 0px;
+  margin: 0 auto 40px auto;
+  width: 900px;
+  border: none;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid grey;
+}
