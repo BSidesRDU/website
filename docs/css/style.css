@@ -1263,10 +1263,6 @@ iframe {
   color: rgb(212 212 216 / var(--tw-text-opacity));
 }
 
-.line-through {
-  text-decoration-line: line-through;
-}
-
 .underline-offset-2 {
   text-underline-offset: 2px;
 }
