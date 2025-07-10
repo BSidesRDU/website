@@ -777,16 +777,24 @@ iframe {
   width: 91.666667%;
 }
 
+.w-12 {
+  width: 3rem;
+}
+
 .w-16 {
   width: 4rem;
 }
 
-.w-28 {
-  width: 7rem;
-}
-
 .w-3 {
   width: 0.75rem;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.w-36 {
+  width: 9rem;
 }
 
 .w-48 {
@@ -1402,6 +1410,14 @@ iframe {
 
   .sm\:w-3\/4 {
     width: 75%;
+  }
+
+  .sm\:w-32 {
+    width: 8rem;
+  }
+
+  .sm\:w-36 {
+    width: 9rem;
   }
 
   .sm\:w-4\/5 {
