@@ -46,7 +46,7 @@
   </head>
   <!-- ANCHOR body -->
   <body class="flex min-h-screen flex-col bg-slate-50 font-sans text-slate-900">
-    <!-- ANCHOR header -->
+    <!-- SECTION header -->
     <header class="sticky top-0 z-[500] flex-shrink border-b border-b-slate-300 shadow-xl">
       <!-- ANCHOR social bar -->
       <div id="social-bar" class="flex h-10 flex-row items-center bg-slate-900 fill-slate-50 text-sm text-slate-50">
@@ -311,14 +311,15 @@
         </div>
       </nav>
     </header>
+    <!-- !SECTION -->
 
     <!-- ANCHOR main -->
     <main class="flex-grow">
-      <!-- ANCHOR hero -->
-      <div class="bg-red-800">
+      <!-- SECTION hero -->
+      <div class="border-b border-b-slate-400 bg-red-800">
         <div
           id="hero"
-          class="container-full relative flex flex-col items-center border-b border-b-slate-400 bg-gradient-to-b from-black/90 p-4"
+          class="container-full justify-stat relative flex flex-col items-center bg-gradient-to-b from-black/90 px-4 pb-20 pt-8"
         >
           <!-- sm:pb-16 -->
           <!-- <div class="my-10 flex w-full flex-row justify-center text-2xl font-semibold">
@@ -327,7 +328,7 @@
               Watch the live stream!
             </a>
           </div> -->
-          <div class="mb-4 mt-8 flex flex-row justify-center">
+          <div class="mb-4 flex flex-row justify-center">
             <!-- <img src="/img/2025.jpg" class="max-h-72" /> -->
           </div>
           <h1 class="mb-6 text-center text-6xl font-black text-slate-200 sm:text-6xl">BSides RDU</h1>
@@ -339,7 +340,7 @@
           <p class="mb-8 text-center text-xl font-medium text-slate-100 sm:w-3/4">
             A community-driven framework for building events for and by cybersecurity community members.
           </p>
-          <h2 class="mb-4 w-full text-center text-4xl font-bold italic text-red-50">Tickets are available!</h2>
+          <h2 class="mb-6 w-full text-center text-4xl font-bold italic text-red-50">Tickets are available!</h2>
           <!-- ANCHOR register buy tickets button #2 -->
           <p>
             <a
@@ -355,9 +356,9 @@
         </div>
       </div>
       <!-- ANCHOR countdown -->
-      <!-- <div
+      <div
         id="countdown"
-        class="mx-auto mb-8 flex w-full flex-row items-center justify-between sm:-mt-20 sm:h-40 sm:w-3/4 sm:gap-2 md:w-1/2 md:gap-3"
+        class="mx-auto mb-8 mt-48 flex w-full flex-row items-center justify-between sm:-mt-20 sm:h-40 sm:w-3/4 sm:gap-2 md:w-1/2 md:gap-3"
       >
         <div
           style="background-color: #cc0000"
@@ -383,7 +384,8 @@
         >
           <span id="elS">00</span> <span class="text-sm">Seconds</span>
         </div>
-      </div> -->
+      </div>
+      <!-- !SECTION -->
       <!-- ANCHOR content -->
       <div id="content" class="pt-12">
         <!-- ANCHOR schedule -->
@@ -465,18 +467,7 @@
         <!-- !SECTION -->
         <!-- SECTION sponsors -->
         <div id="sponsors" class="container mx-auto px-4 pb-16 sm:w-4/5">
-          <h2 class="mb-12 text-center text-5xl font-bold">2025 Sponsors</h2>
-          <div class="mx-4 mb-16 flex flex-row flex-wrap items-center justify-center gap-16">
-            <a href="https://www.trendmicro.com/"
-              ><img class="w-56 sm:w-64" src="/img/sponsors/trend-micro.png" alt=""
-            /></a>
-            <a href="https://cloudsecurityalliance.org/"
-              ><img
-                class="w-36 sm:w-48"
-                src="/img/sponsors/cloud-security-alliance-white.png"
-                alt="Cloud Security Alliance"
-            /></a>
-          </div>
+          <h2 class="mb-12 text-center text-5xl font-extrabold">2025 Sponsors</h2>
           <!-- ANCHOR Sponsorship Link -->
           <p class="mb-12 text-center text-2xl font-semibold">
             <a href="https://www.eventzilla.net/e/bsidesrdu-2025-sponsorships-2138649414" class="text-blue-600"
@@ -486,47 +477,62 @@
           <!-- <h3>Diamond</h3>
           <div class="mx-4 mb-16 flex flex-row flex-wrap items-center justify-center gap-16"></div> -->
           <!-- ANCHOR Platinum -->
-          <!-- <h3
-            class="mb-8 text-center text-5xl font-black text-zinc-300 drop-shadow-[1.5px_1.5px_1.2px_rgba(0,0,0,0.9)]"
+          <div
+            class="mb-8 bg-gradient-to-b from-zinc-300 to-zinc-100 py-1 drop-shadow-[1.5px_1.5px_1.2px_rgba(0,0,0,0.9)]"
           >
-            Platinum
-          </h3> -->
+            <h3 class="text-center text-4xl font-bold italic text-zinc-800">Platinum Sponsors</h3>
+          </div>
+          <div class="mx-4 mb-20 flex flex-row flex-wrap items-center justify-center gap-16">
+            <a href="https://aspida.com/"><img class="w-80 sm:w-96" src="/img/sponsors/aspida.png" alt="Aspida" /></a>
+          </div>
           <!-- <div class="mx-4 mb-20 flex flex-row flex-wrap items-center justify-center gap-16">
             <a href="https://www.guidepointsecurity.com/"
               ><img class="w-80 sm:w-96" src="/img/sponsors/guidepoint-security.png" alt="Guidepoint Security"
             /></a>
           </div> -->
           <!-- ANCHOR Gold -->
-          <!-- <h3
-            class="mb-8 text-center text-5xl font-black text-amber-300 drop-shadow-[1.5px_1.5px_1.2px_rgba(0,0,0,0.9)]"
+          <div
+            class="mb-8 bg-gradient-to-b from-yellow-300 to-yellow-200 py-1 drop-shadow-[1.5px_1.5px_1.2px_rgba(0,0,0,0.9)]"
           >
-            Gold
-          </h3> -->
+            <h3 class="text-center text-4xl font-bold italic text-yellow-900">Gold Sponsors</h3>
+          </div>
+          <div class="mx-4 mb-20 flex flex-row flex-wrap items-center justify-center gap-16">
+            <a href="https://www.lenovo.com/"
+              ><img class="w-40 sm:w-56" src="/img/sponsors/lenovo.png" alt="Lenovo"
+            /></a>
+          </div>
+          <div class="mx-4 mb-20 flex flex-row flex-wrap items-center justify-center gap-16">
+            <a href="https://cloudsecurityalliance.org/"
+              ><img
+                class="w-36 sm:w-48"
+                src="/img/sponsors/cloud-security-alliance-white.png"
+                alt="Cloud Security Alliance"
+            /></a>
+          </div>
           <!-- <div class="mx-4 mb-20 flex flex-row flex-wrap items-center justify-center gap-16">
             <a href="https://www.cisco.com/"
               ><img class="w-64 sm:w-72" src="/img/sponsors/cisco.png" alt="Cisco Systems, Inc."
             /></a>
           </div> -->
-          <!-- ANCHOR Titanium -->
-          <!-- <h3
-            class="mb-8 text-center text-5xl font-black text-gray-300 drop-shadow-[1.5px_1.5px_1.2px_rgba(0,0,0,0.9)]"
-          >
-            Titanium
-          </h3> -->
-          <!-- <div class="mx-4 mb-16 flex flex-row flex-wrap items-center justify-center gap-16">
-            <a href="https://www.lenovo.com/"
-              ><img class="w-56 sm:w-64" src="/img/sponsors/lenovo.png" alt="Lenovo"
-            /></a>
-            <a href="https://raleigh.issa.org/"
-              ><img class="w-56 sm:w-64" src="/img/sponsors/issa-raleigh.png" alt="ISSA Raleigh Chapter"
-            /></a>
-          </div> -->
           <!-- ANCHOR Silver -->
-          <!-- <h3
-            class="mb-8 text-center text-5xl font-black text-slate-200 drop-shadow-[1.5px_1.5px_1.2px_rgba(0,0,0,0.9)]"
+          <div
+            class="mb-8 bg-gradient-to-b from-stone-200 to-stone-100 py-1 drop-shadow-[1.5px_1.5px_1.2px_rgba(0,0,0,0.9)]"
           >
-            Silver
-          </h3> -->
+            <h3 class="text-center text-4xl font-bold italic text-stone-950">Silver Sponsors</h3>
+          </div>
+          <div class="mx-4 mb-16 flex flex-row flex-wrap items-center justify-center gap-16">
+            <a href="https://delinea.com/"><img class="w-56 sm:w-64" src="/img/sponsors/delinea.png" alt="Deliea" /></a>
+          </div>
+          <div class="mx-4 mb-16 flex flex-row flex-wrap items-center justify-center gap-16">
+            <a href="https://www.trendmicro.com/"
+              ><img class="w-56 sm:w-64" src="/img/sponsors/trend-micro.png" alt="Trend Micro"
+            /></a>
+          </div>
+          <div class="mx-4 mb-16 flex flex-row flex-wrap items-center justify-center gap-16">
+            <a href="https://www.cobalt.io/"
+              ><img class="w-56 sm:w-64" src="/img/sponsors/cobalt.png" alt="Cobalt"
+            /></a>
+          </div>
           <!-- <div class="mx-4 mb-16 flex flex-row flex-wrap items-center justify-center gap-16">
             <a href="https://www.wiz.io/"><img class="w-48 sm:w-56" src="/img/sponsors/wiz.png" alt="Wiz" /></a>
             <a href="https://corelight.com/"
@@ -534,8 +540,16 @@
             /></a>
           </div> -->
           <!-- ANCHOR Bronze -->
-          <!-- <h3>Bronze</h3>
-          <div class="mx-4 mb-16 flex flex-col flex-wrap items-center justify-center gap-16"></div> -->
+          <div
+            class="mb-8 bg-gradient-to-b from-amber-500 to-amber-400 py-1 drop-shadow-[1.5px_1.5px_1.2px_rgba(0,0,0,0.9)]"
+          >
+            <h3 class="text-center text-4xl font-bold italic text-amber-950">Bronze Sponsors</h3>
+          </div>
+          <div class="mx-4 mb-16 flex flex-col flex-wrap items-center justify-center gap-16">
+            <a href="https://www.viszensecurity.com/"
+              ><img class="w-48 sm:w-56" src="/img/sponsors/viszen.png" alt="Viszen"
+            /></a>
+          </div>
           <!-- ANCHOR Supporters -->
           <!-- <h3 class="mb-8 text-center text-4xl font-black text-[#a00] drop-shadow-[1.5px_1.5px_1.2px_rgba(0,0,0,0.9)]">
             Supporters
@@ -675,23 +689,20 @@
           <!-- </div> -->
         </div>
         <!-- SECTION Last year's sponsors -->
-        <div id="principles" class="container mx-auto px-4 pb-16 sm:w-4/5">
-          <h3 class="my-16 text-center font-serif text-2xl italic">Thanks to our super awesome 2024 sponsors!</h3>
+        <div id="past-sponsors" class="container mx-auto px-4 pb-16 sm:w-4/5">
+          <h3 class="my-16 text-center font-serif text-2xl italic">Thanks to our super awesome past sponsors!</h3>
           <div class="mx-auto flex w-3/4 flex-row flex-wrap items-center justify-center gap-8">
-            <a href="https://www.trendmicro.com/"
+            <!-- <a href="https://www.trendmicro.com/"
               ><img class="w-12 sm:w-32" src="/img/sponsors/trend-micro.png" alt=""
-            /></a>
+            /></a> -->
             <a href="https://www.guidepointsecurity.com/"
               ><img class="w-12 sm:w-32" src="/img/sponsors/guidepoint-security.png" alt="Guidepoint Security"
-            /></a>
-            <a href="https://www.lenovo.com/"
-              ><img class="w-12 sm:w-32" src="/img/sponsors/lenovo.png" alt="Lenovo"
             /></a>
             <a href="https://safebase.io/"
               ><img class="w-12 sm:w-32" src="/img/sponsors/safebase-io.png" alt="SAFEBASE"
             /></a>
             <a href="https://www.sternsecurity.com/"
-              ><img class="w-12 sm:w-32" src="/img/sponsors/stern-security.png" alt="Stern Security"
+              ><img class="w-12 sm:w-32" src="/img/sponsors/velocity-stern-security.png" alt="Stern Security"
             /></a>
             <a href="https://www.cisco.com/"
               ><img class="w-12 sm:w-32" src="/img/sponsors/cisco.png" alt="Cisco Systems, Inc."
@@ -740,6 +751,7 @@
             /></a>
           </div>
         </div>
+        <!-- !SECTION -->
         <!-- SECTION principles -->
         <div id="principles" class="container mx-auto px-4 pb-16 sm:w-4/5">
           <!-- <hr class="mb-4" /> -->
@@ -862,7 +874,7 @@
       </div>
     </footer>
     <script src="/js/nav.js"></script>
-    <!-- <script src="/js/countdown-timer.js"></script> -->
+    <script src="/js/countdown-timer.js"></script>
     <!-- bump -->
   </body>
 </html>

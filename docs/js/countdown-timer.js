@@ -1,4 +1,4 @@
-const target = new Date('2024-09-13T08:30:00').getTime();
+const target = new Date('2025-09-13T08:30:00').getTime();
 
 let initialized = false;
 let diff = null;
@@ -64,6 +64,9 @@ let interval = setInterval(() => {
   }
 }, 1000);
 
+window.addEventListener('load', () => {
+  updateCountdownTimer(tsD, tsH, tsM, tsS);
+});
 window.addEventListener('unload', () => {
   clearInterval(interval);
 });
