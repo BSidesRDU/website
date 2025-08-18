@@ -67,6 +67,6 @@ let interval = setInterval(() => {
 window.addEventListener('load', () => {
   updateCountdownTimer(tsD, tsH, tsM, tsS);
 });
-window.addEventListener('unload', () => {
-  clearInterval(interval);
-});
+// window.addEventListener('unload', () => {
+//   clearInterval(interval);
+// });
