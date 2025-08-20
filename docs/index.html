@@ -356,33 +356,43 @@
         </div>
       </div>
       <!-- ANCHOR countdown -->
-      <div
-        id="countdown"
-        class="mx-auto mb-8 mt-48 flex w-full flex-row items-center justify-between sm:-mt-20 sm:h-40 sm:w-3/4 sm:gap-2 md:w-1/2 md:gap-3"
-      >
+      <div class="relative mx-auto mb-8 mt-48 sm:-mt-20 sm:h-40 sm:w-3/4 sm:gap-2 md:w-1/2 md:gap-3">
         <div
+          id="live"
+          class="absolute hidden w-full items-center justify-center sm:h-28"
           style="background-color: #cc0000"
-          class="text-md flex w-full flex-col items-center py-2 font-medium text-slate-50 sm:w-48 sm:py-6 sm:text-3xl"
         >
-          <span id="elD">0</span> <span class="text-sm">Days</span>
+          <h4 class="text-md w-fulltext-center py-2 font-bold text-slate-50 sm:py-6 sm:text-3xl">We're live!</h4>
         </div>
         <div
-          style="background-color: #cc0000"
-          class="text-md flex w-full flex-col items-center py-2 font-medium text-slate-50 sm:w-48 sm:py-6 sm:text-3xl"
+          id="countdown"
+          aria-label="Countdown to BSides RDU start"
+          class="absolute flex w-full flex-row items-center justify-between sm:h-28"
         >
-          <span id="elH">00</span> <span class="text-sm">Hours</span>
-        </div>
-        <div
-          style="background-color: #cc0000"
-          class="text-md flex w-full flex-col items-center py-2 font-medium text-slate-50 sm:w-48 sm:py-6 sm:text-3xl"
-        >
-          <span id="elM">00</span> <span class="text-sm">Minutes</span>
-        </div>
-        <div
-          style="background-color: #cc0000"
-          class="text-md flex w-full flex-col items-center py-2 font-medium text-slate-50 sm:w-48 sm:py-6 sm:text-3xl"
-        >
-          <span id="elS">00</span> <span class="text-sm">Seconds</span>
+          <div
+            style="background-color: #cc0000"
+            class="text-md flex w-full flex-col items-center py-2 font-medium text-slate-50 sm:w-48 sm:py-6 sm:text-3xl"
+          >
+            <span id="elD">0</span> <span class="text-sm">Days</span>
+          </div>
+          <div
+            style="background-color: #cc0000"
+            class="text-md flex w-full flex-col items-center py-2 font-medium text-slate-50 sm:w-48 sm:py-6 sm:text-3xl"
+          >
+            <span id="elH">00</span> <span class="text-sm">Hours</span>
+          </div>
+          <div
+            style="background-color: #cc0000"
+            class="text-md flex w-full flex-col items-center py-2 font-medium text-slate-50 sm:w-48 sm:py-6 sm:text-3xl"
+          >
+            <span id="elM">00</span> <span class="text-sm">Minutes</span>
+          </div>
+          <div
+            style="background-color: #cc0000"
+            class="text-md flex w-full flex-col items-center py-2 font-medium text-slate-50 sm:w-48 sm:py-6 sm:text-3xl"
+          >
+            <span id="elS">00</span> <span class="text-sm">Seconds</span>
+          </div>
         </div>
       </div>
       <!-- !SECTION -->
