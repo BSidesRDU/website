@@ -1,72 +1,48 @@
-const target = new Date('2025-09-13T08:30:00').getTime();
+// Sept 12, 2025 at 8:00 AM in Raleigh (EDT is UTC-4)
+const target = Date.parse('2025-09-12T08:00:00-04:00');
+// const target = Date.parse('2025-08-20T01:01:00-04:00');
 
-let initialized = false;
-let diff = null;
+const countdownEl = document.getElementById('countdown');
+const liveEl = document.getElementById('live');
+const elD = document.getElementById('elD');
+const elH = document.getElementById('elH');
+const elM = document.getElementById('elM');
+const elS = document.getElementById('elS');
 
-let tsD = 0;
-let tsH = 0;
-let tsM = 0;
-let tsS = 0;
+let timerId = null;
 
-let elD = document.getElementById('elD');
-let elH = document.getElementById('elH');
-let elM = document.getElementById('elM');
-let elS = document.getElementById('elS');
+function render(d, h, m, s) {
+  if (!elD || !elH || !elM || !elS) return;
+  elD.textContent = d; // ✅ no zero padding on days
+  elH.textContent = h.toString().padStart(2, '0');
+  elM.textContent = m.toString().padStart(2, '0');
+  elS.textContent = s.toString().padStart(2, '0');
+}
 
-const after = () => {
-  return diff !== null && diff < 0;
-};
+function tick() {
+  const now = Date.now();
+  let diff = target - now;
 
-const updateCountdownTimer = (stD, stH, stM, stS) => {
-  if (after()) {
-    elD.textContent = '0';
-    elH.textContent = '00';
-    elM.textContent = '00';
-    elS.textContent = '00';
+  if (diff <= 0) {
+    clearInterval(timerId);
+    // ✅ Replace entire countdown with a final message
+    countdownEl.classList.add('hidden');
+    countdownEl.classList.remove('flex');
+    liveEl.classList.remove('hidden');
+    liveEl.classList.add('flex');
     return;
   }
 
-  elD.textContent = stD;
-  elH.textContent = stH;
-  elM.textContent = stM;
-  elS.textContent = stS;
+  const ms = Math.max(diff, 0);
+  const days = Math.floor(ms / 86400000);
+  const hours = Math.floor((ms % 86400000) / 3600000);
+  const mins = Math.floor((ms % 3600000) / 60000);
+  const secs = Math.floor((ms % 60000) / 1000);
 
-  if (!initialized) {
-    elD.innerHTML = '&nbsp;';
-    elH.innerHTML = '&nbsp;';
-    elM.innerHTML = '&nbsp;';
-    elS.innerHTML = '&nbsp;';
-    initialized = true;
-  }
-};
-
-let interval = setInterval(() => {
-  const now = new Date().getTime();
-  diff = target - now;
-
-  stD = Math.floor(diff / 86400000)
-    .toString()
-    .padStart(1, '0');
-  stH = Math.floor((diff % 86400000) / 3600000)
-    .toString()
-    .padStart(2, '0');
-  stM = Math.floor((diff % 3600000) / 60000)
-    .toString()
-    .padStart(2, '0');
-  stS = Math.floor((diff % 60000) / 1000)
-    .toString()
-    .padStart(2, '0');
-
-  updateCountdownTimer(stD, stH, stM, stS);
-
-  if (diff <= 0) {
-    clearInterval(interval);
-  }
-}, 1000);
+  render(days, hours, mins, secs);
+}
 
 window.addEventListener('load', () => {
-  updateCountdownTimer(tsD, tsH, tsM, tsS);
+  tick(); // show immediately
+  timerId = setInterval(tick, 1000);
 });
-// window.addEventListener('unload', () => {
-//   clearInterval(interval);
-// });
