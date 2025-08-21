@@ -1,6 +1,6 @@
 // Sept 12, 2025 at 8:00 AM in Raleigh (EDT is UTC-4)
 const target = Date.parse('2025-09-12T08:00:00-04:00');
-// const target = Date.parse('2025-08-21T07:51:00-04:00');
+// const target = Date.parse('2025-08-21T08:09:00-04:00');
 
 const countdownEl = document.getElementById('countdown');
 const liveEl = document.getElementById('live');
@@ -57,7 +57,7 @@ function goLive() {
       liveEl.classList.add('translate-transform', 'translate-opacity', 'duration-1500');
       liveEl.classList.remove('opacity-0', 'translate-y-16');
     }, 1500);
-  }, 2000);
+  }, 200);
 }
 
 window.addEventListener('load', () => {
