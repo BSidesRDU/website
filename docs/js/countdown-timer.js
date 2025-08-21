@@ -1,6 +1,6 @@
 // Sept 12, 2025 at 8:00 AM in Raleigh (EDT is UTC-4)
 const target = Date.parse('2025-09-12T08:00:00-04:00');
-// const target = Date.parse('2025-08-20T01:01:00-04:00');
+// const target = Date.parse('2025-08-21T07:51:00-04:00');
 
 const countdownEl = document.getElementById('countdown');
 const liveEl = document.getElementById('live');
@@ -24,12 +24,7 @@ function tick() {
   let diff = target - now;
 
   if (diff <= 0) {
-    clearInterval(timerId);
-    // ✅ Replace entire countdown with a final message
-    countdownEl.classList.add('hidden');
-    countdownEl.classList.remove('flex');
-    liveEl.classList.remove('hidden');
-    liveEl.classList.add('flex');
+    goLive();
     return;
   }
 
@@ -40,6 +35,29 @@ function tick() {
   const secs = Math.floor((ms % 60000) / 1000);
 
   render(days, hours, mins, secs);
+}
+
+function goLive() {
+  clearInterval(timerId);
+
+  setTimeout(() => {
+    countdownEl.classList.add(
+      'translate-transform',
+      'duration-1500',
+      '-translate-y-16',
+      'translate-opacity',
+      'opacity-0',
+    );
+    setTimeout(() => {
+      liveEl.classList.remove('hidden');
+
+      // (ensures the transition runs)
+      void liveEl.offsetWidth;
+
+      liveEl.classList.add('translate-transform', 'translate-opacity', 'duration-1500');
+      liveEl.classList.remove('opacity-0', 'translate-y-16');
+    }, 1500);
+  }, 2000);
 }
 
 window.addEventListener('load', () => {
