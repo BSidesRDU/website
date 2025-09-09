@@ -641,8 +641,36 @@ iframe {
   inset: -0.125rem;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.left-0\.5 {
+  left: 0.125rem;
+}
+
+.left-8 {
+  left: 2rem;
+}
+
+.left-6 {
+  left: 1.5rem;
+}
+
+.left-5 {
+  left: 1.25rem;
 }
 
 .z-\[500\] {
@@ -671,6 +699,10 @@ iframe {
 
 .-mt-5 {
   margin-top: -1.25rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-12 {
@@ -711,10 +743,6 @@ iframe {
 
 .mt-px {
   margin-top: 1px;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .block {
@@ -837,6 +865,10 @@ iframe {
   width: 1.75rem;
 }
 
+.w-72 {
+  width: 18rem;
+}
+
 .w-8 {
   width: 2rem;
 }
@@ -849,8 +881,16 @@ iframe {
   width: 100%;
 }
 
-.w-72 {
-  width: 18rem;
+.w-96 {
+  width: 24rem;
+}
+
+.w-52 {
+  width: 13rem;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .max-w-2xl {
@@ -876,6 +916,26 @@ iframe {
 
 .translate-y-16 {
   --tw-translate-y: 4rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-\[17deg\] {
+  --tw-rotate: 17deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-\[17deg\] {
+  --tw-rotate: -17deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-\[14deg\] {
+  --tw-rotate: -14deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-\[4deg\] {
+  --tw-rotate: -4deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -959,6 +1019,10 @@ iframe {
   white-space: nowrap;
 }
 
+.text-nowrap {
+  text-wrap: nowrap;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -1026,6 +1090,16 @@ iframe {
 .bg-slate-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-amber-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 211 77 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -1364,6 +1438,15 @@ iframe {
 .text-zinc-800 {
   --tw-text-opacity: 1;
   color: rgb(39 39 42 / var(--tw-text-opacity));
+}
+
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
+}
+
+.line-through {
+  text-decoration-line: line-through;
 }
 
 .underline-offset-2 {

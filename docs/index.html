@@ -58,7 +58,7 @@
       <!-- ANCHOR social bar -->
       <div id="social-bar" class="flex h-10 flex-row items-center bg-slate-900 fill-slate-50 text-sm text-slate-50">
         <div class="container mx-auto flex h-10 flex-row items-center gap-2 px-4">
-          <div>
+          <div class="relative">
             <!-- ANCHOR register buy tickets button #1 -->
             <a
               href="https://www.eventzilla.net/e/bsidesrdu-2025-2138649409"
@@ -70,6 +70,11 @@
                 <use xlink:href="/img/icons.svg#iconNewWindow"></use>
               </svg>
             </a>
+            <!-- ANCHOR: sold out badge #1 -->
+            <span
+              class="absolute top-1 w-48 w-auto -rotate-[17deg] text-nowrap bg-amber-300 text-center text-2xl font-black text-red-700"
+              >SOLD OUT</span
+            >
           </div>
           <div class="grow">
             <span class="font-semibold">📣 <span class="hidden sm:inline">Updates:</span></span>
@@ -347,9 +352,11 @@
           <p class="mb-8 max-w-2xl text-center text-xl font-medium text-slate-100 sm:w-3/4">
             A community-driven framework for building events for and by cybersecurity community members.
           </p>
-          <h2 class="mb-6 w-full text-center text-4xl font-bold italic text-red-50">Tickets are still available!</h2>
+          <h2 class="mb-6 w-full text-center text-4xl font-bold italic text-red-50">
+            <span class="line-through">Tickets are still available!</span>
+          </h2>
           <!-- ANCHOR register buy tickets button #2 -->
-          <p>
+          <p class="relative">
             <a
               href="https://www.eventzilla.net/e/bsidesrdu-2025-2138649409"
               class="mb-6 flex flex-row items-center justify-center gap-3 rounded-3xl bg-gradient-to-b from-green-600 to-green-300 px-6 py-2 text-3xl font-semibold italic hover:from-green-500 hover:to-green-200"
@@ -359,6 +366,11 @@
                 <use xlink:href="/img/icons.svg#iconNewWindow"></use>
               </svg>
             </a>
+            <!-- ANCHOR: sold out badge #2 -->
+            <span
+              class="absolute left-5 top-1 w-96 w-auto -rotate-[4deg] text-nowrap bg-amber-300 text-center text-5xl font-black text-red-700"
+              >SOLD OUT</span
+            >
           </p>
         </div>
       </div>
