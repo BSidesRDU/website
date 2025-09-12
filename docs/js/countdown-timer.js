@@ -4,6 +4,7 @@ const target = Date.parse('2025-09-12T08:00:00-04:00');
 
 const countdownEl = document.getElementById('countdown');
 const liveEl = document.getElementById('live');
+const liveStreamEl = document.getElementById('live-stream');
 const elD = document.getElementById('elD');
 const elH = document.getElementById('elH');
 const elM = document.getElementById('elM');
@@ -56,6 +57,11 @@ function goLive() {
 
       liveEl.classList.add('translate-transform', 'translate-opacity', 'duration-1500');
       liveEl.classList.remove('opacity-0', 'translate-y-16');
+
+      if (liveStreamEl) {
+        liveStreamEl.classList.add('translate-transform', 'translate-opacity', 'duration-1500');
+        liveStreamEl.classList.remove('opacity-0', '-translate-x-full');
+      }
     }, 1500);
   }, 200);
 }
