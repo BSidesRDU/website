@@ -10,6 +10,13 @@ module.exports = {
   ],
 // */
   theme: {
+    container: {
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+      },
+    },
     extend: {
       transitionDuration: {
         1500: '1500ms',
