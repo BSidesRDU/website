@@ -1042,6 +1042,10 @@ iframe {
   border-radius: 0.75rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1103,6 +1107,11 @@ iframe {
 .bg-slate-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(2 6 23 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#0b1730\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 23 48 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
